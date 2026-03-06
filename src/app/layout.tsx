@@ -78,25 +78,31 @@ export default function RootLayout({
                 href="/calculators/slab"
                 className="hover:text-orange-600 transition"
               >
-                Slab Calculator
+                Slab
+              </Link>
+              <Link
+                href="/calculators/block"
+                className="hover:text-orange-600 transition"
+              >
+                Block
+              </Link>
+              <Link
+                href="/calculators/rebar"
+                className="hover:text-orange-600 transition"
+              >
+                Rebar
               </Link>
               <Link
                 href="/calculators/driveway"
                 className="hover:text-orange-600 transition"
               >
-                Driveway Cost
+                Driveway
               </Link>
               <Link
-                href="/calculators/patio"
+                href="/calculators/stamped"
                 className="hover:text-orange-600 transition"
               >
-                Patio Calculator
-              </Link>
-              <Link
-                href="/calculators/footing"
-                className="hover:text-orange-600 transition"
-              >
-                Footing Calculator
+                Stamped
               </Link>
               <Link
                 href="/states"
@@ -133,36 +139,18 @@ export default function RootLayout({
               <div>
                 <h4 className="text-white font-semibold mb-3">Calculators</h4>
                 <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link href="/calculators/slab" className="hover:text-white">
-                      Slab Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/calculators/driveway"
-                      className="hover:text-white"
-                    >
-                      Driveway Cost Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/calculators/patio"
-                      className="hover:text-white"
-                    >
-                      Patio Calculator
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/calculators/footing"
-                      className="hover:text-white"
-                    >
-                      Footing Calculator
-                    </Link>
-                  </li>
+                  <li><Link href="/calculators/slab" className="hover:text-white">Slab Calculator</Link></li>
+                  <li><Link href="/calculators/block" className="hover:text-white">Block Calculator</Link></li>
+                  <li><Link href="/calculators/rebar" className="hover:text-white">Rebar Calculator</Link></li>
+                  <li><Link href="/calculators/driveway" className="hover:text-white">Driveway Calculator</Link></li>
+                  <li><Link href="/calculators/patio" className="hover:text-white">Patio Calculator</Link></li>
+                  <li><Link href="/calculators/stamped" className="hover:text-white">Stamped Concrete</Link></li>
+                  <li><Link href="/calculators/sidewalk" className="hover:text-white">Sidewalk Calculator</Link></li>
+                  <li><Link href="/calculators/footing" className="hover:text-white">Footing Calculator</Link></li>
+                  <li><Link href="/calculators/stairs" className="hover:text-white">Stairs Calculator</Link></li>
                 </ul>
+              </div>
+              <div>
               </div>
               <div>
                 <h4 className="text-white font-semibold mb-3">Resources</h4>

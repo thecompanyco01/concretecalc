@@ -109,7 +109,7 @@ export default function Home() {
           waste factors. Built specifically for concrete contractors — not
           homeowners.
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {calculators.map((calc) => (
             <Link
               key={calc.href}
