@@ -9,6 +9,42 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Concrete Driveway Cost in 2026: Prices Per Sq Ft by Type",
+    slug: "concrete-driveway-cost-guide",
+    excerpt:
+      "How much does a concrete driveway cost? Get real prices per square foot for plain, stamped, colored, and exposed aggregate driveways. Includes removal costs, sizing guide, and asphalt comparison.",
+    date: "March 6, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Patio Cost in 2026: Prices by Size & Finish Type",
+    slug: "concrete-patio-cost-guide",
+    excerpt:
+      "Real patio costs by size (10x10 to 20x20), finish options, DIY vs contractor comparison, design ideas, permits, and maintenance tips for concrete patios.",
+    date: "March 6, 2026",
+    readTime: "13 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Foundation Cost in 2026: Prices by Type & Size",
+    slug: "concrete-foundation-cost-guide",
+    excerpt:
+      "Detailed pricing for slab-on-grade, crawlspace, full basement, and pier foundations. Covers soil testing, engineering, permits, and frost line requirements by region.",
+    date: "March 6, 2026",
+    readTime: "15 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Cost Per Yard in 2026: Prices by Region & Type",
+    slug: "concrete-cost-per-yard",
+    excerpt:
+      "Current ready-mix concrete prices by state, cost per square foot, short load fees, seasonal pricing, and tips for negotiating with suppliers.",
+    date: "March 6, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
+  {
     title: "How to Bid Concrete Jobs: The Complete Guide for Contractors",
     slug: "how-to-bid-concrete-jobs",
     excerpt:
@@ -18,31 +54,31 @@ const posts = [
     status: "live",
   },
   {
-    title: "Concrete Cost Per Square Foot: 2026 Pricing Guide",
-    slug: "concrete-cost-per-square-foot",
+    title: "Concrete Slab Cost Guide: 2026 Pricing Breakdown",
+    slug: "concrete-slab-cost-guide",
     excerpt:
-      "Updated 2026 pricing for residential and commercial concrete work. Covers slabs, driveways, patios, stamped, and decorative concrete by region.",
-    date: "March 2026",
-    readTime: "8 min read",
-    status: "coming-soon",
+      "Complete cost breakdown for concrete slabs including material, labor, site prep, and finishing. Covers garage floors, patios, and commercial slabs.",
+    date: "March 6, 2026",
+    readTime: "10 min read",
+    status: "live",
+  },
+  {
+    title: "Stamped Concrete Cost Guide: Patterns, Pricing & ROI",
+    slug: "stamped-concrete-cost-guide",
+    excerpt:
+      "How much does stamped concrete cost? Pricing by pattern, color options, maintenance requirements, and whether the premium is worth it for your project.",
+    date: "March 6, 2026",
+    readTime: "10 min read",
+    status: "live",
   },
   {
     title: "Starting a Concrete Business: What You Need to Know",
-    slug: "starting-a-concrete-business",
+    slug: "how-to-start-concrete-business",
     excerpt:
       "Equipment, licensing, insurance, and startup costs for launching a concrete contracting business. Realistic expectations from day one.",
-    date: "March 2026",
+    date: "March 6, 2026",
     readTime: "15 min read",
-    status: "coming-soon",
-  },
-  {
-    title: "Concrete Estimate Template: Free Download + How to Use It",
-    slug: "concrete-estimate-template",
-    excerpt:
-      "Download our free concrete estimate template and learn how to calculate material, labor, and profit margins for any project.",
-    date: "March 2026",
-    readTime: "6 min read",
-    status: "coming-soon",
+    status: "live",
   },
 ];
 
