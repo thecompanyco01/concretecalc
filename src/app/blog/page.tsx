@@ -9,6 +9,42 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Free Concrete Estimate Template for Contractors (2026)",
+    slug: "concrete-estimate-template",
+    excerpt:
+      "Download a professional concrete estimate template with material costs, labor rates, overhead, and profit margins. Includes tips on winning more jobs with better estimates.",
+    date: "March 6, 2026",
+    readTime: "10 min read",
+    status: "live",
+  },
+  {
+    title: "How Much to Charge for Concrete Work in 2026",
+    slug: "how-much-to-charge-for-concrete-work",
+    excerpt:
+      "Complete pricing guide with per-square-foot rates by job type, regional pricing differences, how to calculate your rate, and what top-earning contractors do differently.",
+    date: "March 6, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Contract Template: Protect Your Business on Every Job",
+    slug: "concrete-contract-template",
+    excerpt:
+      "Essential contract template with payment terms, scope of work, change orders, warranty, and liability protection. Includes state-specific requirements and common mistakes.",
+    date: "March 6, 2026",
+    readTime: "11 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Invoice Template: Get Paid Faster, Look Professional",
+    slug: "concrete-invoice-template",
+    excerpt:
+      "Professional invoice template with detailed line items, progress billing, and payment terms. Plus tips on getting paid faster and tax considerations.",
+    date: "March 6, 2026",
+    readTime: "9 min read",
+    status: "live",
+  },
+  {
     title: "Concrete Driveway Cost in 2026: Prices Per Sq Ft by Type",
     slug: "concrete-driveway-cost-guide",
     excerpt:
