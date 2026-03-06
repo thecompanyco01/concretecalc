@@ -11,6 +11,21 @@ export const metadata: Metadata = {
     "Professional concrete calculators built for contractors. Estimate slabs, driveways, patios, footings & more. Free tools + premium templates for concrete businesses.",
   keywords:
     "concrete calculator, concrete slab calculator, concrete cost calculator, concrete estimate, concrete bidding",
+  metadataBase: new URL("https://concretecalc.vercel.app"),
+  openGraph: {
+    type: "website",
+    title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+    description: "Professional concrete calculators built for contractors. Calculate yards, costs, and materials for any concrete job.",
+    siteName: "ConcreteCalc",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+    description: "Professional concrete calculators built for contractors.",
+  },
+  alternates: {
+    canonical: "https://concretecalc.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -20,6 +35,38 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "ConcreteCalc",
+              url: "https://concretecalc.vercel.app",
+              description: "Professional concrete calculators and business tools built for contractors.",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://concretecalc.vercel.app/blog?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "ConcreteCalc",
+              url: "https://concretecalc.vercel.app",
+              logo: "https://concretecalc.vercel.app/logo.png",
+              sameAs: [],
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -50,6 +97,12 @@ export default function RootLayout({
                 className="hover:text-orange-600 transition"
               >
                 Footing Calculator
+              </Link>
+              <Link
+                href="/states"
+                className="hover:text-orange-600 transition"
+              >
+                State Guides
               </Link>
               <Link
                 href="/blog"
@@ -122,6 +175,11 @@ export default function RootLayout({
                   <li>
                     <Link href="/templates" className="hover:text-white">
                       Pro Templates
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/states" className="hover:text-white">
+                      State Guides
                     </Link>
                   </li>
                   <li>

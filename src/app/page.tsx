@@ -13,7 +13,6 @@ const calculators = [
     description:
       "Calculate cubic yards, bags of concrete, and material cost for any slab project. Includes waste factor and rebar estimates.",
     href: "/calculators/slab",
-    keywords: "550K+ monthly searches",
     icon: "📐",
   },
   {
@@ -21,7 +20,6 @@ const calculators = [
     description:
       "Estimate total cost for concrete driveways including material, labor, finishing, and removal of old driveway.",
     href: "/calculators/driveway",
-    keywords: "8,100 monthly searches",
     icon: "🚗",
   },
   {
@@ -29,7 +27,6 @@ const calculators = [
     description:
       "Price out concrete patios with options for stamped, colored, or broom-finished surfaces. Includes labor estimates.",
     href: "/calculators/patio",
-    keywords: "880+ monthly searches",
     icon: "🏡",
   },
   {
@@ -37,8 +34,35 @@ const calculators = [
     description:
       "Calculate concrete needed for footings — continuous, pier, and stepped. Includes depth and width configurations.",
     href: "/calculators/footing",
-    keywords: "High-value keyword",
     icon: "🏗️",
+  },
+  {
+    title: "Stamped Concrete Calculator",
+    description:
+      "Estimate costs for stamped concrete with pattern and color options. Compare stamped vs. plain concrete pricing.",
+    href: "/calculators/stamped",
+    icon: "🎨",
+  },
+  {
+    title: "Sidewalk Calculator",
+    description:
+      "Calculate concrete for sidewalks and walkways. Get material quantities and cost per linear foot.",
+    href: "/calculators/sidewalk",
+    icon: "🚶",
+  },
+  {
+    title: "Concrete Block Calculator",
+    description:
+      "Calculate blocks, mortar, and cost for block walls. Supports standard 8x8x16 and other block sizes.",
+    href: "/calculators/block",
+    icon: "🧱",
+  },
+  {
+    title: "Rebar Calculator",
+    description:
+      "Calculate rebar quantity, weight, and cost for any slab or foundation. Supports #3 through #8 bar sizes.",
+    href: "/calculators/rebar",
+    icon: "⚙️",
   },
 ];
 
@@ -136,6 +160,89 @@ export default function Home() {
                 the trade.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* State Guides */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            Concrete Costs & Licensing by State
+          </h2>
+          <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+            Find licensing requirements, concrete pricing, and business startup guides specific to your state.
+          </p>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+            {[
+              { name: "California", slug: "california", price: "$175" },
+              { name: "Texas", slug: "texas", price: "$140" },
+              { name: "Florida", slug: "florida", price: "$150" },
+              { name: "New York", slug: "new-york", price: "$170" },
+              { name: "Ohio", slug: "ohio", price: "$140" },
+              { name: "Georgia", slug: "georgia", price: "$140" },
+              { name: "Arizona", slug: "arizona", price: "$145" },
+              { name: "Michigan", slug: "michigan", price: "$150" },
+              { name: "N. Carolina", slug: "north-carolina", price: "$140" },
+              { name: "Illinois", slug: "illinois", price: "$155" },
+              { name: "Colorado", slug: "colorado", price: "$155" },
+              { name: "Washington", slug: "washington", price: "$165" },
+            ].map((state) => (
+              <Link
+                key={state.slug}
+                href={`/states/${state.slug}`}
+                className="bg-white border border-gray-200 rounded-lg p-3 text-center hover:border-orange-300 hover:shadow transition text-sm"
+              >
+                <div className="font-semibold">{state.name}</div>
+                <div className="text-orange-600 text-xs">{state.price}/yd</div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-4">
+            <Link href="/states" className="text-orange-600 hover:text-orange-700 font-medium text-sm">
+              View all state guides →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Preview */}
+      <section className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            Concrete Business Resources
+          </h2>
+          <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+            Guides, pricing data, and business advice for concrete contractors.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: "How to Bid Concrete Jobs: The Complete Guide",
+                href: "/blog/how-to-bid-concrete-jobs",
+                desc: "Step-by-step bidding guide with formulas, pricing tables, and real-world examples.",
+              },
+              {
+                title: "Concrete Cost Per Yard in 2026",
+                href: "/blog/concrete-cost-per-yard",
+                desc: "Current pricing by region, ready-mix vs bags, and how to negotiate with suppliers.",
+              },
+              {
+                title: "How to Start a Concrete Business",
+                href: "/blog/how-to-start-concrete-business",
+                desc: "Complete startup guide — licensing, equipment, insurance, and finding first customers.",
+              },
+            ].map((post) => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className="border border-gray-200 rounded-xl p-6 hover:border-orange-300 hover:shadow-lg transition group"
+              >
+                <h3 className="font-bold mb-2 group-hover:text-orange-600">{post.title}</h3>
+                <p className="text-gray-600 text-sm">{post.desc}</p>
+                <span className="text-orange-600 text-sm font-medium mt-3 inline-block">Read more →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
