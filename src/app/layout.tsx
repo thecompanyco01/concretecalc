@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Link from "next/link";
 
@@ -81,6 +82,7 @@ export default function RootLayout({
         </nav>
 
         <main>{children}</main>
+        <Analytics />
 
         {/* Footer */}
         <footer className="bg-slate-900 text-slate-400 py-12 mt-16 border-t border-slate-800">
