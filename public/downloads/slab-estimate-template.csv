@@ -1,0 +1,95 @@
+CONCRETE SLAB ESTIMATE,,,,
+,,,,
+Company Name:,[Your Company Name],,,
+Address:,[Your Address],,,
+Phone:,[Your Phone],,,
+License #:,[Your License #],,,
+,,,,
+Date:,[MM/DD/YYYY],,,
+Estimate #:,[EST-001],,,
+Valid For:,30 Days,,,
+,,,,
+CLIENT INFORMATION,,,,
+Client Name:,[Client Name],,,
+Client Phone:,[Client Phone],,,
+Client Email:,[Client Email],,,
+Project Address:,[Project Address],,,
+,,,,
+PROJECT DETAILS,,,,
+Slab Dimensions:,[L x W x Thickness],,,
+Total Square Footage:,[Enter SF],,,
+Total Cubic Yards:,[Enter CY],,,
+,,,,
+ESTIMATE LINE ITEMS,,,,
+Description,Quantity,Unit,Unit Price,Total
+,,,,
+MATERIALS,,,,
+Concrete (ready-mix),12,Cubic Yards,$150.00,"$1,800.00"
+Gravel base (4" depth),8,Tons,$35.00,$280.00
+Vapor barrier (10 mil),1200,Sq Ft,$0.15,$180.00
+Rebar (#4 bar),400,Linear Ft,$0.75,$300.00
+Wire mesh (6x6 W2.9),1200,Sq Ft,$0.45,$540.00
+Control joint material,120,Linear Ft,$1.25,$150.00
+Curing compound,5,Gallons,$18.00,$90.00
+Form lumber & stakes,1,Lot,$350.00,$350.00
+Anchor bolts / hardware,1,Lot,$75.00,$75.00
+,,,,
+MATERIALS SUBTOTAL,,,,"$3,765.00"
+,,,,
+LABOR,,,,
+Site preparation & grading,16,Hours,$55.00,$880.00
+Formwork installation,12,Hours,$55.00,$660.00
+Gravel base placement & compaction,8,Hours,$50.00,$400.00
+Vapor barrier installation,4,Hours,$45.00,$180.00
+Rebar / mesh placement,8,Hours,$55.00,$440.00
+Concrete placement & finishing,16,Hours,$65.00,"$1,040.00"
+Control joint cutting,4,Hours,$55.00,$220.00
+Curing compound application,2,Hours,$45.00,$90.00
+Cleanup & debris removal,6,Hours,$45.00,$270.00
+,,,,
+LABOR SUBTOTAL,,,,"$4,180.00"
+,,,,
+EQUIPMENT,,,,
+Skid steer / bobcat,1,Day,$350.00,$350.00
+Plate compactor,1,Day,$125.00,$125.00
+Concrete vibrator,1,Day,$85.00,$85.00
+Power trowel / float,1,Day,$150.00,$150.00
+Concrete saw (joint cutting),1,Day,$125.00,$125.00
+Mobilization / transport,1,Trip,$250.00,$250.00
+,,,,
+EQUIPMENT SUBTOTAL,,,,"$1,085.00"
+,,,,
+SUMMARY,,,,
+Materials Subtotal,,,,"$3,765.00"
+Labor Subtotal,,,,"$4,180.00"
+Equipment Subtotal,,,,"$1,085.00"
+,,,,
+Subtotal,,,,"$9,030.00"
+Overhead (10%),,,,"$903.00"
+Profit Margin (15%),,,,"$1,489.95"
+,,,,
+GRAND TOTAL,,,,"$11,422.95"
+,,,,
+PAYMENT TERMS,,,,
+"Deposit required: 50% upon acceptance of estimate",,,,
+"Progress payment: 40% upon completion of concrete pour",,,,
+"Final payment: 10% upon project completion and walkthrough",,,,
+,,,,
+TERMS & CONDITIONS,,,,
+"1. This estimate is valid for 30 days from the date above.",,,,
+"2. Pricing is based on current material costs and may adjust if costs change significantly.",,,,
+"3. Any changes to the scope of work may result in additional charges.",,,,
+"4. Client is responsible for obtaining all necessary permits unless otherwise agreed.",,,,
+"5. Work area must be accessible for equipment and material delivery.",,,,
+"6. Underground utilities must be marked by client or utility company prior to work.",,,,
+"7. Concrete curing time is 7-28 days; no heavy loads during curing period.",,,,
+"8. Minor surface cracking is normal and not a defect in workmanship.",,,,
+"9. Warranty: 1 year on workmanship; materials per manufacturer warranty.",,,,
+"10. Additional charges may apply for rock removal, tree roots, or unforeseen conditions.",,,,
+,,,,
+NOTES,,,,
+"[Add any project-specific notes here]",,,,
+,,,,
+ACCEPTANCE,,,,
+"Client Signature: ________________________  Date: ____________",,,,
+"Contractor Signature: ____________________  Date: ____________",,,,

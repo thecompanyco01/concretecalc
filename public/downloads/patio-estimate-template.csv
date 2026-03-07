@@ -1,0 +1,102 @@
+CONCRETE PATIO ESTIMATE,,,,
+,,,,
+Company Name:,[Your Company Name],,,
+Address:,[Your Address],,,
+Phone:,[Your Phone],,,
+License #:,[Your License #],,,
+,,,,
+Date:,[MM/DD/YYYY],,,
+Estimate #:,[EST-001],,,
+Valid For:,30 Days,,,
+,,,,
+CLIENT INFORMATION,,,,
+Client Name:,[Client Name],,,
+Client Phone:,[Client Phone],,,
+Client Email:,[Client Email],,,
+Project Address:,[Project Address],,,
+,,,,
+PROJECT DETAILS,,,,
+Patio Dimensions:,[L x W x Thickness],,,
+Total Square Footage:,[Enter SF],,,
+Total Cubic Yards:,[Enter CY],,,
+Finish Type:,[Broom / Stamped / Colored / Exposed Aggregate],,,
+Stamp Pattern:,[Ashlar Slate / Cobblestone / Wood Plank / Other],,,
+Color Selection:,[Desert Tan / Slate Gray / Terra Cotta / Custom],,,
+,,,,
+ESTIMATE LINE ITEMS,,,,
+Description,Quantity,Unit,Unit Price,Total
+,,,,
+MATERIALS,,,,
+Concrete (ready-mix 4000 PSI),8,Cubic Yards,$150.00,"$1,200.00"
+Gravel base (4" depth),6,Tons,$35.00,$210.00
+Wire mesh (6x6 W2.9),600,Sq Ft,$0.45,$270.00
+Form lumber & stakes,1,Lot,$300.00,$300.00
+Color additive (integral color),8,Bags,$35.00,$280.00
+Color hardener (broadcast),2,Pails (60 lb),$85.00,$170.00
+Release agent (liquid),3,Gallons,$32.00,$96.00
+Sealer (high-gloss acrylic),8,Gallons,$32.00,$256.00
+Expansion joint material,40,Linear Ft,$2.50,$100.00
+,,,,
+MATERIALS SUBTOTAL,,,,"$2,882.00"
+,,,,
+LABOR,,,,
+Site preparation & grading,10,Hours,$55.00,$550.00
+Gravel base placement & compaction,6,Hours,$50.00,$300.00
+Formwork installation,8,Hours,$55.00,$440.00
+Mesh placement,4,Hours,$50.00,$200.00
+Concrete placement,8,Hours,$65.00,$520.00
+Decorative finish / stamping labor,12,Hours,$65.00,$780.00
+Color hardener broadcast & float,4,Hours,$60.00,$240.00
+Border detail work,6,Hours,$60.00,$360.00
+Steps / transitions (if applicable),8,Hours,$60.00,$480.00
+Sealer application (2 coats),6,Hours,$45.00,$270.00
+Cleanup & debris removal,6,Hours,$45.00,$270.00
+,,,,
+LABOR SUBTOTAL,,,,"$4,410.00"
+,,,,
+EQUIPMENT,,,,
+Skid steer / bobcat,1,Day,$350.00,$350.00
+Plate compactor,1,Day,$125.00,$125.00
+Concrete vibrator,1,Day,$85.00,$85.00
+Stamp set rental,1,Day,$175.00,$175.00
+Texture roller / skins,1,Day,$75.00,$75.00
+Sprayer (sealer application),1,Day,$65.00,$65.00
+Mobilization / transport,1,Trip,$250.00,$250.00
+,,,,
+EQUIPMENT SUBTOTAL,,,,"$1,125.00"
+,,,,
+SUMMARY,,,,
+Materials Subtotal,,,,"$2,882.00"
+Labor Subtotal,,,,"$4,410.00"
+Equipment Subtotal,,,,"$1,125.00"
+,,,,
+Subtotal,,,,"$8,417.00"
+Overhead (10%),,,,,$841.70
+Profit Margin (15%),,,,"$1,388.81"
+,,,,
+GRAND TOTAL,,,,"$10,647.51"
+,,,,
+PAYMENT TERMS,,,,
+"Deposit required: 50% upon acceptance of estimate",,,,
+"Progress payment: 40% upon completion of concrete pour",,,,
+"Final payment: 10% upon project completion and walkthrough",,,,
+,,,,
+TERMS & CONDITIONS,,,,
+"1. This estimate is valid for 30 days from the date above.",,,,
+"2. Pricing is based on current material costs and may adjust if costs change significantly.",,,,
+"3. Any changes to the scope of work may result in additional charges.",,,,
+"4. Client is responsible for obtaining all necessary permits unless otherwise agreed.",,,,
+"5. Color samples are approximate; actual color may vary due to weather, mix, and curing conditions.",,,,
+"6. Stamp pattern must be selected and confirmed before pour date.",,,,
+"7. Concrete curing: avoid foot traffic for 3 days, heavy items for 7 days.",,,,
+"8. Sealer should be reapplied every 2-3 years for color protection and durability.",,,,
+"9. Minor color variation and hairline cracking are normal characteristics of decorative concrete.",,,,
+"10. Warranty: 1 year on workmanship; materials per manufacturer warranty.",,,,
+"11. Drainage slope per standard practice to direct water away from structures.",,,,
+,,,,
+NOTES,,,,
+"[Add any project-specific notes here]",,,,
+,,,,
+ACCEPTANCE,,,,
+"Client Signature: ________________________  Date: ____________",,,,
+"Contractor Signature: ____________________  Date: ____________",,,,

@@ -1,0 +1,100 @@
+CONCRETE DRIVEWAY ESTIMATE,,,,
+,,,,
+Company Name:,[Your Company Name],,,
+Address:,[Your Address],,,
+Phone:,[Your Phone],,,
+License #:,[Your License #],,,
+,,,,
+Date:,[MM/DD/YYYY],,,
+Estimate #:,[EST-001],,,
+Valid For:,30 Days,,,
+,,,,
+CLIENT INFORMATION,,,,
+Client Name:,[Client Name],,,
+Client Phone:,[Client Phone],,,
+Client Email:,[Client Email],,,
+Project Address:,[Project Address],,,
+,,,,
+PROJECT DETAILS,,,,
+Driveway Dimensions:,[L x W x Thickness],,,
+Total Square Footage:,[Enter SF],,,
+Total Cubic Yards:,[Enter CY],,,
+Finish Type:,[Broom / Exposed Aggregate / Stamped],,,
+,,,,
+ESTIMATE LINE ITEMS,,,,
+Description,Quantity,Unit,Unit Price,Total
+,,,,
+MATERIALS,,,,
+Concrete (ready-mix 4000 PSI),15,Cubic Yards,$150.00,"$2,250.00"
+Gravel base (6" depth),12,Tons,$35.00,$420.00
+Wire mesh (6x6 W2.9),800,Sq Ft,$0.45,$360.00
+Rebar (#4 bar - edges & joints),200,Linear Ft,$0.75,$150.00
+Expansion joint filler (1/2"),60,Linear Ft,$2.50,$150.00
+Form lumber & stakes,1,Lot,$400.00,$400.00
+Fiber mesh additive,15,Bags,$12.00,$180.00
+Sealer (acrylic),10,Gallons,$28.00,$280.00
+,,,,
+MATERIALS SUBTOTAL,,,,"$4,190.00"
+,,,,
+LABOR,,,,
+Demo / removal of existing driveway,16,Hours,$55.00,$880.00
+Excavation & rough grading,12,Hours,$55.00,$660.00
+Gravel base placement & compaction,8,Hours,$50.00,$400.00
+Formwork installation,10,Hours,$55.00,$550.00
+Wire mesh / rebar placement,6,Hours,$55.00,$330.00
+Concrete placement & finishing,16,Hours,$65.00,"$1,040.00"
+Broom finish / texturing,4,Hours,$55.00,$220.00
+Expansion joint installation,4,Hours,$50.00,$200.00
+Apron section (street transition),6,Hours,$60.00,$360.00
+Sealer application,4,Hours,$45.00,$180.00
+Cleanup & debris removal,8,Hours,$45.00,$360.00
+,,,,
+LABOR SUBTOTAL,,,,"$5,180.00"
+,,,,
+EQUIPMENT,,,,
+Skid steer / bobcat,2,Days,$350.00,$700.00
+Dump truck (demo hauling),1,Load,$450.00,$450.00
+Plate compactor,1,Day,$125.00,$125.00
+Concrete vibrator,1,Day,$85.00,$85.00
+Power trowel / bull float,1,Day,$150.00,$150.00
+Concrete saw,1,Day,$125.00,$125.00
+Mobilization / transport,1,Trip,$300.00,$300.00
+,,,,
+EQUIPMENT SUBTOTAL,,,,"$1,935.00"
+,,,,
+SUMMARY,,,,
+Materials Subtotal,,,,"$4,190.00"
+Labor Subtotal,,,,"$5,180.00"
+Equipment Subtotal,,,,"$1,935.00"
+,,,,
+Subtotal,,,,"$11,305.00"
+Overhead (10%),,,,"$1,130.50"
+Profit Margin (15%),,,,"$1,865.33"
+,,,,
+GRAND TOTAL,,,,"$14,300.83"
+,,,,
+PAYMENT TERMS,,,,
+"Deposit required: 50% upon acceptance of estimate",,,,
+"Progress payment: 40% upon completion of concrete pour",,,,
+"Final payment: 10% upon project completion and walkthrough",,,,
+,,,,
+TERMS & CONDITIONS,,,,
+"1. This estimate is valid for 30 days from the date above.",,,,
+"2. Pricing is based on current material costs and may adjust if costs change significantly.",,,,
+"3. Any changes to the scope of work may result in additional charges.",,,,
+"4. Client is responsible for obtaining all necessary permits unless otherwise agreed.",,,,
+"5. Work area must be accessible for concrete trucks and equipment delivery.",,,,
+"6. Underground utilities must be marked by client or utility company prior to work.",,,,
+"7. Existing driveway removal includes hauling; disposal fees included in estimate.",,,,
+"8. Concrete curing time is 7 days minimum; no vehicle traffic for 7-10 days.",,,,
+"9. Minor surface cracking is normal and not a defect in workmanship.",,,,
+"10. Warranty: 1 year on workmanship; materials per manufacturer warranty.",,,,
+"11. Grade and drainage slope per standard practice (1/8 inch per foot minimum).",,,,
+"12. Sealer should be reapplied every 2-3 years for best results.",,,,
+,,,,
+NOTES,,,,
+"[Add any project-specific notes here]",,,,
+,,,,
+ACCEPTANCE,,,,
+"Client Signature: ________________________  Date: ____________",,,,
+"Contractor Signature: ____________________  Date: ____________",,,,

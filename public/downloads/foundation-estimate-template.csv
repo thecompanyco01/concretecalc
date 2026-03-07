@@ -1,0 +1,122 @@
+FOUNDATION & FOOTINGS ESTIMATE,,,,
+,,,,
+Company Name:,[Your Company Name],,,
+Address:,[Your Address],,,
+Phone:,[Your Phone],,,
+License #:,[Your License #],,,
+,,,,
+Date:,[MM/DD/YYYY],,,
+Estimate #:,[EST-001],,,
+Valid For:,30 Days,,,
+,,,,
+CLIENT INFORMATION,,,,
+Client Name:,[Client Name],,,
+Client Phone:,[Client Phone],,,
+Client Email:,[Client Email],,,
+Project Address:,[Project Address],,,
+,,,,
+PROJECT DETAILS,,,,
+Foundation Type:,[Slab-on-Grade / Strip Footing / T-Foundation / Pier],,,
+Building Dimensions:,[L x W],,,
+Footing Depth:,[Enter Depth],,,
+Footing Width:,[Enter Width],,,
+Total Linear Feet of Footing:,[Enter LF],,,
+Total Cubic Yards:,[Enter CY],,,
+Engineering Plan Reference:,[Plan # / Date],,,
+,,,,
+ESTIMATE LINE ITEMS,,,,
+Description,Quantity,Unit,Unit Price,Total
+,,,,
+MATERIALS,,,,
+Concrete (ready-mix 3500 PSI - footings),18,Cubic Yards,$150.00,"$2,700.00"
+Concrete (ready-mix 4000 PSI - walls),12,Cubic Yards,$155.00,"$1,860.00"
+Rebar #4 (footings),600,Linear Ft,$0.75,$450.00
+Rebar #5 (walls/columns),400,Linear Ft,$0.95,$380.00
+Rebar ties & chairs,1,Lot,$150.00,$150.00
+Anchor bolts (1/2" x 10"),24,Each,$4.50,$108.00
+Hold-down hardware (Simpson HD),8,Each,$28.00,$224.00
+Form panels (foundation walls),1,Lot,"$1,200.00","$1,200.00"
+Form release agent,5,Gallons,$18.00,$90.00
+Waterproofing membrane,400,Sq Ft,$2.25,$900.00
+Drain tile / perforated pipe,120,Linear Ft,$3.50,$420.00
+Backfill material (clean gravel),15,Tons,$35.00,$525.00
+Vapor barrier (15 mil),800,Sq Ft,$0.20,$160.00
+,,,,
+MATERIALS SUBTOTAL,,,,"$9,167.00"
+,,,,
+LABOR,,,,
+Excavation (footings & trenches),24,Hours,$55.00,"$1,320.00"
+Soil compaction & preparation,8,Hours,$50.00,$400.00
+Footing formwork installation,16,Hours,$55.00,$880.00
+Wall formwork installation,20,Hours,$60.00,"$1,200.00"
+Rebar placement (#4 footings),12,Hours,$55.00,$660.00
+Rebar placement (#5 walls),10,Hours,$60.00,$600.00
+Anchor bolt & hardware setting,6,Hours,$55.00,$330.00
+Concrete placement (footings),8,Hours,$65.00,$520.00
+Concrete placement (walls),10,Hours,$65.00,$650.00
+Form stripping,8,Hours,$50.00,$400.00
+Waterproofing application,8,Hours,$50.00,$400.00
+Drain tile installation,6,Hours,$50.00,$300.00
+Backfill & compaction,8,Hours,$55.00,$440.00
+Cleanup & debris removal,8,Hours,$45.00,$360.00
+,,,,
+LABOR SUBTOTAL,,,,"$8,460.00"
+,,,,
+EQUIPMENT,,,,
+Excavator (mini),3,Days,$500.00,"$1,500.00"
+Skid steer / bobcat,2,Days,$350.00,$700.00
+Plate compactor / jumping jack,2,Days,$125.00,$250.00
+Concrete vibrator,2,Days,$85.00,$170.00
+Concrete pump (if required),1,Half Day,$750.00,$750.00
+Transit / laser level,2,Days,$75.00,$150.00
+Mobilization / transport,2,Trips,$300.00,$600.00
+,,,,
+EQUIPMENT SUBTOTAL,,,,"$4,120.00"
+,,,,
+PROFESSIONAL SERVICES,,,,
+Engineering review / consultation,1,Flat Rate,$500.00,$500.00
+Soils / geotechnical report,1,Flat Rate,$800.00,$800.00
+Building permit fees,1,Flat Rate,$350.00,$350.00
+Inspection fees (footing + foundation),2,Each,$150.00,$300.00
+Survey / layout staking,1,Flat Rate,$400.00,$400.00
+,,,,
+PROFESSIONAL SERVICES SUBTOTAL,,,,"$2,350.00"
+,,,,
+SUMMARY,,,,
+Materials Subtotal,,,,"$9,167.00"
+Labor Subtotal,,,,"$8,460.00"
+Equipment Subtotal,,,,"$4,120.00"
+Professional Services Subtotal,,,,"$2,350.00"
+,,,,
+Subtotal,,,,"$24,097.00"
+Overhead (10%),,,,"$2,409.70"
+Profit Margin (12%),,,,"$3,180.80"
+,,,,
+GRAND TOTAL,,,,"$29,687.50"
+,,,,
+PAYMENT TERMS,,,,
+"Deposit required: 40% upon acceptance of estimate",,,,
+"Progress payment #1: 30% upon completion of footings pour",,,,
+"Progress payment #2: 20% upon completion of foundation walls",,,,
+"Final payment: 10% upon inspection approval and backfill completion",,,,
+,,,,
+TERMS & CONDITIONS,,,,
+"1. This estimate is valid for 30 days from the date above.",,,,
+"2. Pricing is based on current material costs and may adjust if costs change significantly.",,,,
+"3. Any changes to the scope of work or engineering plans may result in additional charges.",,,,
+"4. Client is responsible for providing approved engineering plans and permits.",,,,
+"5. All underground utilities must be located and marked prior to excavation.",,,,
+"6. Soil conditions assumed stable; rock removal or dewatering is additional cost.",,,,
+"7. Footing and foundation inspections must pass before proceeding to next phase.",,,,
+"8. Work complies with local building codes and approved engineering specifications.",,,,
+"9. Warranty: 1 year on workmanship; structural per engineering specifications.",,,,
+"10. Unforeseen conditions (high water table, contaminated soil, etc.) may require change orders.",,,,
+"11. Backfill will not occur until foundation walls have cured minimum 7 days.",,,,
+"12. Client responsible for final grading and landscaping unless included in scope.",,,,
+,,,,
+NOTES,,,,
+"[Add any project-specific notes here]",,,,
+,,,,
+ACCEPTANCE,,,,
+"Client Signature: ________________________  Date: ____________",,,,
+"Contractor Signature: ____________________  Date: ____________",,,,
