@@ -131,7 +131,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 py-4 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-slate-500">
           <span>✓ 9 specialized calculators</span>
           <span>✓ 50-state licensing guides</span>
-          <span>✓ Used by 1,000+ contractors</span>
+          <span>✓ Built for working contractors</span>
           <span>✓ 100% free tools</span>
         </div>
       </section>
@@ -234,6 +234,35 @@ export default function Home() {
               View all state guides →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Pro Templates CTA */}
+      <section className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Ready to Win More Concrete Jobs?
+          </h2>
+          <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+            Professional estimate templates, bid sheets, and business tools built specifically for concrete contractors. Stop guessing — start bidding with confidence.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/templates"
+              className="inline-block bg-white text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-slate-100 transition text-lg"
+            >
+              View Pro Templates →
+            </Link>
+            <a
+              href="https://buy.stripe.com/6oUdRadrNdg91rJ3ntaMU00"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition text-lg"
+            >
+              Get Estimate Pack — $49
+            </a>
+          </div>
+          <p className="text-slate-400 text-sm mt-4">🔒 30-day money-back guarantee</p>
         </div>
       </section>
 
