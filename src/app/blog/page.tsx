@@ -9,6 +9,51 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Pervious Concrete: Costs, Benefits & Installation Guide (2026)",
+    slug: "pervious-concrete-guide",
+    excerpt:
+      "Complete guide to pervious concrete: costs ($8-16/sq ft installed), mix design, installation, stormwater benefits, LEED credits, maintenance, and business opportunities for contractors.",
+    date: "March 7, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Fiber Mesh vs Rebar: When to Use Each Reinforcement (2026)",
+    slug: "concrete-fiber-mesh-guide",
+    excerpt:
+      "Complete guide to fiber mesh vs rebar: types (synthetic, steel, glass, basalt), dosage rates, costs, ASTM standards, and when each reinforcement type is the right choice for your project.",
+    date: "March 7, 2026",
+    readTime: "15 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Edging: Types, Costs & Installation Guide (2026)",
+    slug: "concrete-edging-guide",
+    excerpt:
+      "Complete guide to concrete edging: mow strips ($3-6/ft), landscape curbing ($5-10/ft), decorative edging ($8-15/ft), and DIY poured edging. Covers installation, costs, and maintenance.",
+    date: "March 7, 2026",
+    readTime: "13 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Block Calculator Guide: How Many Blocks Do You Need? (2026)",
+    slug: "concrete-block-calculator-guide",
+    excerpt:
+      "Calculate exactly how many concrete blocks you need for any wall project. Covers CMU sizes, mortar quantities, waste factors, and cost estimates for residential and commercial block work.",
+    date: "March 7, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Driveway Repair: Costs, Methods & When to Replace (2026)",
+    slug: "concrete-driveway-repair-guide",
+    excerpt:
+      "Complete guide to concrete driveway repair: crack filling ($0.50-3/ft), resurfacing ($3-7/sq ft), mudjacking ($3-6/sq ft), and full replacement ($8-18/sq ft). Know when to repair vs replace.",
+    date: "March 7, 2026",
+    readTime: "13 min read",
+    status: "live",
+  },
+  {
     title: "Free Concrete Estimate Template for Contractors (2026)",
     slug: "concrete-estimate-template",
     excerpt:
