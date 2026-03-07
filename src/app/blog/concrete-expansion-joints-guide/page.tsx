@@ -1,443 +1,569 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
+import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Concrete Expansion Joints: Types, Spacing & Installation Guide (2026) | ConcreteCalc',
-  description: 'Complete guide to concrete expansion joints for contractors. Joint types, proper spacing rules, installation methods, sealant selection, and repair techniques.',
-  keywords: ['concrete expansion joints', 'concrete joints', 'expansion joint spacing', 'concrete control joints', 'concrete joint sealant'],
-}
+  title: "Concrete Expansion Joints: Types, Spacing & Installation Guide (2026)",
+  description:
+    "Complete guide to concrete expansion joints: expansion vs control vs isolation joints, spacing rules, filler materials, costs, common failures, and repair methods for contractors.",
+  keywords:
+    "concrete expansion joints, expansion joint spacing, concrete joint filler, concrete control joints, isolation joints, expansion joint repair, concrete joint spacing",
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How far apart should expansion joints be in concrete?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The general rule is expansion joint spacing in feet should equal 2-3 times the slab thickness in inches. For a 4-inch slab, that's 8-12 feet apart. For a 6-inch slab, 12-18 feet apart. ACI 302 recommends panels no larger than 36:1 length-to-width ratio. In hot climates or with high-shrinkage concrete, reduce spacing by 15-20%.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between expansion joints and control joints?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Expansion joints are full-depth separations that allow slabs to expand and contract independently — they go all the way through the slab. Control joints (contraction joints) are partial-depth grooves (1/4 to 1/3 of slab depth) that create a weakened plane where cracks form predictably instead of randomly. Isolation joints separate the slab from fixed structures like columns, walls, and footings.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the best filler material for concrete expansion joints?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For most applications, self-leveling polyurethane sealant (like Sikaflex or Sonolastic) is the best choice — it's flexible, durable, and bonds well. For high-traffic areas, use a semi-rigid epoxy or polyurea joint filler. For large expansion joints (over 1 inch), use a closed-cell foam backer rod with flexible sealant on top. Avoid rigid fillers that defeat the joint's purpose.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much do concrete expansion joints cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Saw-cut control joints cost $1-3 per linear foot. Pre-formed expansion joint filler strips cost $0.50-2.00 per linear foot for material. Joint sealing costs $1-4 per linear foot. Full expansion joint installation (including formwork) costs $5-15 per linear foot. Repair/resealing of existing joints runs $2-8 per linear foot.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "When should expansion joints be sealed?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Seal expansion joints after the concrete has cured for at least 28 days and most initial shrinkage has occurred (ideally 60-90 days for new construction). Existing joints should be resealed when the sealant shows signs of failure — cracking, pulling away from joint edges, or allowing water infiltration. In commercial settings, inspect joints annually and budget for resealing every 5-8 years.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you repair a damaged concrete expansion joint?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Remove old failed sealant with a joint rake or saw blade. Clean the joint thoroughly — remove debris, old adhesive, and contaminants. Install a new backer rod at the correct depth (joint width × 1.5 for depth). Apply new sealant. For severely spalled joint edges, rout the joint wider with a diamond blade, then fill. Cost for joint repair is typically $2-8 per linear foot.",
+      },
+    },
+  ],
+};
 
 export default function ConcreteExpansionJointsGuide() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
-      <nav className="text-sm text-gray-500 mb-8">
-        <Link href="/" className="hover:text-blue-600">Home</Link>
-        <span className="mx-2">/</span>
-        <Link href="/blog" className="hover:text-blue-600">Blog</Link>
-        <span className="mx-2">/</span>
-        <span className="text-gray-900">Concrete Expansion Joints Guide</span>
+    <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
+      <nav className="text-sm text-gray-500 mb-6">
+        <Link href="/" className="hover:text-orange-600">Home</Link>{" "}
+        /{" "}
+        <Link href="/blog" className="hover:text-orange-600">Blog</Link>{" "}
+        /{" "}
+        <span className="text-gray-900 font-medium">Concrete Expansion Joints Guide</span>
       </nav>
 
-      <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Concrete Expansion Joints: Types, Spacing Rules & Installation Guide
-        </h1>
-        
-        <p className="text-xl text-gray-600 mb-8">
-          Expansion joints are one of the most critical — and most misunderstood — elements of concrete work. 
-          Get them wrong, and you'll see random cracking, buckling, and callbacks that destroy your reputation. 
-          Get them right, and your work lasts decades. This guide covers the three types of concrete joints, 
-          proper spacing rules, sealant selection, and repair techniques — searched over <strong>12,100 times 
-          per month</strong> by contractors and property owners.
+      <article className="prose prose-gray prose-lg max-w-none">
+        <h1>Concrete Expansion Joints: Types, Spacing &amp; Installation Guide</h1>
+
+        <p className="lead text-xl text-gray-600">
+          Expansion joints are the unsung heroes of durable concrete work. Get them right, and your slabs perform flawlessly for decades. Get them wrong — or skip them — and you&apos;re looking at random cracking, buckling, structural damage, and expensive callbacks. With <strong>12,100 monthly searches</strong>, &quot;concrete expansion joints&quot; is one of the most-searched technical concrete topics, proving that both contractors and property owners need clear, practical guidance. This guide delivers exactly that.
         </p>
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-lg">
-          <h3 className="text-lg font-semibold text-blue-900 mt-0">Quick Reference: Joint Spacing Rules</h3>
-          <ul className="text-blue-800 mb-0">
-            <li><strong>Control joints:</strong> Spacing (ft) = 2-3× slab thickness (inches). A 4" slab = 8-12 ft spacing.</li>
-            <li><strong>Expansion joints:</strong> Every 20-30 ft for slabs, at all structure connections</li>
-            <li><strong>Construction joints:</strong> Wherever you stop pouring for the day</li>
-            <li><strong>Joint depth:</strong> Minimum ¼ of slab thickness</li>
+        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">⚡ Quick Reference: Joint Types</h3>
+          <ul className="space-y-1 text-gray-700">
+            <li>• <strong>Expansion joints:</strong> Full-depth, allow thermal expansion/contraction. $5–$15/linear ft installed.</li>
+            <li>• <strong>Control joints (contraction):</strong> Partial-depth, guide where cracks form. $1–$3/linear ft saw-cut.</li>
+            <li>• <strong>Isolation joints:</strong> Separate slab from fixed structures. $3–$8/linear ft installed.</li>
+            <li>• <strong>Construction joints:</strong> Where concrete placements meet. Formed during pour.</li>
+            <li>• <strong>Joint sealing:</strong> $1–$4/linear ft for sealant application.</li>
           </ul>
         </div>
 
-        <h2 className="text-3xl font-bold mt-12">The 3 Types of Concrete Joints</h2>
+        <h2>Why Concrete Joints Matter</h2>
 
         <p>
-          Every concrete slab needs joints. Concrete shrinks as it cures (about ⅛" per 10 linear feet), 
-          and it expands and contracts with temperature changes. Without joints, these forces create random 
-          cracks — which look terrible and compromise structural integrity.
+          Concrete expands and contracts with temperature changes. A 100-foot slab can move 3/4 inch between summer and winter extremes. Concrete also shrinks as it cures — about 1/16 inch per 10 feet in the first year. Without joints to accommodate this movement, the concrete will crack. Not might crack — <strong>will crack</strong>.
         </p>
 
-        <h3>1. Control Joints (Contraction Joints)</h3>
         <p>
-          <strong>Purpose:</strong> Create planned weak points so inevitable shrinkage cracks occur in 
-          straight, controlled lines instead of randomly across the slab surface.
+          Joints serve three critical functions:
         </p>
-        <p>
-          Control joints are the most common type. They're cut or tooled into the surface of the slab 
-          to a depth of at least ¼ of the slab thickness (a 4" slab needs joints at least 1" deep). 
-          The thin concrete at the bottom of the joint cracks cleanly along the line, keeping the 
-          surface looking intentional.
-        </p>
-        <p><strong>How they're made:</strong></p>
         <ul>
-          <li><strong>Tooled (green cutting):</strong> A jointing tool is run through fresh concrete during finishing. Creates a rounded edge that looks clean but may not cut deep enough for thick slabs.</li>
-          <li><strong>Saw-cut (most common):</strong> An early-entry saw cuts joints 4-12 hours after pour (when concrete is firm but not fully cured). This is the professional standard for most flatwork.</li>
-          <li><strong>Zip strips:</strong> Plastic or metal strips placed in the forms before pouring. The concrete cures around them, creating a pre-formed joint. Quick but less common.</li>
+          <li><strong>Accommodate thermal movement:</strong> Expansion joints allow slabs to expand in heat and contract in cold without buckling or cracking.</li>
+          <li><strong>Control shrinkage cracking:</strong> Control joints create predetermined weak points where inevitable shrinkage cracks form in straight, predictable lines rather than random patterns.</li>
+          <li><strong>Isolate independent elements:</strong> Isolation joints prevent stress transfer between the slab and fixed structures (columns, walls, drains, manholes) that would cause cracking around those features.</li>
         </ul>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8 rounded-r-lg">
-          <h3 className="text-lg font-semibold text-yellow-900 mt-0">⚠️ Timing Is Everything</h3>
-          <p className="text-yellow-800 mb-0">
-            Cut control joints too early, and the saw tears and ravels the concrete. Cut too late, and 
-            random cracks have already formed. The window is typically <strong>4-12 hours after pour</strong> 
-            in normal conditions (faster in hot/dry weather, slower in cold). Use an early-entry saw (Soff-Cut 
-            type) to start cutting as soon as the surface won't ravel — sometimes as early as 1-2 hours 
-            after finishing.
-          </p>
-        </div>
+        <p>
+          For contractors, understanding joints is essential because <strong>joint failures are the #1 source of concrete callbacks and disputes</strong>. Random cracks, curling, spalling at joints, and water infiltration through failed sealant — these are all joint-related problems that proper design and installation prevent.
+        </p>
 
-        <h3>2. Expansion Joints (Isolation Joints)</h3>
+        <h2>The 4 Types of Concrete Joints</h2>
+
+        <h3>1. Expansion Joints (Isolation/Expansion Joints)</h3>
+
         <p>
-          <strong>Purpose:</strong> Provide a compressible gap between the slab and adjacent structures 
-          (walls, columns, other slabs) so the concrete can expand without pushing against and cracking 
-          those structures.
+          True expansion joints are full-depth separations through the entire slab, filled with compressible material that allows the concrete to expand and contract freely. They&apos;re required wherever:
         </p>
-        <p>
-          Expansion joints run the <em>full depth</em> of the slab and are filled with a compressible 
-          material (typically ½" or ¾" thick premolded asphalt-impregnated fiber board, closed-cell foam, 
-          or self-expanding cork). Unlike control joints, expansion joints completely separate the two 
-          concrete sections — there's no aggregate interlock.
-        </p>
-        <p><strong>Where expansion joints are required:</strong></p>
         <ul>
-          <li>Where a slab meets a building foundation, wall, or column</li>
-          <li>Where a new slab meets an existing slab</li>
-          <li>Around utility manholes, drains, and in-ground obstructions</li>
-          <li>Every 20-30 ft in large exterior slabs (sidewalks, parking lots)</li>
-          <li>At T-intersections in sidewalk systems</li>
-          <li>Where a driveway meets a garage floor, sidewalk, or street</li>
+          <li>A new slab meets an existing structure (building, curb, older slab)</li>
+          <li>Large slabs need to expand independently (parking lots, bridge decks)</li>
+          <li>Temperature variations are significant (outdoor slabs in climates with hot summers and cold winters)</li>
+          <li>The slab abuts a fixed structure that can&apos;t move (foundation wall, column footing)</li>
         </ul>
 
-        <h3>3. Construction Joints</h3>
         <p>
-          <strong>Purpose:</strong> Create a clean stopping point where you end one concrete pour and 
-          begin the next (the next day, or when a section is complete).
-        </p>
-        <p>
-          Construction joints aren't about expansion or contraction — they're about logistics. When 
-          you can't pour an entire slab in one session, you need a planned stopping point with a clean, 
-          straight edge. A bulkhead (form board or metal keyway) is placed at the stopping point, creating 
-          a vertical face for the next pour to bond against.
-        </p>
-        <p>
-          <strong>Best practice:</strong> Place construction joints at the same location as a control joint 
-          whenever possible. This way, the construction joint doubles as a control joint and you don't 
-          add an extra joint to the slab layout.
+          <strong>Typical width:</strong> 1/2 inch to 1 inch, though heavy-duty applications may use 2-inch joints. The joint must be filled with compressible material — typically pre-formed filler board (asphalt-impregnated fiber, closed-cell foam, or cork) — that can compress by at least 50% of its thickness.
         </p>
 
-        <h2 className="text-3xl font-bold mt-12">Joint Spacing Rules</h2>
-
         <p>
-          Proper spacing is the difference between a slab that performs for decades and one that cracks 
-          within the first year. The fundamental rule:
+          <strong>Cost:</strong> $5-$15 per linear foot installed, including pre-formed filler, formwork, and sealant. More for heavy-duty commercial or industrial joints with armored edges.
         </p>
 
-        <div className="bg-gray-100 border border-gray-300 rounded-lg p-6 my-8 text-center">
-          <p className="text-2xl font-bold mb-2">Joint Spacing (ft) = 2× to 3× Slab Thickness (inches)</p>
-          <p className="text-gray-600 mb-0">Example: 4" slab → joints every 8-12 feet</p>
-        </div>
+        <h3>2. Control Joints (Contraction Joints)</h3>
 
-        <div className="overflow-x-auto my-8">
+        <p>
+          Control joints are the most common type of concrete joint. They&apos;re created by sawing or tooling a groove into the slab surface to a depth of at least 1/4 to 1/3 of the slab thickness. This groove creates a weakened plane where shrinkage cracks form in a straight, controlled line rather than randomly across the slab.
+        </p>
+
+        <p>
+          <strong>Methods of creating control joints:</strong>
+        </p>
+        <ul>
+          <li><strong>Saw cutting:</strong> The preferred method. Use an early-entry saw (Soff-Cut type) within 4-12 hours of finishing, or a conventional wet saw within 12-24 hours. Depth: 1/4 to 1/3 slab thickness. A 4&quot; slab gets a 1&quot;-1.33&quot; deep cut.</li>
+          <li><strong>Tooling/grooving:</strong> Created during finishing with a groover tool. Less precise than sawing but works for small residential jobs. Must be done while concrete is still plastic.</li>
+          <li><strong>Zip strips/crack inducers:</strong> Pre-formed plastic or metal strips set into the concrete surface during finishing. The strip creates a weakened plane. Less common but useful for small jobs where saw cutting isn&apos;t practical.</li>
+        </ul>
+
+        <p>
+          <strong>Cost:</strong> $1-$3 per linear foot for saw cutting. Tooling is included in the finishing cost.
+        </p>
+
+        <h3>3. Isolation Joints</h3>
+
+        <p>
+          Isolation joints separate the slab from fixed objects that would restrain its movement. Without isolation joints, the slab pushes against the fixed object as it expands and contracts, causing stress cracks radiating from that point.
+        </p>
+
+        <p>
+          <strong>Where isolation joints are required:</strong>
+        </p>
+        <ul>
+          <li>Around columns and column footings</li>
+          <li>Along walls and foundations</li>
+          <li>Around floor drains, manholes, and catch basins</li>
+          <li>Around light posts and sign bases</li>
+          <li>Where a slab meets a stairway or ramp</li>
+        </ul>
+
+        <p>
+          Isolation joints are full-depth and typically 1/2 inch wide, filled with pre-formed joint filler. For round columns, use a circular cardboard or foam form. For walls, use pre-formed expansion joint material placed against the wall before the pour.
+        </p>
+
+        <p>
+          <strong>Cost:</strong> $3-$8 per linear foot, depending on complexity. Column isolation is typically priced per column ($25-$75 each).
+        </p>
+
+        <h3>4. Construction Joints</h3>
+
+        <p>
+          Construction joints occur where one concrete placement ends and the next begins — they&apos;re the boundaries between pours. Unlike the other joint types, construction joints aren&apos;t designed for movement; they&apos;re structural connections between adjacent slab sections.
+        </p>
+
+        <p>
+          <strong>Best practices for construction joints:</strong>
+        </p>
+        <ul>
+          <li>Always locate construction joints at planned control joint locations — never between them.</li>
+          <li>Form a straight, clean edge using bulkhead forms or keyway forms.</li>
+          <li>For load transfer across the joint, use dowel bars (smooth, greased steel bars) or a keyed joint (tongue-and-groove profile).</li>
+          <li>Clean the existing concrete edge before the adjacent pour — remove laitance and loose material. Apply a bonding agent or neat cement paste.</li>
+        </ul>
+
+        <h2>Joint Spacing Rules: How Far Apart?</h2>
+
+        <p>
+          Joint spacing is one of the most common questions in concrete work, and getting it wrong leads to random cracking. Here are the rules:
+        </p>
+
+        <h3>The Basic Rule</h3>
+        <p>
+          <strong>Joint spacing in feet = 2 to 3 × slab thickness in inches.</strong>
+        </p>
+        <p>
+          For a 4-inch slab: joints every 8-12 feet. For a 6-inch slab: joints every 12-18 feet. For an 8-inch slab: joints every 16-24 feet. This is the ACI (American Concrete Institute) recommendation and the standard most contractors follow.
+        </p>
+
+        <div className="overflow-x-auto not-prose my-8">
           <table className="min-w-full border border-gray-300">
-            <thead className="bg-gray-100">
-              <tr>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Slab Thickness</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Maximum Joint Spacing</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Joint Depth (min ¼ thickness)</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Common Applications</th>
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left">Slab Thickness</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Min Spacing (2×)</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Max Spacing (3×)</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Recommended</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-3">3"</td>
-                <td className="border border-gray-300 px-4 py-3">6-9 ft</td>
-                <td className="border border-gray-300 px-4 py-3">¾"</td>
-                <td className="border border-gray-300 px-4 py-3">Sidewalks, patios</td>
+                <td className="border border-gray-300 px-4 py-2">4 inches</td>
+                <td className="border border-gray-300 px-4 py-2">8 feet</td>
+                <td className="border border-gray-300 px-4 py-2">12 feet</td>
+                <td className="border border-gray-300 px-4 py-2">10 feet</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3">4"</td>
-                <td className="border border-gray-300 px-4 py-3">8-12 ft</td>
-                <td className="border border-gray-300 px-4 py-3">1"</td>
-                <td className="border border-gray-300 px-4 py-3">Driveways, garage floors, residential slabs</td>
+                <td className="border border-gray-300 px-4 py-2">5 inches</td>
+                <td className="border border-gray-300 px-4 py-2">10 feet</td>
+                <td className="border border-gray-300 px-4 py-2">15 feet</td>
+                <td className="border border-gray-300 px-4 py-2">12 feet</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3">5"</td>
-                <td className="border border-gray-300 px-4 py-3">10-15 ft</td>
-                <td className="border border-gray-300 px-4 py-3">1¼"</td>
-                <td className="border border-gray-300 px-4 py-3">Heavy residential, light commercial</td>
+                <td className="border border-gray-300 px-4 py-2">6 inches</td>
+                <td className="border border-gray-300 px-4 py-2">12 feet</td>
+                <td className="border border-gray-300 px-4 py-2">18 feet</td>
+                <td className="border border-gray-300 px-4 py-2">15 feet</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3">6"</td>
-                <td className="border border-gray-300 px-4 py-3">12-18 ft</td>
-                <td className="border border-gray-300 px-4 py-3">1½"</td>
-                <td className="border border-gray-300 px-4 py-3">Commercial floors, parking lots</td>
+                <td className="border border-gray-300 px-4 py-2">8 inches</td>
+                <td className="border border-gray-300 px-4 py-2">16 feet</td>
+                <td className="border border-gray-300 px-4 py-2">24 feet</td>
+                <td className="border border-gray-300 px-4 py-2">20 feet</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3">8"</td>
-                <td className="border border-gray-300 px-4 py-3">16-24 ft</td>
-                <td className="border border-gray-300 px-4 py-3">2"</td>
-                <td className="border border-gray-300 px-4 py-3">Industrial floors, heavy traffic</td>
+                <td className="border border-gray-300 px-4 py-2">10 inches</td>
+                <td className="border border-gray-300 px-4 py-2">20 feet</td>
+                <td className="border border-gray-300 px-4 py-2">30 feet</td>
+                <td className="border border-gray-300 px-4 py-2">25 feet</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">12 inches</td>
+                <td className="border border-gray-300 px-4 py-2">24 feet</td>
+                <td className="border border-gray-300 px-4 py-2">36 feet</td>
+                <td className="border border-gray-300 px-4 py-2">30 feet</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3>Additional Spacing Rules</h3>
+        <h3>Panel Aspect Ratio</h3>
+        <p>
+          Joint panels should be as close to square as possible. ACI recommends a maximum length-to-width ratio of 1.5:1. A 10×10 panel is ideal. A 10×15 panel is acceptable. A 10×20 panel will likely crack diagonally. When laying out joints, plan your grid to avoid long, narrow panels.
+        </p>
+
+        <h3>Factors That Reduce Spacing</h3>
         <ul>
-          <li><strong>Panel aspect ratio:</strong> Keep slab panels as close to square as possible. The length-to-width ratio should not exceed 1.5:1. A 10×10 ft panel is ideal; a 10×15 ft panel is acceptable; a 10×20 ft panel will likely crack.</li>
-          <li><strong>Re-entrant corners:</strong> Always place a joint at inside corners (L-shapes, columns, manholes). Re-entrant corners concentrate stress and will crack without a joint.</li>
-          <li><strong>No random shapes:</strong> Avoid T-shaped, L-shaped, or triangular panels. These concentrate stress at the corners and crack predictably.</li>
-          <li><strong>Align with columns:</strong> In commercial floors, joints should align with column lines and pass through column centers.</li>
+          <li><strong>Hot weather pours:</strong> High temperatures increase shrinkage. Reduce spacing by 15-20%.</li>
+          <li><strong>High-shrinkage mixes:</strong> High water content, high cement content, or shrinkage-prone aggregates. Reduce spacing by 10-15%.</li>
+          <li><strong>Restraint:</strong> If the slab is restrained by dowels, walls, or subgrade friction, reduce spacing.</li>
+          <li><strong>No steel reinforcement:</strong> Unreinforced slabs need tighter joint spacing than fiber-reinforced or steel-reinforced slabs.</li>
+          <li><strong>Re-entrant corners:</strong> Always place a joint at any inside corner (L-shapes, notches, column blockouts) to prevent diagonal cracking from the corner.</li>
         </ul>
 
-        <h2 className="text-3xl font-bold mt-12">Joint Sealant Selection</h2>
-
+        <h3>Timing of Saw Cuts</h3>
         <p>
-          Sealing joints prevents water, debris, and incompressible materials (sand, gravel) from entering 
-          the joint. Without sealant, water erodes the subbase and incompressibles prevent the joint from 
-          closing, causing spalling at the edges.
+          Saw-cut timing is critical. Cut too early and you ravel the fresh concrete (tearing aggregate out of the paste). Cut too late and random shrinkage cracks have already formed, making the control joints useless.
         </p>
-
-        <div className="overflow-x-auto my-8">
-          <table className="min-w-full border border-gray-300">
-            <thead className="bg-gray-100">
-              <tr>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Sealant Type</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Cost/LF</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Life Span</th>
-                <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Best For</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Self-leveling polyurethane</td>
-                <td className="border border-gray-300 px-4 py-3">$1.50–$3.00</td>
-                <td className="border border-gray-300 px-4 py-3">7-10 years</td>
-                <td className="border border-gray-300 px-4 py-3">Horizontal joints, driveways, sidewalks</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Silicone sealant</td>
-                <td className="border border-gray-300 px-4 py-3">$2.00–$4.00</td>
-                <td className="border border-gray-300 px-4 py-3">10-20 years</td>
-                <td className="border border-gray-300 px-4 py-3">Building joints, expansion joints at walls</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Hot-pour rubberized asphalt</td>
-                <td className="border border-gray-300 px-4 py-3">$0.75–$1.50</td>
-                <td className="border border-gray-300 px-4 py-3">5-8 years</td>
-                <td className="border border-gray-300 px-4 py-3">Parking lots, roads, large-scale work</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Polyurea joint filler</td>
-                <td className="border border-gray-300 px-4 py-3">$2.50–$5.00</td>
-                <td className="border border-gray-300 px-4 py-3">15-20 years</td>
-                <td className="border border-gray-300 px-4 py-3">Warehouse floors, forklift traffic</td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Backer rod + caulk</td>
-                <td className="border border-gray-300 px-4 py-3">$1.00–$2.00</td>
-                <td className="border border-gray-300 px-4 py-3">5-10 years</td>
-                <td className="border border-gray-300 px-4 py-3">Residential, general purpose</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>Sealant Application Best Practices</h3>
-        <ol>
-          <li><strong>Clean the joint:</strong> Remove all debris, old sealant, and dust. Use compressed air and a joint router or saw if needed to create clean, square edges.</li>
-          <li><strong>Install backer rod:</strong> For joints deeper than ½", install closed-cell backer rod at a depth that creates the correct width-to-depth ratio (typically 2:1 — a ½" wide joint should have sealant ¼" deep).</li>
-          <li><strong>Apply primer (if required):</strong> Some sealants require primer for adhesion. Check the product data sheet.</li>
-          <li><strong>Fill to proper depth:</strong> Sealant should be recessed slightly below the surface to prevent tire or foot traffic from pulling it out.</li>
-          <li><strong>Tool the surface:</strong> Use a tooling spatula dipped in soapy water to smooth the sealant and ensure good contact with both joint faces.</li>
-        </ol>
-
-        <h2 className="text-3xl font-bold mt-12">Repairing Failed Expansion Joints</h2>
-
-        <p>
-          Joint repair is a common callback — and a profitable add-on service. Here's how to handle 
-          the most common problems:
-        </p>
-
-        <h3>Problem: Joint Spalling (Chipped Edges)</h3>
-        <p>
-          <strong>Cause:</strong> Incompressible material in the joint prevents it from closing, or the 
-          joint wasn't cut deep enough. Traffic loads then chip the thin concrete edges.
-        </p>
-        <p>
-          <strong>Repair:</strong> Rout the joint to clean, square edges (use a concrete router or diamond 
-          blade). Fill with semi-rigid polyurea or epoxy joint filler. For heavy traffic, use armored 
-          joint edges (steel angle iron or epoxy nosing compound).
-        </p>
-
-        <h3>Problem: Sealant Failure</h3>
-        <p>
-          <strong>Cause:</strong> Wrong sealant type, poor surface prep, or sealant installed over 
-          dirt/moisture. The sealant pulls away from the joint faces (adhesive failure) or tears 
-          down the middle (cohesive failure).
-        </p>
-        <p>
-          <strong>Repair:</strong> Remove old sealant completely. Clean joint faces. Install backer rod 
-          at correct depth. Apply new sealant appropriate for the application. Don't re-seal over 
-          failed sealant — it will fail again.
-        </p>
-
-        <h3>Problem: Expansion Joint Material Deteriorated</h3>
-        <p>
-          <strong>Cause:</strong> Original fiberboard expansion joint material has rotted, compressed, 
-          or been damaged by water intrusion.
-        </p>
-        <p>
-          <strong>Repair:</strong> Remove old material to full joint depth. Install new closed-cell 
-          foam backer (slightly wider than the joint to compress-fit). Cap with self-leveling sealant. 
-          For structural expansion joints, consult an engineer before modifying.
-        </p>
-
-        <h2 className="text-3xl font-bold mt-12">Expansion Joint Products and Materials</h2>
-
-        <h3>Pre-Formed Joint Materials</h3>
         <ul>
-          <li><strong>Asphalt-impregnated fiber board:</strong> The traditional standard. Inexpensive ($0.50-$1.00/LF), available everywhere. Absorbs water over time and can deteriorate. Suitable for most residential work.</li>
-          <li><strong>Closed-cell polyethylene foam:</strong> Won't absorb water, resists rot. Comes in various thicknesses (¼" to 1"). Costs $0.75-$1.50/LF. The modern standard.</li>
-          <li><strong>Self-expanding cork:</strong> Premium option that expands to fill the joint completely. Used in architectural and decorative concrete. $2.00-$4.00/LF.</li>
-          <li><strong>Metal expansion joint strips:</strong> Aluminum or steel strips with a rubber center. Used in commercial and industrial applications where the joint must handle heavy traffic. $5.00-$15.00/LF installed.</li>
+          <li><strong>Early-entry (Soff-Cut) saws:</strong> Cut within 1-4 hours of finishing in warm weather, 4-12 hours in cool weather. Shallow initial cut (1 inch), then deepen later if needed.</li>
+          <li><strong>Conventional wet saws:</strong> Cut within 4-12 hours in warm weather, 12-24 hours in cool weather. Full depth in one pass.</li>
+          <li><strong>Rule of thumb:</strong> If you see random cracks forming before you&apos;ve cut, you waited too long. On hot, windy days, have the saw crew standing by before finishing is complete.</li>
         </ul>
 
-        <h2 className="text-3xl font-bold mt-12">Common Mistakes Contractors Make</h2>
+        <h2>Joint Filler Materials: What to Use</h2>
 
-        <ol>
-          <li>
-            <strong>Cutting control joints too late.</strong> If you see random cracks before you cut, 
-            you've waited too long. In hot weather, be ready to cut within 4-6 hours of finishing.
-          </li>
-          <li>
-            <strong>Not cutting deep enough.</strong> Joints must be at least ¼ of slab thickness. A 
-            shallow decorative line will NOT function as a control joint — the crack will form elsewhere.
-          </li>
-          <li>
-            <strong>Omitting expansion joints at structures.</strong> A slab poured against a foundation 
-            wall without an expansion joint WILL crack the wall, the slab, or both. This is a code 
-            requirement, not optional.
-          </li>
-          <li>
-            <strong>Non-square panels.</strong> Long, narrow panels (e.g., 6×20 ft) crack at the narrowest 
-            point. Keep aspect ratios at 1.5:1 or less.
-          </li>
-          <li>
-            <strong>Filling expansion joints with rigid material.</strong> Never fill expansion joints 
-            with concrete, mortar, or rigid epoxy. They need to compress — that's their entire purpose.
-          </li>
-          <li>
-            <strong>Skipping joints at re-entrant corners.</strong> Inside corners (around columns, 
-            at step-outs, at T-intersections) are guaranteed crack points. Always place a control 
-            joint at re-entrant corners, diagonal from the inside corner.
-          </li>
-        </ol>
+        <h3>Pre-Formed Joint Fillers (Expansion Joints)</h3>
+        <ul>
+          <li><strong>Asphalt-impregnated fiber board:</strong> The traditional choice. Cheap ($0.30-$0.60/linear ft), easy to cut, compresses well. Downsides: absorbs water, degrades over time, not great for exposed joints. Best for covered joints under flooring or where appearance doesn&apos;t matter.</li>
+          <li><strong>Closed-cell polyethylene foam:</strong> Better moisture resistance, consistent compression, won&apos;t rot. $0.50-$1.50/linear ft. The modern standard for most expansion joints.</li>
+          <li><strong>Cork:</strong> Premium option for interior work where aesthetics matter. Good compression, natural appearance. $1.00-$3.00/linear ft. Common in architectural and decorative concrete.</li>
+          <li><strong>Self-expanding foam:</strong> Specialized product for joints that need to stay sealed against water. Expands to maintain contact with joint faces as the joint opens. $2.00-$5.00/linear ft.</li>
+        </ul>
 
-        <h2 className="text-3xl font-bold mt-12">Frequently Asked Questions</h2>
+        <h3>Joint Sealants (All Joint Types)</h3>
+        <ul>
+          <li><strong>Self-leveling polyurethane:</strong> The workhorse sealant for horizontal joints. Flows into the joint and self-levels. Stays flexible. Excellent adhesion. Brands: Sikaflex 1A, Sonolastic NP2, Pecora Dynatrol. $0.50-$1.50/linear ft for material.</li>
+          <li><strong>Non-sag polyurethane:</strong> Same chemistry but thicker consistency for vertical or sloped joints. Won&apos;t sag or run. $0.60-$1.80/linear ft.</li>
+          <li><strong>Silicone sealant:</strong> Excellent flexibility and UV resistance. Good for decorative concrete and pool decks. Doesn&apos;t bond well to dirty or wet surfaces. $0.40-$1.20/linear ft.</li>
+          <li><strong>Hot-pour rubberized asphalt:</strong> Used for roads, parking lots, and heavy-duty exterior joints. Applied hot (375-400°F) and cools to a flexible rubber seal. Very durable under traffic. $1.00-$3.00/linear ft.</li>
+          <li><strong>Semi-rigid epoxy:</strong> For high-traffic joints in warehouses and industrial floors where forklift wheels would damage flexible sealants. Provides edge support. $2.00-$5.00/linear ft.</li>
+          <li><strong>Polyurea:</strong> Fast-curing (walkable in 1 hour), very flexible, chemical resistant. Ideal for cold storage, food processing, and chemical environments. $3.00-$8.00/linear ft.</li>
+        </ul>
 
-        <div className="space-y-6 my-8">
-          <div className="border-b border-gray-200 pb-6">
-            <h3 className="text-lg font-semibold mt-0">How far apart should expansion joints be in concrete?</h3>
-            <p className="mb-0">
-              True expansion joints should be placed every 20-30 feet in large exterior slabs (sidewalks, 
-              driveways, parking lots) and at every point where concrete meets a structure (wall, column, 
-              manhole). Control joints (the more common joint type) should be spaced at 2-3× the slab 
-              thickness in inches — so a 4" slab gets joints every 8-12 feet.
-            </p>
-          </div>
+        <h3>Backer Rod</h3>
+        <p>
+          Before applying sealant, install backer rod — a flexible foam rope that sits in the joint below the sealant. Backer rod serves two purposes: it controls sealant depth (the ideal depth is half the joint width) and provides a &quot;bond-breaker&quot; at the bottom so the sealant only bonds to the two sides of the joint (two-sided adhesion allows better flexibility).
+        </p>
+        <p>
+          <strong>Sizing:</strong> Use backer rod 25% larger in diameter than the joint width. For a 1/2&quot; joint, use 5/8&quot; backer rod. Push it into the joint to a depth of about 1/2&quot; below the surface.
+        </p>
 
-          <div className="border-b border-gray-200 pb-6">
-            <h3 className="text-lg font-semibold mt-0">What is the difference between expansion joints and control joints?</h3>
-            <p className="mb-0">
-              Control joints are partial-depth cuts that create weak points for shrinkage cracks to 
-              follow. They go about ¼ of the way through the slab. Expansion joints are full-depth 
-              separations with compressible filler that allow the slab to expand and contract independently 
-              of adjacent structures. They completely separate two sections of concrete.
-            </p>
-          </div>
-
-          <div className="border-b border-gray-200 pb-6">
-            <h3 className="text-lg font-semibold mt-0">What do you fill concrete expansion joints with?</h3>
-            <p className="mb-0">
-              Use a compressible filler material at the bottom (closed-cell foam backer rod or pre-formed 
-              expansion joint board) and seal the top with a flexible sealant (self-leveling polyurethane 
-              for horizontal joints, silicone for vertical joints). Never use rigid materials like concrete 
-              or mortar — the joint must be able to compress.
-            </p>
-          </div>
-
-          <div className="border-b border-gray-200 pb-6">
-            <h3 className="text-lg font-semibold mt-0">When should you cut control joints in concrete?</h3>
-            <p className="mb-0">
-              Cut control joints as soon as the concrete is firm enough to support the saw weight without 
-              raveling — typically 4-12 hours after pour in normal conditions. With an early-entry saw 
-              (Soff-Cut), you can cut as early as 1-2 hours. In hot weather, cut earlier. In cold weather, 
-              you may wait up to 24 hours. If random cracks appear before cutting, you waited too long.
-            </p>
-          </div>
-
-          <div className="border-b border-gray-200 pb-6">
-            <h3 className="text-lg font-semibold mt-0">Do concrete patios need expansion joints?</h3>
-            <p className="mb-0">
-              Yes. A concrete patio needs control joints spaced at 8-12 feet (for a 4" slab) and expansion 
-              joints where the patio meets the house foundation. Skipping the expansion joint at the house 
-              is the #1 cause of cracked patios — the slab pushes against the foundation as it expands 
-              in summer heat and one or both crack.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gray-900 text-white rounded-lg p-8 my-12">
-          <h2 className="text-2xl font-bold text-white mt-0">Plan Your Concrete Project</h2>
-          <p className="text-gray-300">
-            Use our free concrete calculators to estimate material quantities and joint layout, 
-            then download professional estimate templates for your bids.
+        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">📐 Plan Your Slab Joints</h3>
+          <p className="text-gray-700 mb-4">
+            Use our free concrete calculators to estimate slab dimensions, material quantities, and joint layouts for your projects.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/calculators/slab" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold no-underline">
+          <div className="flex flex-wrap gap-3">
+            <Link href="/calculators/slab" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700">
               Slab Calculator →
             </Link>
-            <Link href="/templates" className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold no-underline">
-              Estimate Templates →
+            <Link href="/calculators/driveway" className="inline-block bg-white text-orange-600 border border-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50">
+              Driveway Calculator →
             </Link>
           </div>
         </div>
+
+        <h2>Common Expansion Joint Failures (And How to Fix Them)</h2>
+
+        <h3>Failure 1: Sealant Adhesion Failure</h3>
+        <p>
+          <strong>What it looks like:</strong> Sealant pulls away from one or both sides of the joint, leaving a gap. Water and debris get in.
+        </p>
+        <p>
+          <strong>Why it happens:</strong> Dirty or wet joint surfaces during sealant application. No primer when the sealant required one. Sealant applied too thin. Wrong sealant type for the application.
+        </p>
+        <p>
+          <strong>Fix:</strong> Remove failed sealant completely. Clean joint faces with a wire brush and compressed air. Apply primer if the sealant specifies one. Install new backer rod at the correct depth. Apply sealant per manufacturer instructions, ensuring contact with both joint faces. Cost: $3-$6/linear ft.
+        </p>
+
+        <h3>Failure 2: Sealant Cohesion Failure</h3>
+        <p>
+          <strong>What it looks like:</strong> Sealant splits or tears within its body (not at the edges). The sealant was stretched beyond its movement capability.
+        </p>
+        <p>
+          <strong>Why it happens:</strong> Joint movement exceeds the sealant&apos;s rated extension. Sealant applied too thin (insufficient cross-section). Wrong sealant type for the joint width and expected movement.
+        </p>
+        <p>
+          <strong>Fix:</strong> Choose a sealant with higher movement capability. Ensure proper depth-to-width ratio (1:2 for sealant cross-section — depth should be half the width). Use correct backer rod to control depth.
+        </p>
+
+        <h3>Failure 3: Joint Spalling</h3>
+        <p>
+          <strong>What it looks like:</strong> Concrete edges along the joint break off, crumble, or flake. The joint gets wider and ragged.
+        </p>
+        <p>
+          <strong>Why it happens:</strong> Saw cutting too soon (raveling). Impact from hard-wheeled traffic (forklifts, pallet jacks). Freeze-thaw damage when water infiltrates unsealed joints. Inadequate joint design for the traffic loading.
+        </p>
+        <p>
+          <strong>Fix:</strong> For minor spalling, clean and fill with a semi-rigid epoxy filler. For severe spalling, rout the joint wider (diamond saw blade), create clean edges, and refill with epoxy or polyurea. For industrial floors with heavy traffic, install armored joint edges (steel angle iron embedded in epoxy). Cost: $5-$15/linear ft for severe spall repair.
+        </p>
+
+        <h3>Failure 4: Random Cracking Between Joints</h3>
+        <p>
+          <strong>What it looks like:</strong> Cracks form between control joints, often diagonally across panels or radiating from corners.
+        </p>
+        <p>
+          <strong>Why it happens:</strong> Joint spacing too wide. Panels not square enough (aspect ratio exceeds 1.5:1). No joint at re-entrant corners. Saw cuts too late. Saw cuts too shallow.
+        </p>
+        <p>
+          <strong>Fix:</strong> Prevention is key — random cracks can&apos;t be un-cracked. For existing cracks, route and seal with flexible polyurethane sealant. For structural concerns, inject epoxy to restore load transfer. Add additional saw cuts (though after the fact, they&apos;re cosmetic). Cost: $2-$5/linear ft for crack repair.
+        </p>
+
+        <h3>Failure 5: Joint Filler Extrusion</h3>
+        <p>
+          <strong>What it looks like:</strong> Pre-formed filler material pushes up out of the joint, creating a bump or ridge.
+        </p>
+        <p>
+          <strong>Why it happens:</strong> Expansion joint filler is incompressible or too thick for the joint. No room for the concrete to expand, so the filler gets squeezed upward.
+        </p>
+        <p>
+          <strong>Fix:</strong> Trim extruded filler flush with a utility knife. If it recurs, the filler is too rigid — replace with more compressible material (closed-cell foam instead of fiberboard) or widen the joint.
+        </p>
+
+        <h2>Joint Design for Specific Applications</h2>
+
+        <h3>Residential Driveways</h3>
+        <p>
+          For a standard 4-inch residential driveway, control joints every 8-10 feet in both directions. Place isolation joints where the driveway meets the garage slab and any sidewalks. For driveways over 50 feet long, include a full expansion joint every 40-50 feet. Tooled or saw-cut joints are both acceptable.
+        </p>
+
+        <h3>Sidewalks</h3>
+        <p>
+          Sidewalk joints should be spaced at intervals equal to the sidewalk width. A 4-foot-wide sidewalk gets joints every 4 feet. A 5-foot sidewalk gets joints every 5 feet. This creates square panels. Isolation joints where the sidewalk meets curbs, driveways, and buildings.
+        </p>
+
+        <h3>Garage Floors</h3>
+        <p>
+          Minimum 4-inch slab with control joints every 8-10 feet. Isolate the slab from the foundation walls and any columns. Pay special attention to the garage door threshold — this area sees the most thermal cycling and moisture exposure. Consider a thickened edge (6 inches) at the door opening.
+        </p>
+
+        <h3>Commercial/Warehouse Floors</h3>
+        <p>
+          Joint design for commercial floors is more complex due to heavier loads, forklift traffic, and larger pour sizes. Key considerations:
+        </p>
+        <ul>
+          <li>Joint spacing per ACI 302/ACI 360 — often tighter than the standard 2-3× rule for unreinforced slabs.</li>
+          <li>Dowel bars at construction joints for load transfer (critical for forklift traffic).</li>
+          <li>Armored joints (metal angles) at high-traffic joints.</li>
+          <li>Semi-rigid joint filler that supports wheel loads without being too rigid to crack.</li>
+          <li>Joint layout coordinated with racking layout — joints shouldn&apos;t run under rack legs.</li>
+        </ul>
+
+        <h3>Parking Lots</h3>
+        <p>
+          Expansion joints every 40-60 feet in both directions for parking lots. Control joints at 12-15 foot intervals for 6-inch slabs. Isolation joints around light poles, utility manholes, catch basins, and building perimeters. Use hot-pour rubberized asphalt sealant for durability under vehicle traffic. Budget for resealing every 3-5 years.
+        </p>
+
+        <h2>How to Install Expansion Joints: Step-by-Step</h2>
+
+        <h3>Step 1: Plan the Joint Layout</h3>
+        <p>
+          Before pouring, draw a joint plan showing all expansion, control, isolation, and construction joints. Mark joint locations on the subgrade or forms with paint or chalk lines. Verify panel sizes, aspect ratios, and joint locations relative to columns, walls, and penetrations.
+        </p>
+
+        <h3>Step 2: Install Pre-Formed Expansion Joint Material</h3>
+        <p>
+          For true expansion joints, set pre-formed joint filler vertically in the joint location before the pour. The filler should extend the full depth of the slab and be flush with (or slightly below) the planned slab surface. Stake or wire it in place so the concrete doesn&apos;t push it out of position during placement.
+        </p>
+
+        <h3>Step 3: Place and Finish Concrete</h3>
+        <p>
+          Pour and finish the concrete normally. At expansion joints, finish the concrete right up to the pre-formed filler. At planned control joint locations, mark the positions for saw cutting.
+        </p>
+
+        <h3>Step 4: Saw Cut Control Joints</h3>
+        <p>
+          Using an early-entry saw or conventional wet saw, cut control joints at the marked locations. Depth: minimum 1/4 of slab thickness (1 inch for a 4-inch slab). For 4-inch slabs, most contractors cut 1 inch to 1-1/4 inches deep.
+        </p>
+
+        <h3>Step 5: Install Backer Rod and Sealant</h3>
+        <p>
+          After the concrete has cured (minimum 28 days, ideally 60-90 days for new construction), clean all joints thoroughly. Install backer rod at the appropriate depth. Apply sealant per manufacturer instructions. Most polyurethane sealants need 24-48 hours to cure before traffic.
+        </p>
+
+        <h2>Joint Repair and Maintenance Schedule</h2>
+
+        <div className="overflow-x-auto not-prose my-8">
+          <table className="min-w-full border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left">Task</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Frequency</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Cost/Linear Ft</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Visual inspection</td>
+                <td className="border border-gray-300 px-4 py-2">Annual (spring)</td>
+                <td className="border border-gray-300 px-4 py-2">$0 (owner) / $0.50-$1 (contractor)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">Joint cleaning</td>
+                <td className="border border-gray-300 px-4 py-2">Annual</td>
+                <td className="border border-gray-300 px-4 py-2">$0.50–$1.50</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Sealant touch-up (spot repairs)</td>
+                <td className="border border-gray-300 px-4 py-2">As needed (2-3 years)</td>
+                <td className="border border-gray-300 px-4 py-2">$2–$4</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">Full re-sealing</td>
+                <td className="border border-gray-300 px-4 py-2">Every 5-8 years</td>
+                <td className="border border-gray-300 px-4 py-2">$2–$5</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">Spall repair</td>
+                <td className="border border-gray-300 px-4 py-2">As needed</td>
+                <td className="border border-gray-300 px-4 py-2">$5–$15</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">Full joint replacement</td>
+                <td className="border border-gray-300 px-4 py-2">Every 15-25 years</td>
+                <td className="border border-gray-300 px-4 py-2">$8–$20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          For contractors, joint maintenance contracts are excellent recurring revenue. A commercial property with 5,000 linear feet of joints that needs annual inspection and periodic resealing can generate $2,500-$10,000/year in maintenance revenue — with minimal labor once you&apos;re familiar with the property.
+        </p>
+
+        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">📋 Free Contractor Templates</h3>
+          <p className="text-gray-700 mb-4">
+            Download professional estimate templates, contract templates, and invoice templates designed for concrete contractors. Price your joint work accurately and look professional doing it.
+          </p>
+          <Link href="/templates" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700">
+            Get Free Templates →
+          </Link>
+        </div>
+
+        <h2>Pro Tips for Concrete Joints</h2>
+
+        <ol>
+          <li><strong>Always cut joints deeper than minimum.</strong> The 1/4-depth rule is a minimum. Cutting to 1/3 depth gives you better crack control and costs almost nothing extra. On a 4-inch slab, cut 1.25-1.5 inches instead of just 1 inch.</li>
+          <li><strong>Never let joints go unsealed.</strong> Open joints collect water, debris, and incompressible materials (gravel, hardened dirt). When the joint tries to close during expansion, the incompressible material causes spalling and blowups. Seal every joint.</li>
+          <li><strong>Tooled joints don&apos;t replace saw cuts.</strong> Many contractors tool a line during finishing and call it a control joint. If the tool groove isn&apos;t deep enough (1/4 slab thickness minimum), it won&apos;t work. Saw cutting is more reliable.</li>
+          <li><strong>Plan for odd shapes.</strong> L-shaped slabs, slabs with cutouts, and irregular pour areas need extra joints at re-entrant corners. Every inside corner should have a joint running from it, or a diagonal crack will form.</li>
+          <li><strong>Match joint fillers to the application.</strong> A flexible polyurethane is wrong for a warehouse joint under forklift traffic (wheels will gouge it out). A rigid epoxy is wrong for an outdoor expansion joint (it&apos;ll crack when the joint moves). Match the material to the loading and movement.</li>
+          <li><strong>Document your joint layout.</strong> Take photos and create a simple drawing of all joint locations, types, and sealant products used. Give this to the building owner. It makes maintenance easier and protects you from liability claims.</li>
+        </ol>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How far apart should expansion joints be in concrete?</h3>
+        <p>
+          The general rule is expansion joint spacing in feet should equal 2-3 times the slab thickness in inches. For a 4-inch slab, that&apos;s 8-12 feet apart. For a 6-inch slab, 12-18 feet apart. ACI 302 recommends panels no larger than a 1.5:1 length-to-width ratio. In hot climates or with high-shrinkage concrete, reduce spacing by 15-20%.
+        </p>
+
+        <h3>What is the difference between expansion joints and control joints?</h3>
+        <p>
+          Expansion joints are full-depth separations that allow slabs to expand and contract independently — they go all the way through the slab and are filled with compressible material. Control joints (contraction joints) are partial-depth grooves (1/4 to 1/3 of slab depth) that create a weakened plane where cracks form predictably. Isolation joints separate the slab from fixed structures like columns, walls, and footings.
+        </p>
+
+        <h3>What is the best filler material for concrete expansion joints?</h3>
+        <p>
+          For most applications, self-leveling polyurethane sealant (like Sikaflex 1A or Sonolastic NP2) is the best choice — it&apos;s flexible, durable, and bonds well to concrete. For high-traffic areas, use semi-rigid epoxy or polyurea joint filler. For joints over 1 inch wide, use a closed-cell foam backer rod with flexible sealant on top. Avoid rigid fillers that defeat the joint&apos;s expansion purpose.
+        </p>
+
+        <h3>How much do concrete expansion joints cost?</h3>
+        <p>
+          Saw-cut control joints cost $1-3 per linear foot. Pre-formed expansion joint filler strips cost $0.50-2.00/linear ft for material. Joint sealing costs $1-4 per linear foot for labor and material. Full expansion joint installation runs $5-15 per linear foot. Repair and resealing of existing joints costs $2-8 per linear foot depending on condition.
+        </p>
+
+        <h3>When should expansion joints be sealed?</h3>
+        <p>
+          Seal expansion joints after the concrete has cured for at least 28 days — ideally 60-90 days for new construction so most initial shrinkage has occurred. For existing joints, reseal when the sealant shows cracking, pulling away from edges, or allows water infiltration. In commercial settings, inspect joints annually and budget for full resealing every 5-8 years.
+        </p>
+
+        <h3>Can you repair a damaged concrete expansion joint?</h3>
+        <p>
+          Yes. Remove old failed sealant with a joint rake or saw blade. Clean the joint thoroughly. Install a new backer rod at the correct depth (half the joint width). Apply new sealant. For severely spalled joint edges, rout the joint wider with a diamond blade, then fill with epoxy or polyurea. Cost for joint repair is typically $2-8 per linear foot.
+        </p>
+
       </article>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Concrete Expansion Joints: Types, Spacing Rules & Installation Guide",
-            "description": "Complete guide to concrete expansion joints — types, proper spacing rules, sealant selection, installation methods, and repair techniques.",
-            "author": { "@type": "Organization", "name": "ConcreteCalc" },
-            "publisher": { "@type": "Organization", "name": "ConcreteCalc" },
-            "datePublished": "2026-03-07",
-            "dateModified": "2026-03-07",
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How far apart should expansion joints be in concrete?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Expansion joints every 20-30 feet in large slabs and at all structure connections. Control joints at 2-3× slab thickness in inches." }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the difference between expansion joints and control joints?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Control joints are partial-depth cuts for shrinkage cracks. Expansion joints are full-depth separations with compressible filler for thermal expansion." }
-              },
-              {
-                "@type": "Question",
-                "name": "When should you cut control joints in concrete?",
-                "acceptedAnswer": { "@type": "Answer", "text": "As soon as concrete is firm enough (4-12 hours typically). With early-entry saws, as early as 1-2 hours after pour." }
-              }
-            ]
-          }),
-        }}
-      />
-    </main>
-  )
+      <div className="mt-12 border-t border-gray-200 pt-8">
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Related Articles</h3>
+        <ul className="space-y-2">
+          <li><Link href="/blog/concrete-saw-cutting-guide" className="text-orange-600 hover:underline">Concrete Saw Cutting: Methods, Equipment &amp; Pricing</Link></li>
+          <li><Link href="/blog/concrete-slab-cost-guide" className="text-orange-600 hover:underline">Concrete Slab Cost Guide: 2026 Pricing Breakdown</Link></li>
+          <li><Link href="/blog/concrete-driveway-cost-guide" className="text-orange-600 hover:underline">Concrete Driveway Cost in 2026</Link></li>
+          <li><Link href="/blog/concrete-spalling-guide" className="text-orange-600 hover:underline">Concrete Spalling: Causes, Repair Methods &amp; Prevention</Link></li>
+          <li><Link href="/blog/concrete-driveway-repair-guide" className="text-orange-600 hover:underline">Concrete Driveway Repair: Costs, Methods &amp; When to Replace</Link></li>
+        </ul>
+      </div>
+    </div>
+  );
 }

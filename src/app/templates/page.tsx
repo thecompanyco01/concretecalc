@@ -23,7 +23,8 @@ const products = [
       "Works in Excel & Google Sheets",
     ],
     popular: false,
-    href: "#",
+    href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03",
+    cta: "Buy Now — $29",
   },
   {
     name: "Estimate Template Pack",
@@ -39,7 +40,8 @@ const products = [
       "Company branding section",
     ],
     popular: true,
-    href: "#",
+    href: "https://buy.stripe.com/6oUdRadrNdg91rJ3ntaMU00",
+    cta: "Buy Now — $49",
   },
   {
     name: "Business Starter Kit",
@@ -58,7 +60,8 @@ const products = [
       "30-60-90 day launch plan",
     ],
     popular: false,
-    href: "#",
+    href: "https://buy.stripe.com/8x2cN6afBdg9c6ne27aMU01",
+    cta: "Buy Now — $297",
   },
 ];
 
@@ -114,16 +117,52 @@ export default function Templates() {
             </ul>
             <a
               href={product.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`block w-full text-center py-3 rounded-lg font-semibold transition ${
                 product.popular
                   ? "bg-slate-900 text-white hover:bg-slate-800"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              Coming Soon
+              {product.cta || "Buy Now"}
             </a>
           </div>
         ))}
+      </div>
+
+      {/* Pro Membership */}
+      <div className="mt-12 bg-gradient-to-r from-blue-700 to-blue-900 text-white rounded-xl p-8 md:p-10">
+        <div className="md:flex md:items-center md:justify-between">
+          <div className="mb-6 md:mb-0 md:mr-8">
+            <span className="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+              RECURRING
+            </span>
+            <h2 className="text-2xl font-bold mt-3 mb-2">ConcreteCalc Pro Membership</h2>
+            <p className="text-blue-200 leading-relaxed max-w-lg">
+              Monthly access to updated regional pricing data, all templates included, pro calculator features, and benchmarks showing what contractors in your area charge.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-blue-100">
+              <li>✓ Updated pricing data by ZIP code (monthly refresh)</li>
+              <li>✓ All estimate templates included</li>
+              <li>✓ Pro bid calculator with PDF export</li>
+              <li>✓ Regional benchmark data</li>
+              <li>✓ New templates every month</li>
+              <li>✓ Cancel anytime</li>
+            </ul>
+          </div>
+          <div className="text-center md:text-right flex-shrink-0">
+            <div className="text-4xl font-extrabold">$29<span className="text-lg font-normal text-blue-200">/mo</span></div>
+            <a
+              href="https://buy.stripe.com/00w4gA2N9b815HZbTZaMU02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 bg-white text-blue-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition"
+            >
+              Subscribe Now →
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Guarantee */}
