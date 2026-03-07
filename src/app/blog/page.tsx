@@ -9,6 +9,96 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Concrete Curing Compounds: Types, Application & Best Practices (2026)",
+    slug: "concrete-curing-compound-guide",
+    excerpt:
+      "Complete guide to concrete curing compounds: water-based acrylic, solvent-based resin, wax-based, sodium silicate. ASTM C309 types, application rates (150-200 sq ft/gal), costs ($15-40/gal), and when NOT to use them.",
+    date: "March 7, 2026",
+    readTime: "15 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Floor Leveling: Methods, Costs & DIY vs Pro (2026)",
+    slug: "concrete-floor-leveling-guide",
+    excerpt:
+      "Complete guide to concrete floor leveling: self-leveling compound ($2-5/sq ft), grinding ($1-4/sq ft), mudjacking ($3-6/sq ft), foam jacking ($5-25/sq ft). FF/FL numbers, DIY steps, and when to hire a pro.",
+    date: "March 7, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Saw Cutting: Methods, Equipment & Contractor Pricing (2026)",
+    slug: "concrete-saw-cutting-guide",
+    excerpt:
+      "Complete guide to concrete saw cutting: flat sawing, wall sawing, wire sawing, core drilling, blade types, control joint timing, wet vs dry cutting, equipment rental ($200-800/day), and contractor pricing ($1-15/LF).",
+    date: "March 7, 2026",
+    readTime: "16 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Spalling: Causes, Repair Methods & Prevention (2026)",
+    slug: "concrete-spalling-guide",
+    excerpt:
+      "Complete guide to concrete spalling: causes (freeze-thaw, corrosion, deicing salts), repair methods (patching, overlays, resurfacing), prevention strategies, and costs for residential and commercial concrete.",
+    date: "March 7, 2026",
+    readTime: "13 min read",
+    status: "live",
+  },
+  {
+    title: "Stamped Concrete Patterns: Popular Designs, Costs & Installation (2026)",
+    slug: "stamped-concrete-patterns-guide",
+    excerpt:
+      "Complete guide to stamped concrete patterns: slate, flagstone, brick, cobblestone, wood plank, and custom designs. Pattern costs, color options, installation process, and maintenance tips.",
+    date: "March 7, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Delivery Cost: Pricing, Fees & How to Save (2026)",
+    slug: "concrete-delivery-cost-guide",
+    excerpt:
+      "Complete guide to concrete delivery costs: per-yard pricing, short load fees, fuel surcharges, Saturday delivery premiums, pump truck costs, and tips for reducing your total delivery bill.",
+    date: "March 7, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Anchor Bolts: Types, Sizing & Installation Guide (2026)",
+    slug: "concrete-anchor-bolts-guide",
+    excerpt:
+      "Complete guide to concrete anchor bolts: wedge anchors, sleeve anchors, drop-in anchors, epoxy anchors, cast-in-place J-bolts. Sizing charts, pull-out strength, installation steps, and costs.",
+    date: "March 7, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Blankets: Curing & Cold Weather Protection Guide (2026)",
+    slug: "concrete-blanket-guide",
+    excerpt:
+      "Complete guide to concrete blankets: insulated curing blankets ($50-150), heated blankets ($100-400), cold weather concreting (ACI 306), sizing, costs, and contractor best practices.",
+    date: "March 7, 2026",
+    readTime: "15 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Bonding Agents: Types, Application & Best Practices (2026)",
+    slug: "concrete-bonding-agent-guide",
+    excerpt:
+      "Complete guide to concrete bonding agents: acrylic latex, epoxy, SBR latex, polyvinyl acetate. When to use each type, application methods, costs, and common mistakes to avoid.",
+    date: "March 7, 2026",
+    readTime: "13 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Floor Paint: Types, Costs & Application Guide (2026)",
+    slug: "concrete-floor-paint-guide",
+    excerpt:
+      "Complete guide to concrete floor paint: epoxy ($3-7/sq ft), latex acrylic ($1-3/sq ft), polyurethane ($4-8/sq ft). Surface prep, application steps, durability comparison, and garage floor coating tips.",
+    date: "March 7, 2026",
+    readTime: "14 min read",
+    status: "live",
+  },
+  {
     title: "Pervious Concrete: Costs, Benefits & Installation Guide (2026)",
     slug: "pervious-concrete-guide",
     excerpt:
