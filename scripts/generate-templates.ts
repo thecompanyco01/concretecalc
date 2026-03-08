@@ -288,7 +288,7 @@ async function generateBidCalculator() {
   // Row 30: Materials with markup = B29 × (1 + Markup(B18))
   // Row 31: blank
   // Row 32: LABOR (label)
-  // Row 33: Estimated labor hours = Area(B23) × 0.15
+  // Row 33: Estimated labor hours = Area(B23) × 0.06 (includes forming, prep, pour, finish, cleanup)
   // Row 34: Labor cost = Hours(B33) × Rate(B17)
   // Row 35: blank
   // Row 36: EQUIPMENT COST = 450
@@ -312,7 +312,7 @@ async function generateBidCalculator() {
     { row: 30, label: "  Materials with markup", formula: "B29*(1+B18)" },
     { row: 31, label: "" },
     { row: 32, label: "LABOR", isBold: true },
-    { row: 33, label: "  Estimated labor hours", formula: "B23*0.15", fmt: NUM_FMT },
+    { row: 33, label: "  Estimated labor hours", formula: "B23*0.06", fmt: NUM_FMT },
     { row: 34, label: "  Labor cost", formula: "B33*B17" },
     { row: 35, label: "" },
     { row: 36, label: "EQUIPMENT COST", value: 450 },
@@ -720,6 +720,88 @@ interface EstimateConfig {
   scopeExclusions: string[];
   warrantyNotes: string[];
   howToSteps: string[];
+}
+
+function addSiteConditionsSheet(wb: ExcelJS.Workbook, conditions: string[]) {
+  const ws = wb.addWorksheet("✅ Site Conditions", { properties: { tabColor: { argb: "FFD1FAE5" } } });
+  ws.columns = [{ width: 6 }, { width: 40 }, { width: 14 }, { width: 30 }];
+
+  ws.mergeCells("A1:D1");
+  ws.getCell("A1").value = "✅ SITE CONDITIONS CHECKLIST";
+  ws.getCell("A1").font = { bold: true, size: 16, color: { argb: "FF1E293B" } };
+  ws.getRow(1).height = 30;
+
+  ws.mergeCells("A2:D2");
+  ws.getCell("A2").value = "Complete this checklist during your site visit. Fill in yellow cells.";
+  ws.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+
+  ws.getCell("A3").value = "Date:";
+  ws.getCell("A3").font = { bold: true, size: 10 };
+  ws.getCell("B3").fill = ACCENT_FILL;
+  ws.getCell("C3").value = "Inspector:";
+  ws.getCell("C3").font = { bold: true, size: 10 };
+  ws.getCell("D3").fill = ACCENT_FILL;
+
+  ["#", "Site Condition", "Status", "Notes / Details"].forEach((h, i) => {
+    ws.getCell(5, i + 1).value = h;
+  });
+  styleHeaderRow(ws, 5, 4);
+
+  conditions.forEach((cond, i) => {
+    const row = 6 + i;
+    ws.getCell(row, 1).value = i + 1;
+    ws.getCell(row, 1).alignment = { horizontal: "center" };
+    ws.getCell(row, 2).value = cond;
+    ws.getCell(row, 2).font = { size: 10 };
+    ws.getCell(row, 3).fill = ACCENT_FILL;
+    ws.getCell(row, 3).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"✓ OK,⚠ Issue,✗ Fail,N/A"'],
+    };
+    ws.getCell(row, 4).fill = ACCENT_FILL;
+    for (let c = 1; c <= 4; c++) applyBorder(ws.getCell(row, c));
+  });
+
+  let r = 6 + conditions.length + 1;
+  ws.mergeCells(`A${r}:D${r}`);
+  ws.getCell(`A${r}`).value = "ADDITIONAL OBSERVATIONS";
+  ws.getCell(`A${r}`).font = { bold: true, size: 11, color: { argb: "FF1E293B" } };
+  r++;
+  for (let i = 0; i < 5; i++) {
+    ws.mergeCells(`A${r}:D${r}`);
+    ws.getCell(`A${r}`).fill = ACCENT_FILL;
+    ws.getRow(r).height = 20;
+    applyBorder(ws.getCell(`A${r}`));
+    r++;
+  }
+
+  r++;
+  ws.mergeCells(`A${r}:D${r}`);
+  ws.getCell(`A${r}`).value = "SITE PHOTOS NEEDED";
+  ws.getCell(`A${r}`).font = { bold: true, size: 11, color: { argb: "FF1E293B" } };
+  r++;
+  const photoItems = [
+    "Overall site (wide angle)", "Access point for concrete truck",
+    "Existing surface condition", "Drainage/slope direction",
+    "Utility locations", "Adjacent structures",
+  ];
+  photoItems.forEach((item, i) => {
+    ws.getCell(r, 1).value = `${i + 1}.`;
+    ws.getCell(r, 1).alignment = { horizontal: "center" };
+    ws.getCell(r, 2).value = item;
+    ws.getCell(r, 3).fill = ACCENT_FILL;
+    ws.getCell(r, 3).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"✓ Taken,☐ Needed"'],
+    };
+    for (let c = 1; c <= 4; c++) applyBorder(ws.getCell(r, c));
+    r++;
+  });
+
+  ws.pageSetup = { paperSize: 1, orientation: "portrait", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+  return ws;
 }
 
 async function generateEstimate(data: EstimateConfig) {
