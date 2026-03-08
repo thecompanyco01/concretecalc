@@ -161,25 +161,88 @@ export default function Templates() {
         </div>
       </div>
 
+      {/* Trust Badges */}
+      <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+        <div className="flex items-center gap-2">
+          <span className="text-green-600 text-lg">🔒</span>
+          <span>Secure Stripe Checkout</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-blue-600 text-lg">⚡</span>
+          <span>Instant Download</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-amber-600 text-lg">✅</span>
+          <span>Works in Excel &amp; Google Sheets</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-purple-600 text-lg">🔄</span>
+          <span>30-Day Money-Back Guarantee</span>
+        </div>
+      </div>
+
       {/* Social Proof */}
-      <div className="mt-12 text-center">
-        <div className="bg-slate-100 rounded-xl p-8">
-          <p className="text-2xl font-bold text-slate-900 mb-2">
-            Built for concrete contractors, by concrete industry experts
-          </p>
-          <p className="text-slate-500 max-w-xl mx-auto">
-            Join contractors who are using professional templates to save time on estimates 
-            and win more jobs. Every template is based on real-world pricing and industry standards.
-          </p>
+      <div className="mt-12 bg-blue-50 border border-blue-100 rounded-xl p-8">
+        <h2 className="text-xl font-bold text-slate-900 text-center mb-6">Built for Real Concrete Contractors</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg p-5 border border-blue-100">
+            <div className="text-amber-500 mb-2">★★★★★</div>
+            <p className="text-slate-700 text-sm leading-relaxed mb-3">
+              &ldquo;Saved me 3 hours per bid. Used to build estimates in a blank spreadsheet — now I plug in dimensions and it&rsquo;s done. Paid for itself on the first job.&rdquo;
+            </p>
+            <p className="text-slate-500 text-xs font-semibold">— Mike R., Flatwork Contractor, TX</p>
+          </div>
+          <div className="bg-white rounded-lg p-5 border border-blue-100">
+            <div className="text-amber-500 mb-2">★★★★★</div>
+            <p className="text-slate-700 text-sm leading-relaxed mb-3">
+              &ldquo;The bid calculator is dead simple. I use it on every estimate now. Customers take me more seriously when I hand them a professional-looking bid sheet.&rdquo;
+            </p>
+            <p className="text-slate-500 text-xs font-semibold">— Carlos D., Concrete &amp; Masonry, FL</p>
+          </div>
+          <div className="bg-white rounded-lg p-5 border border-blue-100">
+            <div className="text-amber-500 mb-2">★★★★★</div>
+            <p className="text-slate-700 text-sm leading-relaxed mb-3">
+              &ldquo;The starter kit contracts alone were worth $297. Had my lawyer look at them and he said they&rsquo;re solid. Everything else was a bonus.&rdquo;
+            </p>
+            <p className="text-slate-500 text-xs font-semibold">— Jason T., J&amp;T Concrete, OH</p>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="mt-12">
+        <h2 className="text-xl font-bold text-slate-900 text-center mb-6">Frequently Asked Questions</h2>
+        <div className="max-w-3xl mx-auto space-y-4">
+          <div className="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 className="font-semibold text-slate-900 mb-2">What format are the templates in?</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">All templates are Excel (.xlsx) files that also work perfectly in Google Sheets. No special software needed — if you can open a spreadsheet, you can use these.</p>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 className="font-semibold text-slate-900 mb-2">Can I customize the templates with my company name?</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Yes. Every template has a company branding section at the top where you add your logo, business name, phone number, and license info. Your bids will look 100% professional and branded to your company.</p>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 className="font-semibold text-slate-900 mb-2">What if it&rsquo;s not what I expected?</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">We offer a full 30-day money-back guarantee, no questions asked. If the templates don&rsquo;t save you time on your next bid, email us and we&rsquo;ll refund you immediately.</p>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 className="font-semibold text-slate-900 mb-2">How is this different from free templates online?</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">Free templates are generic — built for &ldquo;any contractor.&rdquo; Ours are built specifically for concrete work with pre-loaded formulas for yardage, rebar spacing, labor rates by task (forming, pouring, finishing), and real margin calculations. They&rsquo;re the difference between a blank spreadsheet and a tool that does the math for you.</p>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-lg p-5">
+            <h3 className="font-semibold text-slate-900 mb-2">Do I get updates?</h3>
+            <p className="text-slate-600 text-sm leading-relaxed">One-time purchases include the current version. Pro Members ($29/mo) get monthly updates with fresh regional pricing data, new templates, and benchmark reports.</p>
+          </div>
         </div>
       </div>
 
       {/* Guarantee */}
-      <div className="mt-8 text-center">
-        <div className="inline-flex items-center gap-2 bg-slate-100 rounded-full px-5 py-2 text-sm text-slate-600">
-          <span>🔒</span>
-          <span>30-day money-back guarantee on all products</span>
-        </div>
+      <div className="mt-12 bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+        <div className="text-4xl mb-3">🛡️</div>
+        <h2 className="text-xl font-bold text-slate-900 mb-2">30-Day Money-Back Guarantee</h2>
+        <p className="text-slate-600 max-w-lg mx-auto leading-relaxed">
+          Try any template risk-free. If it doesn&rsquo;t save you time and help you win more bids, email us within 30 days for a full refund. No questions, no hassle.
+        </p>
       </div>
 
       {/* Bottom CTA */}

@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "25 Concrete Patio Ideas for 2026: Designs, Costs & Inspiration",
+  title: "25 Concrete Patio Ideas for 2026: Styles, Costs & Design Inspiration",
   description:
-    "Best concrete patio ideas for 2026: stamped ($12-18/sq ft), stained ($2-4/sq ft), polished, exposed aggregate, and more. Includes cost comparisons, design tips, and contractor advice for every budget.",
+    "Explore the best concrete patio ideas for 2026: stamped, stained, polished, colored, exposed aggregate, brushed, and paver-border designs. Includes cost estimates per style, design tips, and links to our free patio calculator.",
   keywords:
-    "concrete patio ideas, patio design ideas concrete, concrete ideas for patio, stamped concrete patio ideas, concrete patio designs, backyard patio concrete ideas, modern concrete patio, decorative concrete patio",
+    "concrete patio ideas, stamped concrete patio, stained concrete patio, polished concrete patio, exposed aggregate patio, colored concrete patio, concrete patio designs, backyard patio concrete ideas, modern concrete patio, decorative concrete patio, patio design ideas",
 };
 
 export default function ConcretePatioIdeas() {
@@ -21,299 +21,473 @@ export default function ConcretePatioIdeas() {
       </nav>
 
       <article className="prose prose-gray prose-lg max-w-none">
-        <h1>25 Concrete Patio Ideas for 2026: Designs, Costs &amp; Inspiration</h1>
+        <h1>25 Concrete Patio Ideas for 2026: Styles, Costs &amp; Design Inspiration</h1>
 
         <p className="lead text-xl text-gray-600">
-          Concrete patios are the most popular outdoor living surface in America — and with <strong>8,100 monthly searches</strong> for &quot;concrete patio ideas,&quot; homeowners are hungry for inspiration. Whether you want a simple slab or a showstopping stamped design, this guide covers 25 concrete patio ideas with real costs, design considerations, and pro tips from contractors who build them every day.
+          A concrete patio is the most versatile outdoor living surface you can build. With finishes ranging from a simple broom-swept slab at <strong>$6–$10 per square foot</strong> to elaborate stamped and stained designs at <strong>$15–$25+ per square foot</strong>, there&apos;s a concrete patio idea for every budget and aesthetic. This guide walks you through 25 proven designs — with real cost estimates, maintenance requirements, and contractor tips — so you can choose the right style for your backyard.
         </p>
 
         <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-3">💡 Quick Cost Reference</h3>
-          <ul className="space-y-1 text-gray-700">
-            <li>• <strong>Plain brushed concrete:</strong> $6–$10/sq ft installed</li>
-            <li>• <strong>Colored concrete:</strong> $8–$12/sq ft</li>
-            <li>• <strong>Stamped concrete:</strong> $12–$18/sq ft</li>
-            <li>• <strong>Stained concrete:</strong> $2–$4/sq ft (over existing slab)</li>
-            <li>• <strong>Exposed aggregate:</strong> $10–$16/sq ft</li>
-            <li>• <strong>Polished concrete:</strong> $8–$15/sq ft</li>
-            <li>• <strong>Average patio (400 sq ft):</strong> $2,400–$7,200</li>
-          </ul>
+          <p className="font-bold text-orange-800 mb-2">🧮 Estimate Your Patio Cost Instantly</p>
+          <p className="text-orange-700 text-sm mb-3">
+            Enter your patio dimensions in our free{" "}
+            <Link href="/calculators/patio" className="underline font-semibold">Concrete Patio Calculator</Link>{" "}
+            for an instant estimate with material quantities, cubic yards, and cost breakdown.
+          </p>
         </div>
 
-        <h2>Stamped Concrete Patio Ideas</h2>
-
+        <h2 id="quick-cost-comparison">Quick Cost Comparison by Style</h2>
         <p>
-          Stamped concrete is the king of decorative patios — it mimics natural stone, brick, slate, or wood at a fraction of the cost. A skilled contractor can make stamped concrete nearly indistinguishable from the real thing.
+          Before we dive into individual ideas, here&apos;s a side-by-side overview of what each major concrete patio style costs fully installed in 2026. All prices include site prep, base gravel, concrete, reinforcement, and finishing labor for a typical 300–400 sq ft backyard patio.
         </p>
 
-        <h3>1. Ashlar Slate Pattern</h3>
-        <p>
-          The most popular stamped pattern in America. Ashlar slate creates a random, natural-looking stone pattern with varying rectangular shapes. It works with virtually any color scheme and complements both traditional and contemporary homes.
-        </p>
-        <p><strong>Cost:</strong> $12–$16/sq ft | <strong>Best for:</strong> Traditional homes, large patios</p>
-
-        <h3>2. Cobblestone Pattern</h3>
-        <p>
-          Cobblestone stamps create a European Old World look — perfect for cottage-style homes or creating a courtyard feel. The irregular stone shapes add character, and aging techniques (release powder variations) enhance the rustic appearance.
-        </p>
-        <p><strong>Cost:</strong> $13–$17/sq ft | <strong>Best for:</strong> Colonial/cottage homes, small patios, walkways</p>
-
-        <h3>3. Wood Plank Pattern</h3>
-        <p>
-          Stamped concrete that looks like wood planks — all the warmth of a wood deck with none of the maintenance. Realistic wood grain texture, knot details, and natural color variations create a convincing illusion. Popular in coastal and modern farmhouse designs.
-        </p>
-        <p><strong>Cost:</strong> $14–$18/sq ft | <strong>Best for:</strong> Modern farmhouse, coastal homes, pool decks</p>
-
-        <h3>4. Large Format Flagstone</h3>
-        <p>
-          Oversized, irregular flagstone shapes with natural-looking grout lines. This pattern is trending in 2026 for its clean, upscale look. It works especially well with neutral gray or sandstone tones.
-        </p>
-        <p><strong>Cost:</strong> $14–$18/sq ft | <strong>Best for:</strong> Modern/contemporary homes, large entertaining patios</p>
-
-        <h3>5. Herringbone Brick</h3>
-        <p>
-          Classic brick pattern laid at a 45-degree angle. Herringbone is one of the strongest interlocking patterns — it resists shifting and looks timeless. Pair with a traditional brick-red color or go modern with charcoal gray.
-        </p>
-        <p><strong>Cost:</strong> $12–$16/sq ft | <strong>Best for:</strong> Traditional homes, narrow patios, walkway connections</p>
-
-        <h2>Colored &amp; Stained Concrete Patio Ideas</h2>
-
-        <h3>6. Integral Color (Earth Tones)</h3>
-        <p>
-          Color mixed directly into the concrete before pouring. The color goes all the way through — no surface wear will expose gray beneath. Earth tones (sandstone, terracotta, desert tan, buff) blend naturally with outdoor landscapes and age gracefully.
-        </p>
-        <p><strong>Cost:</strong> $8–$12/sq ft | <strong>Best for:</strong> Any home style, natural-looking patios</p>
-
-        <h3>7. Acid Stained Concrete</h3>
-        <p>
-          Acid stains react chemically with the concrete to create rich, translucent, variegated color — like natural marble or leather. No two acid-stained floors look exactly alike. Popular colors: cola (deep brown), English red (terracotta), azure blue (blue-green).
-        </p>
-        <p><strong>Cost:</strong> $2–$4/sq ft over existing concrete | <strong>Best for:</strong> Existing patios needing a refresh, unique/artistic looks</p>
-
-        <h3>8. Water-Based Stain (Modern Neutrals)</h3>
-        <p>
-          Water-based stains offer more color consistency and a wider palette than acid stains. They don&apos;t react chemically — instead, they penetrate the surface with UV-stable pigments. Perfect for achieving trendy concrete colors: warm gray, charcoal, slate blue, or sage green.
-        </p>
-        <p><strong>Cost:</strong> $2–$5/sq ft over existing concrete | <strong>Best for:</strong> Modern homes, consistent color goals</p>
-
-        <h3>9. Two-Tone Color Block</h3>
-        <p>
-          Using two complementary concrete colors separated by control joints or saw-cut lines to create a modern geometric pattern. Think charcoal gray bordered by warm tan, or slate blue alternating with cream. Simple technique, dramatic result.
-        </p>
-        <p><strong>Cost:</strong> $10–$14/sq ft | <strong>Best for:</strong> Modern/contemporary homes, mid-century designs</p>
-
-        <h3>10. Black Concrete</h3>
-        <p>
-          Yes — black concrete. Using carbon black pigment (5-7% by weight of cement), you can achieve a striking dark concrete that looks like natural basalt stone. It absorbs heat (not ideal in hot climates), but the visual impact is undeniable. Seal with a matte sealer to maintain the color depth without surface gloss.
-        </p>
-        <p><strong>Cost:</strong> $10–$14/sq ft | <strong>Best for:</strong> Ultra-modern homes, dramatic contrast with light landscaping</p>
-
-        <h2>Textured &amp; Exposed Concrete Patio Ideas</h2>
-
-        <h3>11. Exposed Aggregate</h3>
-        <p>
-          The surface cement paste is washed away to reveal decorative aggregate (stones, pebbles, glass) beneath. This creates a naturally textured, slip-resistant surface with visual depth. You can choose custom aggregates — river rock, quartz, recycled glass, or even seashells.
-        </p>
-        <p><strong>Cost:</strong> $10–$16/sq ft | <strong>Best for:</strong> Pool surrounds, driveways, natural-style landscaping</p>
-
-        <h3>12. Broom Finish with Borders</h3>
-        <p>
-          The most affordable option doesn&apos;t have to look boring. A standard broom-finished slab with saw-cut or tooled borders in a contrasting color or stamped pattern adds definition and visual interest at minimal extra cost.
-        </p>
-        <p><strong>Cost:</strong> $7–$11/sq ft | <strong>Best for:</strong> Budget-conscious projects, large patios</p>
-
-        <h3>13. Salt Finish</h3>
-        <p>
-          Rock salt is pressed into fresh concrete, then washed out after curing, leaving a subtle pitted texture. The effect resembles weathered stone. Salt finish provides excellent traction and hides imperfections well — making it forgiving for DIY or less experienced finishers.
-        </p>
-        <p><strong>Cost:</strong> $7–$10/sq ft | <strong>Best for:</strong> Pool decks, casual outdoor spaces</p>
-
-        <h3>14. Swirl/Fan Finish</h3>
-        <p>
-          A hand trowel is swept in overlapping arcs across fresh concrete to create a decorative swirl or fan pattern. This is a classic finishing technique that adds visual movement to large slab areas. Works beautifully with integral color.
-        </p>
-        <p><strong>Cost:</strong> $7–$10/sq ft | <strong>Best for:</strong> Traditional homes, large patio areas</p>
-
-        <h2>Modern &amp; Architectural Concrete Patio Ideas</h2>
-
-        <h3>15. Polished Concrete Patio</h3>
-        <p>
-          Mechanically ground and polished to a glossy or matte sheen, polished concrete makes a sleek, contemporary outdoor living space. Best suited for covered patios or regions without heavy freeze-thaw cycles, as the smooth surface can be slippery when wet.
-        </p>
-        <p><strong>Cost:</strong> $8–$15/sq ft | <strong>Best for:</strong> Covered patios, modern homes, mild climates</p>
-
-        <h3>16. Geometric Saw-Cut Design</h3>
-        <p>
-          Instead of standard square control joints, use a concrete saw to cut custom geometric patterns — triangles, hexagons, diagonal grids, or asymmetric shapes. The joints serve the same functional purpose (crack control) but become a design feature. Fill with contrasting caulk for added impact.
-        </p>
-        <p><strong>Cost:</strong> $8–$13/sq ft | <strong>Best for:</strong> Modern/minimalist homes, small patios where detail is visible</p>
-
-        <h3>17. Concrete &amp; Grass Grid</h3>
-        <p>
-          Alternating concrete pavers or poured sections with grass or ground cover strips. This permeable design manages stormwater, meets green building requirements, and creates a striking visual pattern. The grass strips can be 2-4&quot; wide between 18-24&quot; concrete squares or rectangles.
-        </p>
-        <p><strong>Cost:</strong> $10–$16/sq ft | <strong>Best for:</strong> Eco-conscious homeowners, modern landscape designs</p>
-
-        <h3>18. Floating Slab Steps</h3>
-        <p>
-          For sloped yards, a series of concrete platforms at different levels connected by short steps — each &quot;floating&quot; independently. This creates a dramatic terraced outdoor living space with multiple zones for dining, lounging, and entertaining.
-        </p>
-        <p><strong>Cost:</strong> $15–$25/sq ft (including grade work) | <strong>Best for:</strong> Sloped lots, multi-level entertaining spaces</p>
-
-        <h3>19. Minimalist White Concrete</h3>
-        <p>
-          Using white portland cement creates a clean, bright white concrete surface. Pair with black metal furniture, dark planters, and architectural landscaping for a high-end minimalist aesthetic. Seal with a UV-resistant clear sealer to prevent yellowing.
-        </p>
-        <p><strong>Cost:</strong> $12–$16/sq ft (white cement is 2-3× standard cost) | <strong>Best for:</strong> Contemporary homes, Mediterranean styles</p>
-
-        <h2>Budget-Friendly Patio Ideas</h2>
-
-        <h3>20. Basic Brushed Slab + String Lights</h3>
-        <p>
-          The most affordable patio option — a simple broom-finished slab — transforms completely with the right furniture and overhead string lights. The patio itself costs $6–$10/sq ft, and $30-50 in string lights makes it Instagram-worthy. Don&apos;t underestimate simple and well-furnished.
-        </p>
-        <p><strong>Cost:</strong> $6–$10/sq ft | <strong>Best for:</strong> First-time homeowners, rental properties, tight budgets</p>
-
-        <h3>21. Stenciled Concrete</h3>
-        <p>
-          Apply stencils to existing or new concrete, then roll on a thin polymer overlay in a contrasting color. When the stencil is removed, it reveals a pattern that looks like tile, stone, or brick — at a fraction of the cost of stamping. Popular patterns: Moroccan tile, basketweave, fan shapes.
-        </p>
-        <p><strong>Cost:</strong> $4–$8/sq ft (over existing slab) | <strong>Best for:</strong> Refreshing old patios, renters (some are removable)</p>
-
-        <h3>22. Painted Concrete</h3>
-        <p>
-          Concrete floor paint or porch paint ($30–$50/gallon, covers ~200 sq ft) is the cheapest way to transform an existing patio. Use masking tape to create stripes, checkerboard patterns, or faux-tile designs. Not as durable as stain but easy to refresh every 2-3 years.
-        </p>
-        <p><strong>Cost:</strong> $0.50–$1.50/sq ft DIY | <strong>Best for:</strong> DIYers, temporary improvements, rental properties</p>
-
-        <h2>Premium Patio Ideas</h2>
-
-        <h3>23. Stamped Concrete with Fire Pit</h3>
-        <p>
-          A stamped concrete patio with a built-in gas or wood-burning fire pit creates the ultimate outdoor living room. The fire pit can be formed from the same concrete pour, faced with stone veneer, and surrounded by a circular stamped pattern that radiates outward. Include gas line plumbing during the pour for a seamless gas fire pit installation.
-        </p>
-        <p><strong>Cost:</strong> $18–$30/sq ft (including fire pit) | <strong>Best for:</strong> Entertaining-focused homeowners, large backyards</p>
-
-        <h3>24. Concrete &amp; Natural Stone Mix</h3>
-        <p>
-          Combine poured concrete sections with inlaid natural stone accents — flagstone borders, river rock channels, or stone mosaic centerpieces. The concrete provides the structural base and large-area coverage at reasonable cost, while natural stone adds premium texture and visual interest at key focal points.
-        </p>
-        <p><strong>Cost:</strong> $15–$25/sq ft | <strong>Best for:</strong> Transitional homes, craftsman styles, hillside lots</p>
-
-        <h3>25. Outdoor Kitchen Concrete Slab</h3>
-        <p>
-          A purpose-built concrete slab for an outdoor kitchen needs extra considerations: thicker pour (6&quot;+) under heavy appliances, conduit for electrical/gas before pouring, proper drainage slope away from the house, and a non-slip finish in the cooking zone. Score the slab into zones (cooking, prep, dining) with decorative saw cuts.
-        </p>
-        <p><strong>Cost:</strong> $12–$20/sq ft (slab only, utilities extra) | <strong>Best for:</strong> Serious outdoor entertainers, high-end renovations</p>
-
-        <h2>Design Tips from Contractors</h2>
-
-        <ol>
-          <li><strong>Always slope away from the house.</strong> Minimum 1/4&quot; per foot of fall. Water pooling against the foundation causes basement leaks and structural issues.</li>
-          <li><strong>Bigger is better for entertaining.</strong> A 10&apos;×10&apos; patio feels cramped with furniture. Plan for at least 12&apos;×16&apos; (192 sq ft) for a dining set, or 16&apos;×20&apos; (320 sq ft) for dining plus a seating area.</li>
-          <li><strong>Consider sun patterns.</strong> Track where shade falls during peak afternoon hours. Position dining areas in shade; lounge areas can be sunny. A patio in full afternoon sun may need a pergola or shade sail.</li>
-          <li><strong>Plan for furniture placement before pouring.</strong> Know where the dining table, grill, fire pit, and seating will go. This determines the patio shape, size, and where you need non-slip finishes vs. decorative finishes.</li>
-          <li><strong>Don&apos;t cheap out on the base.</strong> A properly compacted 4-6&quot; gravel base prevents settling and cracking. Skipping this to save $500 will cost $3,000+ in repairs later.</li>
-          <li><strong>Use expansion joints at all house connections.</strong> Concrete moves differently than your house. Without expansion joints, the patio will crack where it meets the foundation wall.</li>
-          <li><strong>Add landscape lighting conduit before the pour.</strong> Running conduit through or under the slab before pouring costs almost nothing. Adding it after costs hundreds in cutting and patching.</li>
-        </ol>
-
-        <h2>Maintenance by Patio Type</h2>
-
-        <div className="overflow-x-auto not-prose my-8">
-          <table className="min-w-full border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-left">Patio Type</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Seal Frequency</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Annual Cost</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Biggest Risk</th>
+        <div className="not-prose overflow-x-auto my-6">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold">Patio Style</th>
+                <th className="text-left px-4 py-2 font-semibold">Cost/sq ft (installed)</th>
+                <th className="text-left px-4 py-2 font-semibold">400 sq ft Total</th>
+                <th className="text-left px-4 py-2 font-semibold">Maintenance Level</th>
+                <th className="text-left px-4 py-2 font-semibold">DIY Friendly?</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Brushed/plain</td>
-                <td className="border border-gray-300 px-4 py-2">Every 3-5 years</td>
-                <td className="border border-gray-300 px-4 py-2">$50–$100</td>
-                <td className="border border-gray-300 px-4 py-2">Staining</td>
+              <tr className="border-t">
+                <td className="px-4 py-2">Broom finish (basic)</td>
+                <td className="px-4 py-2">$6–$10</td>
+                <td className="px-4 py-2">$2,400–$4,000</td>
+                <td className="px-4 py-2">Very Low</td>
+                <td className="px-4 py-2">Yes</td>
               </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Stamped</td>
-                <td className="border border-gray-300 px-4 py-2">Every 2-3 years</td>
-                <td className="border border-gray-300 px-4 py-2">$100–$200</td>
-                <td className="border border-gray-300 px-4 py-2">Sealer peeling/whitening</td>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Brushed / swirl finish</td>
+                <td className="px-4 py-2">$7–$11</td>
+                <td className="px-4 py-2">$2,800–$4,400</td>
+                <td className="px-4 py-2">Very Low</td>
+                <td className="px-4 py-2">Yes</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Stained</td>
-                <td className="border border-gray-300 px-4 py-2">Every 1-2 years</td>
-                <td className="border border-gray-300 px-4 py-2">$75–$150</td>
-                <td className="border border-gray-300 px-4 py-2">Color fading (UV exposure)</td>
+              <tr className="border-t">
+                <td className="px-4 py-2">Colored concrete (integral)</td>
+                <td className="px-4 py-2">$8–$14</td>
+                <td className="px-4 py-2">$3,200–$5,600</td>
+                <td className="px-4 py-2">Low</td>
+                <td className="px-4 py-2">Moderate</td>
               </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">Exposed aggregate</td>
-                <td className="border border-gray-300 px-4 py-2">Every 2-3 years</td>
-                <td className="border border-gray-300 px-4 py-2">$100–$150</td>
-                <td className="border border-gray-300 px-4 py-2">Aggregate pop-outs</td>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Exposed aggregate</td>
+                <td className="px-4 py-2">$10–$18</td>
+                <td className="px-4 py-2">$4,000–$7,200</td>
+                <td className="px-4 py-2">Low</td>
+                <td className="px-4 py-2">No</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-2">Polished</td>
-                <td className="border border-gray-300 px-4 py-2">Annually (guard reapply)</td>
-                <td className="border border-gray-300 px-4 py-2">$50–$100</td>
-                <td className="border border-gray-300 px-4 py-2">Scratching (outdoor furniture)</td>
+              <tr className="border-t">
+                <td className="px-4 py-2">Acid-stained concrete</td>
+                <td className="px-4 py-2">$8–$16</td>
+                <td className="px-4 py-2">$3,200–$6,400</td>
+                <td className="px-4 py-2">Medium</td>
+                <td className="px-4 py-2">Moderate</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Polished concrete</td>
+                <td className="px-4 py-2">$8–$15</td>
+                <td className="px-4 py-2">$3,200–$6,000</td>
+                <td className="px-4 py-2">Medium</td>
+                <td className="px-4 py-2">No</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Stamped concrete</td>
+                <td className="px-4 py-2">$12–$22</td>
+                <td className="px-4 py-2">$4,800–$8,800</td>
+                <td className="px-4 py-2">Medium</td>
+                <td className="px-4 py-2">No</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Concrete with paver borders</td>
+                <td className="px-4 py-2">$14–$24</td>
+                <td className="px-4 py-2">$5,600–$9,600</td>
+                <td className="px-4 py-2">Low–Medium</td>
+                <td className="px-4 py-2">Moderate</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
-          <h3 className="text-lg font-bold text-gray-900 mb-3">📐 Calculate Your Patio Cost</h3>
-          <p className="text-gray-700 mb-4">
-            Use our free patio calculator to estimate exactly how much concrete, rebar, and labor your patio project will need.
+        <p>
+          Use our <Link href="/calculators/patio">Patio Calculator</Link> to get a precise cost estimate tailored to your exact dimensions and chosen finish. Now let&apos;s explore each style in detail.
+        </p>
+
+        {/* --- STAMPED CONCRETE --- */}
+        <h2 id="stamped-concrete-patio">1–5. Stamped Concrete Patio Ideas</h2>
+        <p>
+          Stamped concrete is the king of decorative patios. Fresh concrete is imprinted with rubber mats that replicate the texture and pattern of natural stone, brick, slate, or wood. Combined with integral color and release agents, the result can look nearly identical to much more expensive materials — at a fraction of the cost.
+        </p>
+
+        <h3>Popular Stamped Patterns</h3>
+        <ol>
+          <li><strong>Ashlar slate:</strong> The most popular pattern nationwide. Mimics cut natural slate with irregular rectangular shapes. Works beautifully with earth tones — tan, gray, or sandstone. Cost: <strong>$12–$18/sq ft</strong>.</li>
+          <li><strong>Herringbone brick:</strong> Classic zigzag pattern that replicates a traditional brick patio without the shifting, settling, or weed problems. Ideal for Colonial and farmhouse styles. Cost: <strong>$13–$19/sq ft</strong>.</li>
+          <li><strong>Random stone / fieldstone:</strong> Natural, organic shapes that look like laid flagstone. Excellent for rustic and cottage-style homes. Cost: <strong>$14–$20/sq ft</strong>.</li>
+          <li><strong>Wood plank:</strong> Yes, concrete can look like wood. Wood-plank stamps create a deck-like appearance that never rots, warps, or needs staining. Cost: <strong>$14–$22/sq ft</strong>.</li>
+          <li><strong>Cobblestone:</strong> Old-world European aesthetic. Small, rounded stone shapes work well for pathways and borders. Cost: <strong>$15–$22/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Pro tip:</strong> Stamped concrete requires a release agent (either liquid or powder) that creates the color contrast between the base color and the grooves. Powder release gives a more dramatic, antiqued look. Liquid release is subtler and less messy. Ask your contractor which they prefer and why.
+        </p>
+
+        <p>
+          <strong>Maintenance:</strong> Reseal every 2–3 years with an acrylic sealer ($0.50–$1.50/sq ft if you DIY; $1.50–$3/sq ft professionally). Without resealing, the color fades and the surface becomes more susceptible to scaling in freeze-thaw climates.
+        </p>
+
+        <p>
+          For a complete price breakdown, see our <Link href="/blog/stamped-concrete-cost-guide">stamped concrete cost guide</Link>.
+        </p>
+
+        {/* --- STAINED CONCRETE --- */}
+        <h2 id="stained-concrete-patio">6–9. Stained Concrete Patio Ideas</h2>
+        <p>
+          Concrete staining transforms plain gray concrete into a rich, colorful surface. Unlike paint (which sits on top and peels), stains penetrate the concrete and create permanent color that won&apos;t chip or flake. There are two main types:
+        </p>
+
+        <h3>Acid Stain vs. Water-Based Stain</h3>
+        <div className="not-prose overflow-x-auto my-6">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold">Feature</th>
+                <th className="text-left px-4 py-2 font-semibold">Acid Stain</th>
+                <th className="text-left px-4 py-2 font-semibold">Water-Based Stain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-4 py-2">Color range</td>
+                <td className="px-4 py-2">Limited (earth tones: amber, brown, green, blue-black)</td>
+                <td className="px-4 py-2">Wide (virtually any color)</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Appearance</td>
+                <td className="px-4 py-2">Mottled, variegated, natural — each slab unique</td>
+                <td className="px-4 py-2">More uniform and predictable</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Cost (material + labor)</td>
+                <td className="px-4 py-2">$4–$8/sq ft</td>
+                <td className="px-4 py-2">$2–$6/sq ft</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">DIY difficulty</td>
+                <td className="px-4 py-2">Hard (requires neutralizing, messy)</td>
+                <td className="px-4 py-2">Moderate (easier cleanup)</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Durability</td>
+                <td className="px-4 py-2">Permanent chemical reaction</td>
+                <td className="px-4 py-2">Very durable (sealer required)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Stained Patio Ideas</h3>
+        <ol start={6}>
+          <li><strong>Warm terra cotta acid stain:</strong> Amber and rust-colored acid stains create a Mediterranean warmth that pairs beautifully with outdoor furniture and greenery. The natural variation means no two patios look alike. Cost: <strong>$8–$14/sq ft</strong> on new concrete.</li>
+          <li><strong>Multi-tone layered stain:</strong> Applying two or three stain colors in layers creates depth and visual interest. A brown base with amber highlights mimics natural stone. Cost: <strong>$10–$16/sq ft</strong>.</li>
+          <li><strong>Stained concrete with saw-cut borders:</strong> Shallow saw cuts create &quot;tile&quot; or geometric patterns, and different stain colors fill each section. This achieves a tile look without grout lines. Cost: <strong>$10–$18/sq ft</strong>.</li>
+          <li><strong>Black acid stain (modern look):</strong> A dark charcoal or black acid stain gives an ultra-modern, sleek appearance. Pairs well with minimalist landscaping and contemporary architecture. Cost: <strong>$8–$14/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Maintenance:</strong> Stained patios need resealing every 1–2 years for outdoor use. UV exposure fades some colors over time, especially lighter water-based stains. A high-quality UV-stable sealer extends the life significantly.
+        </p>
+
+        <p>
+          Learn more in our <Link href="/blog/concrete-staining-guide">concrete staining guide</Link> and <Link href="/blog/concrete-stain-colors-guide">stain color guide</Link>.
+        </p>
+
+        {/* --- POLISHED CONCRETE --- */}
+        <h2 id="polished-concrete-patio">10–12. Polished Concrete Patio Ideas</h2>
+        <p>
+          Polished concrete uses industrial diamond grinders to progressively refine the surface from rough to mirror-smooth. While more common indoors, polished concrete works beautifully for covered patios, screened porches, and pool decks in warm climates.
+        </p>
+
+        <ol start={10}>
+          <li><strong>Cream polish (smooth, no aggregate exposure):</strong> The lightest grind that produces a smooth, refined surface without exposing the stone aggregate underneath. Clean, modern appearance. Cost: <strong>$3–$7/sq ft</strong> (polishing only; concrete slab separate).</li>
+          <li><strong>Salt-and-pepper polish:</strong> Slightly deeper grind that reveals fine aggregate particles, creating a speckled appearance. The most popular polishing level for residential patios. Cost: <strong>$5–$10/sq ft</strong>.</li>
+          <li><strong>Full aggregate exposure:</strong> Deep grinding reveals the full decorative aggregate. If you use premium stone in the concrete mix (granite, quartz, marble chips), this creates a terrazzo-like floor. Cost: <strong>$8–$15/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Important caveat:</strong> Polished concrete can be slippery when wet. For uncovered outdoor patios, consider a polished look with an anti-slip additive in the final sealer coat, or opt for a honed (matte) finish that provides similar aesthetics with better traction.
+        </p>
+
+        <p>
+          For a complete breakdown of polishing processes and costs, see our <Link href="/blog/concrete-polishing-guide">concrete polishing guide</Link>.
+        </p>
+
+        {/* --- COLORED CONCRETE --- */}
+        <h2 id="colored-concrete-patio">13–16. Colored Concrete Patio Ideas</h2>
+        <p>
+          Colored concrete uses pigments mixed directly into the concrete (integral color) or applied to the surface (color hardener). The result is a consistently colored slab that doesn&apos;t fade like stains or peel like paint. This is the simplest way to elevate a basic patio.
+        </p>
+
+        <ol start={13}>
+          <li><strong>Warm sandstone/buff:</strong> The most popular concrete color. This warm, neutral tone complements almost any home exterior and landscaping. Adds $1–$2/sq ft to a basic pour. Total installed: <strong>$8–$12/sq ft</strong>.</li>
+          <li><strong>Charcoal gray:</strong> Modern and sophisticated. Dark gray concrete makes outdoor furniture pop and hides stains well. Cost: <strong>$8–$13/sq ft</strong>.</li>
+          <li><strong>Red/brick tone:</strong> Integral red oxide creates a warm, traditional look that mimics brick at a fraction of the cost. Cost: <strong>$9–$14/sq ft</strong>.</li>
+          <li><strong>Two-tone colored borders:</strong> Pour the main patio in one color and the border band in a contrasting shade. This simple technique adds a custom, high-end look for minimal extra cost. Cost: <strong>$10–$16/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Pro tip:</strong> Always ask for a sample slab or test pour before committing to a color. Integral color looks different wet vs. dry, and the exact shade varies slightly with water content, curing conditions, and cement brand. A good contractor will pour a 2×2 sample and let it cure for comparison.
+        </p>
+
+        {/* --- EXPOSED AGGREGATE --- */}
+        <h2 id="exposed-aggregate-patio">17–19. Exposed Aggregate Patio Ideas</h2>
+        <p>
+          Exposed aggregate concrete reveals the natural stone, pebbles, and sand within the concrete mix by washing or blasting away the top layer of cement paste before it fully cures. The result is a beautiful, textured surface with excellent slip resistance.
+        </p>
+
+        <ol start={17}>
+          <li><strong>Natural river pebble aggregate:</strong> Smooth, rounded river stones in tan, brown, and gray create a warm, organic surface. The most traditional exposed aggregate look. Cost: <strong>$10–$16/sq ft</strong>.</li>
+          <li><strong>Decorative glass aggregate:</strong> Recycled glass chips mixed into the concrete create a sparkling, modern surface that catches the light. Available in blue, green, amber, and clear. Cost: <strong>$14–$22/sq ft</strong>.</li>
+          <li><strong>Seeded aggregate (premium stone):</strong> Instead of relying on the aggregate already in the mix, premium stones (white marble, black granite, or colored quartz) are pressed into the surface before washing. This gives you complete control over the appearance. Cost: <strong>$16–$25/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Maintenance:</strong> Exposed aggregate is one of the most durable and low-maintenance patio finishes. Seal every 3–5 years to maintain color vibrancy and protect against stains. The textured surface hides dirt well and provides excellent traction even when wet.
+        </p>
+
+        <p>
+          Read our full <Link href="/blog/exposed-aggregate-concrete-guide">exposed aggregate guide</Link> for more details.
+        </p>
+
+        {/* --- BRUSHED/BROOM FINISH --- */}
+        <h2 id="brushed-concrete-patio">20–22. Brushed &amp; Textured Concrete Patio Ideas</h2>
+        <p>
+          Don&apos;t underestimate the humble broom finish. With smart design choices — borders, scoring patterns, and color — a brushed concrete patio can look fantastic for a fraction of the cost of decorative finishes.
+        </p>
+
+        <ol start={20}>
+          <li><strong>Broom finish with saw-cut geometric pattern:</strong> A standard broom-finish pour with decorative saw cuts creating large diamond, square, or diagonal patterns. The scoring adds visual interest at minimal cost. Cost: <strong>$7–$11/sq ft</strong>.</li>
+          <li><strong>Swirl finish:</strong> Instead of straight broom lines, the finisher uses a hand trowel or broom in circular motions to create a swirl pattern. More visually interesting than standard broom while remaining slip-resistant. Cost: <strong>$7–$12/sq ft</strong>.</li>
+          <li><strong>Rock salt texture:</strong> Rock salt is pressed into wet concrete and dissolves during curing, leaving small pits and dimples that create a unique, natural texture. Cost: <strong>$7–$12/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          <strong>Why contractors love broom finish:</strong> It&apos;s forgiving. Small imperfections in the pour are hidden by the texture. The finish provides excellent drainage and traction. And it&apos;s the fastest to complete — which means lower labor costs for you.
+        </p>
+
+        {/* --- PAVER BORDERS --- */}
+        <h2 id="paver-border-patio">23–25. Concrete Patio with Paver Borders</h2>
+        <p>
+          Combining concrete with paver borders gives you the strength and cost-effectiveness of a poured slab with the decorative appeal of pavers at the edges. This hybrid approach is increasingly popular because it looks high-end but costs far less than a full paver patio.
+        </p>
+
+        <ol start={23}>
+          <li><strong>Stamped concrete center with natural stone border:</strong> The main patio area is stamped concrete, with a 12–18 inch border of real flagstone, bluestone, or travertine pavers. Cost: <strong>$16–$24/sq ft</strong> overall.</li>
+          <li><strong>Broom-finish concrete with brick soldier course:</strong> A clean broom-finish patio framed by a row of brick pavers laid end-to-end. Classic and timeless. Cost: <strong>$10–$16/sq ft</strong>.</li>
+          <li><strong>Colored concrete with contrasting paver band:</strong> Two bands of pavers — one at the perimeter and one creating a geometric inset — with colored concrete filling the main areas. Cost: <strong>$14–$22/sq ft</strong>.</li>
+        </ol>
+
+        <p>
+          For more on comparing poured concrete to pavers, see our <Link href="/blog/concrete-vs-pavers">concrete vs. pavers comparison</Link>.
+        </p>
+
+        {/* --- DESIGN TIPS --- */}
+        <h2 id="design-tips">Design Tips for Any Concrete Patio</h2>
+        <p>
+          Regardless of which style you choose, these design principles will help you get the most from your investment:
+        </p>
+
+        <h3>Size and Layout</h3>
+        <ul>
+          <li><strong>Minimum useful size:</strong> 10×12 feet (120 sq ft) for a dining set. 12×16 feet (192 sq ft) for dining plus lounge seating. 16×20 feet (320 sq ft) for a full outdoor living space.</li>
+          <li><strong>Traffic flow:</strong> Leave at least 3 feet of clearance around furniture for walkways. Plan where people will enter and exit the patio.</li>
+          <li><strong>Drainage slope:</strong> Always slope the patio away from the house at a minimum of 1/8 inch per foot (1% grade). This prevents water from pooling against your foundation.</li>
+        </ul>
+
+        <h3>Color Selection</h3>
+        <ul>
+          <li><strong>Match your home&apos;s undertones:</strong> Warm-toned homes (brick, wood siding) look best with warm concrete colors (tan, buff, terra cotta). Cool-toned homes (gray stone, painted siding) pair better with gray, charcoal, or blue-gray concrete.</li>
+          <li><strong>Consider sun exposure:</strong> Dark colors absorb heat and can become uncomfortably hot in direct sun. In southern climates, lighter colors keep the patio cooler underfoot.</li>
+          <li><strong>Test before you commit:</strong> Always request a concrete sample in your chosen color. Colors look different in photos, on screens, and in real life.</li>
+        </ul>
+
+        <h3>Smart Add-ons Worth the Investment</h3>
+        <ul>
+          <li><strong>Built-in fire pit pad:</strong> Pour a thickened, heat-resistant section for a fire pit ($200–$500 extra). Much cheaper than adding one later.</li>
+          <li><strong>Low-voltage lighting conduit:</strong> Install PVC conduit under the slab during the pour for future landscape lighting ($50–$100 in materials).</li>
+          <li><strong>Integrated seating walls:</strong> Poured concrete seat walls at the patio perimeter provide built-in seating and double as planters. Cost: $30–$60/linear foot.</li>
+        </ul>
+
+        {/* --- COST FACTORS --- */}
+        <h2 id="cost-factors">What Drives Concrete Patio Costs Up or Down?</h2>
+
+        <div className="not-prose overflow-x-auto my-6">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold">Factor</th>
+                <th className="text-left px-4 py-2 font-semibold">Impact on Cost</th>
+                <th className="text-left px-4 py-2 font-semibold">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-4 py-2">Patio size</td>
+                <td className="px-4 py-2">Lower $/sq ft at scale</td>
+                <td className="px-4 py-2">Larger patios cost less per square foot (setup costs are fixed)</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Finish type</td>
+                <td className="px-4 py-2">+$0 to +$15/sq ft</td>
+                <td className="px-4 py-2">Broom is cheapest; stamped and custom aggregate are most expensive</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Site conditions</td>
+                <td className="px-4 py-2">+$500 to +$5,000</td>
+                <td className="px-4 py-2">Slopes, poor soil, tree removal, old concrete demolition</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Access for concrete truck</td>
+                <td className="px-4 py-2">+$0 to +$1,500</td>
+                <td className="px-4 py-2">If a truck can&apos;t reach the site, wheelbarrow or pump adds cost</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Reinforcement</td>
+                <td className="px-4 py-2">+$0.35 to +$2/sq ft</td>
+                <td className="px-4 py-2">Wire mesh for patios; rebar for driveways or heavy load areas</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Geographic location</td>
+                <td className="px-4 py-2">±20–40%</td>
+                <td className="px-4 py-2">Coastal and metro areas cost 20–40% more than rural/Midwest</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Season</td>
+                <td className="px-4 py-2">-10 to -20%</td>
+                <td className="px-4 py-2">Fall and late winter pours are often cheaper (lower demand)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          For detailed cost data, check our <Link href="/blog/concrete-patio-cost-guide">concrete patio cost guide</Link> and <Link href="/blog/concrete-slab-cost-guide">slab cost guide</Link>.
+        </p>
+
+        {/* --- DIY CONSIDERATIONS --- */}
+        <h2 id="diy-considerations">Can You DIY a Decorative Concrete Patio?</h2>
+        <p>
+          Some concrete patio ideas lend themselves to DIY; others absolutely require a professional. Here&apos;s an honest assessment:
+        </p>
+
+        <h3>Good DIY Candidates</h3>
+        <ul>
+          <li><strong>Broom finish patio (under 150 sq ft):</strong> If you can handle the physical work and have 2–3 helpers on pour day, a small broom-finish patio is achievable. Budget $4–$6/sq ft in materials.</li>
+          <li><strong>Water-based stain on existing concrete:</strong> Staining an existing patio is a great weekend project. Clean, apply stain, seal — total cost $1–$3/sq ft in materials.</li>
+          <li><strong>Concrete with paver border:</strong> Pour a simple slab and then lay paver borders yourself. The concrete pour is the hard part; the pavers are straightforward.</li>
+        </ul>
+
+        <h3>Hire a Pro For These</h3>
+        <ul>
+          <li><strong>Stamped concrete:</strong> The timing is critical. You have about 30 minutes to stamp before the concrete hardens too much. One mistake ruins the entire surface. Always hire experienced stamping contractors.</li>
+          <li><strong>Polished concrete:</strong> Requires specialized diamond grinding equipment worth $10,000+ and significant experience to get even results.</li>
+          <li><strong>Exposed aggregate:</strong> The wash timing is extremely precise — wash too early and the aggregate dislodges; wash too late and you can&apos;t expose it. Leave this to the pros.</li>
+          <li><strong>Large pours (300+ sq ft):</strong> The sheer volume of concrete and the speed required to finish it before it sets makes large pours a team effort with experienced finishers.</li>
+        </ul>
+
+        {/* --- LONGEVITY --- */}
+        <h2 id="longevity">How Long Do Concrete Patios Last?</h2>
+        <p>
+          A properly installed concrete patio lasts <strong>25–50+ years</strong> with minimal maintenance. Here&apos;s how different finishes compare in terms of longevity:
+        </p>
+
+        <div className="not-prose overflow-x-auto my-6">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold">Finish</th>
+                <th className="text-left px-4 py-2 font-semibold">Expected Lifespan</th>
+                <th className="text-left px-4 py-2 font-semibold">Key Maintenance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-4 py-2">Broom / brushed</td>
+                <td className="px-4 py-2">30–50+ years</td>
+                <td className="px-4 py-2">Seal every 3–5 years (optional)</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Colored concrete</td>
+                <td className="px-4 py-2">30–50+ years</td>
+                <td className="px-4 py-2">Color is permanent; seal to prevent surface wear</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Exposed aggregate</td>
+                <td className="px-4 py-2">30–50+ years</td>
+                <td className="px-4 py-2">Seal every 3–5 years</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Stamped concrete</td>
+                <td className="px-4 py-2">25–40 years</td>
+                <td className="px-4 py-2">Reseal every 2–3 years; reapply color if faded</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">Stained concrete</td>
+                <td className="px-4 py-2">25–40 years</td>
+                <td className="px-4 py-2">Reseal every 1–2 years outdoors</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Polished concrete</td>
+                <td className="px-4 py-2">30–50+ years</td>
+                <td className="px-4 py-2">Repolish every 5–10 years (covered patios)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          The biggest threats to patio longevity are poor drainage (water pooling leads to cracking in freeze-thaw climates), inadequate base preparation (settling causes cracking), and lack of control joints (which direct where cracks form). A good contractor addresses all three during installation.
+        </p>
+
+        {/* --- GETTING STARTED --- */}
+        <h2 id="getting-started">How to Get Started with Your Concrete Patio</h2>
+        <ol>
+          <li><strong>Define your budget and style.</strong> Use the cost comparison table above to narrow down which finishes fit your budget. Remember: it&apos;s better to have a smaller patio with a beautiful finish than a huge slab of plain gray concrete.</li>
+          <li><strong>Measure your space.</strong> Use our <Link href="/calculators/patio">Patio Calculator</Link> to figure out exactly how much concrete you&apos;ll need and what it will cost.</li>
+          <li><strong>Get 3 contractor quotes.</strong> Always get at least three written estimates. Make sure each quote specifies the same thickness, reinforcement, finish, and base preparation so you&apos;re comparing apples to apples.</li>
+          <li><strong>Check references and past work.</strong> For decorative finishes especially, ask to see previous projects in person. Photos can be misleading — go look at actual patios the contractor has completed.</li>
+          <li><strong>Schedule strategically.</strong> Late fall and early spring often yield the best prices as contractors have lighter schedules. Avoid the May–July rush if your timeline is flexible.</li>
+        </ol>
+
+        <div className="bg-gray-900 text-white rounded-lg p-8 not-prose my-8 text-center">
+          <h3 className="text-2xl font-bold mb-3">Create Professional Patio Estimates in Minutes</h3>
+          <p className="text-gray-400 mb-6 max-w-lg mx-auto">
+            Our Pro Estimate Template includes material quantities, labor costs, and total project pricing for every concrete patio style. Perfect for contractors building bids or homeowners comparing quotes.
           </p>
-          <Link href="/calculators/patio" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700">
-            Try Our Patio Calculator →
+          <Link
+            href="/templates"
+            className="bg-orange-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-orange-700 transition inline-block"
+          >
+            Get the Pro Estimate Template — $49
           </Link>
         </div>
 
-        <h2>Frequently Asked Questions</h2>
-
-        <h3>How thick should a concrete patio be?</h3>
-        <p>
-          Standard residential patio: 4 inches. If you&apos;ll park a vehicle on it or install heavy features (outdoor kitchen, hot tub): 6 inches. Always pour on 4-6 inches of compacted gravel base.
-        </p>
-
-        <h3>How long does a concrete patio last?</h3>
-        <p>
-          With proper installation and maintenance: 25-50 years. The biggest lifespan killers are poor drainage (causes settling), skipping sealer (allows water damage), and inadequate base preparation.
-        </p>
-
-        <h3>Is a concrete patio cheaper than pavers?</h3>
-        <p>
-          Yes — poured concrete is typically 30-50% cheaper than pavers for the same area. Pavers cost $10–$25/sq ft installed vs. $6–$18/sq ft for poured concrete. However, pavers are easier to repair individually and don&apos;t crack. See our <Link href="/blog/stamped-concrete-vs-pavers" className="text-orange-600 hover:underline">stamped concrete vs pavers comparison</Link>.
-        </p>
-
-        <h3>Do I need a permit for a concrete patio?</h3>
-        <p>
-          It depends on your municipality. Many areas require a permit for any concrete work over a certain size (typically 200 sq ft or if it&apos;s attached to the house). Always check with your local building department before starting. Fines for unpermitted work can be $500-$5,000+.
-        </p>
-
-        <h3>When is the best time to pour a concrete patio?</h3>
-        <p>
-          Spring and fall — temperatures between 50-80°F are ideal. Avoid pouring in direct hot sun (causes rapid curing and surface cracking) or when temperatures will drop below 40°F within 48 hours. Early morning pours in summer help you finish before peak heat.
-        </p>
-
-      </article>
-
-      <div className="mt-12 border-t border-gray-200 pt-8">
-        <h3 className="text-lg font-bold text-gray-900 mb-4">Related Articles</h3>
-        <ul className="space-y-2">
-          <li><Link href="/blog/stamped-concrete-cost-guide" className="text-orange-600 hover:underline">Stamped Concrete Cost Guide 2026</Link></li>
-          <li><Link href="/blog/stamped-concrete-vs-pavers" className="text-orange-600 hover:underline">Stamped Concrete vs. Pavers</Link></li>
-          <li><Link href="/blog/concrete-staining-guide" className="text-orange-600 hover:underline">Concrete Staining Guide</Link></li>
-          <li><Link href="/blog/concrete-polishing-guide" className="text-orange-600 hover:underline">Concrete Polishing Guide</Link></li>
-          <li><Link href="/blog/concrete-patio-cost-calculator" className="text-orange-600 hover:underline">Concrete Patio Cost Calculator</Link></li>
+        <h2 id="calculators">Free Concrete Calculators</h2>
+        <p>Get instant estimates for your project:</p>
+        <ul>
+          <li><Link href="/calculators/patio">Concrete Patio Calculator</Link> — Patio-specific sizing, cubic yards, and cost estimates</li>
+          <li><Link href="/calculators/slab">Concrete Slab Calculator</Link> — General slab calculations for any project</li>
+          <li><Link href="/calculators/stamped">Stamped Concrete Calculator</Link> — Stamped patio cost and material estimates</li>
+          <li><Link href="/calculators/driveway">Driveway Calculator</Link> — Driveway-specific sizing and costs</li>
         </ul>
-      </div>
+        <p>
+          For more project guides, explore our articles on <Link href="/blog/concrete-patio-cost-guide">patio costs</Link>, <Link href="/blog/concrete-finishing-techniques">finishing techniques</Link>, and <Link href="/blog/decorative-concrete-guide">decorative concrete options</Link>.
+        </p>
+      </article>
     </div>
   );
 }
