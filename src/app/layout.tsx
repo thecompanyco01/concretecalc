@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Professional concrete calculators built for contractors. Estimate slabs, driveways, patios, footings & more. Free tools + premium templates for concrete businesses.",
   keywords:
     "concrete calculator, concrete slab calculator, concrete cost calculator, concrete estimate, concrete bidding",
-  metadataBase: new URL("https://concretecalc.vercel.app"),
+  metadataBase: new URL("https://estimateconcrete.com"),
   openGraph: {
     type: "website",
     title: "ConcreteCalc — Free Concrete Calculators for Contractors",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Professional concrete calculators built for contractors.",
   },
   alternates: {
-    canonical: "https://concretecalc.vercel.app",
+    canonical: "https://estimateconcrete.com",
   },
 };
 
@@ -46,7 +46,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "ConcreteCalc",
-              url: "https://concretecalc.vercel.app",
+              url: "https://estimateconcrete.com",
               description:
                 "Professional concrete calculators and business tools built for contractors.",
             }),

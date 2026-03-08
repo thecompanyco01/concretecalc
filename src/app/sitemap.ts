@@ -3,7 +3,7 @@ import { getAllStateSlugs } from "./states/data";
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = "https://concretecalc.vercel.app";
+const BASE_URL = "https://estimateconcrete.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
