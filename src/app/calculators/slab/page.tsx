@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 
 const DEFAULTS = {
   concretePricePerYard: 150,
@@ -261,6 +262,10 @@ export default function SlabCalculator() {
               <p className="text-xs text-slate-400 text-center mt-2">
                 Turn this into a professional bid sheet
               </p>
+            </div>
+
+            <div className="mt-4">
+              <EmailCapture source="slab-calculator" variant="compact" />
             </div>
           </div>
         </div>

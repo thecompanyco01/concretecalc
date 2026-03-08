@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Pro Concrete Templates — Estimate Sheets, Bid Templates & Business Tools | EstimateConcrete",
@@ -78,6 +79,11 @@ export default function Templates() {
           Stop building estimates from scratch. These templates are built by concrete
           pros and designed to save you hours on every bid.
         </p>
+      </div>
+
+      {/* Free Sample Lead Magnet */}
+      <div className="mb-10">
+        <EmailCapture source="templates-page" variant="prominent" />
       </div>
 
       <div className="grid md:grid-cols-3 gap-5">
