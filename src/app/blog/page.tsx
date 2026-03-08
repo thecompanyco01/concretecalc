@@ -9,6 +9,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Complete Rebar Size Chart: Grades, Weights & Specifications (2026)",
+    slug: "rebar-size-chart",
+    excerpt:
+      "Rebar size chart with all sizes #3-#18: weight per foot, diameter, cross-sectional area, grades (40/60/75), spacing charts, lap splice lengths, tie wire requirements, and pricing for concrete contractors.",
+    date: "March 8, 2026",
+    readTime: "18 min read",
+    status: "live",
+  },
+  {
+    title: "Essential Concrete Finishing Tools: The Complete Contractor's Guide (2026)",
+    slug: "concrete-finishing-tools-guide",
+    excerpt:
+      "Complete guide to concrete finishing tools: bull floats, fresnos, edgers, groovers, trowels, knee boards, power trowels, broom finishes, stamps, and starter vs pro tool kits with real costs.",
+    date: "March 8, 2026",
+    readTime: "20 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete vs Asphalt Driveway: Cost, Durability & ROI Comparison (2026)",
+    slug: "concrete-vs-asphalt-driveway",
+    excerpt:
+      "Concrete vs asphalt driveway: complete comparison with real pricing data, 30-year total cost of ownership, climate recommendations, ROI analysis, and pros/cons for every homeowner.",
+    date: "March 8, 2026",
+    readTime: "16 min read",
+    status: "live",
+  },
+  {
     title: "Concrete Curing Compounds: Types, Application & Best Practices (2026)",
     slug: "concrete-curing-compound-guide",
     excerpt:
