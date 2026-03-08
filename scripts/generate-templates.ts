@@ -703,6 +703,171 @@ async function generateBidCalculator() {
 
   ws5.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
 
+  // --- Sheet 6: Quick Reference ---
+  const ws6 = wb.addWorksheet("Quick Reference");
+  ws6.columns = [{ width: 28 }, { width: 16 }, { width: 16 }, { width: 16 }, { width: 24 }];
+
+  ws6.mergeCells("A1:E1");
+  ws6.getCell("A1").value = "CONCRETE QUICK REFERENCE GUIDE";
+  ws6.getCell("A1").font = { bold: true, size: 14, color: { argb: "FF1E293B" } };
+  ws6.getRow(1).height = 28;
+
+  ws6.mergeCells("A2:E2");
+  ws6.getCell("A2").value = "Common mix ratios, rebar spacing, curing times, and PSI recommendations";
+  ws6.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+
+  // Mix Ratios
+  let qr = 4;
+  ws6.getCell(`A${qr}`).value = "CONCRETE MIX RATIOS";
+  ws6.mergeCells(`A${qr}:E${qr}`);
+  for (let c = 1; c <= 5; c++) { ws6.getCell(qr, c).fill = HEADER_FILL; ws6.getCell(qr, c).font = HEADER_FONT; }
+  qr++;
+  ["Mix Type", "Cement", "Sand", "Gravel", "Use Case"].forEach((h, i) => { ws6.getCell(qr, i + 1).value = h; });
+  styleSubheaderRow(ws6, qr, 5);
+  qr++;
+
+  const mixRatios: [string, string, string, string, string][] = [
+    ["Standard (1:2:3)", "1 part", "2 parts", "3 parts", "General purpose — slabs, footings, walls"],
+    ["Rich (1:1.5:3)", "1 part", "1.5 parts", "3 parts", "High strength — driveways, garage floors"],
+    ["Lean (1:3:6)", "1 part", "3 parts", "6 parts", "Non-structural — fill, leveling, base"],
+    ["High Strength (1:1:2)", "1 part", "1 part", "2 parts", "Structural columns, beams, heavy loads"],
+    ["Self-Leveling", "Pre-mixed", "—", "—", "Floor overlays, leveling compound"],
+    ["Fiber-Reinforced", "Standard +", "fiber mesh", "—", "Replaces wire mesh in thin slabs"],
+  ];
+  mixRatios.forEach(([type, cement, sand, gravel, use]) => {
+    ws6.getCell(qr, 1).value = type;
+    ws6.getCell(qr, 1).font = { bold: true };
+    ws6.getCell(qr, 2).value = cement;
+    ws6.getCell(qr, 3).value = sand;
+    ws6.getCell(qr, 4).value = gravel;
+    ws6.getCell(qr, 5).value = use;
+    ws6.getCell(qr, 5).font = { size: 9 };
+    for (let c = 1; c <= 5; c++) applyBorder(ws6.getCell(qr, c));
+    qr++;
+  });
+
+  // Rebar Spacing
+  qr += 1;
+  ws6.getCell(`A${qr}`).value = "REBAR SPACING CHART";
+  ws6.mergeCells(`A${qr}:E${qr}`);
+  for (let c = 1; c <= 5; c++) { ws6.getCell(qr, c).fill = HEADER_FILL; ws6.getCell(qr, c).font = HEADER_FONT; }
+  qr++;
+  ["Slab Thickness", "Rebar Size", "Spacing", "Cover", "Application"].forEach((h, i) => { ws6.getCell(qr, i + 1).value = h; });
+  styleSubheaderRow(ws6, qr, 5);
+  qr++;
+
+  const rebarData: [string, string, string, string, string][] = [
+    ["4\" slab (residential)", "#3 or #4", "18\" × 18\"", "1.5\" from bottom", "Patios, sidewalks, light duty"],
+    ["4\" slab (driveway)", "#4", "12\" × 12\"", "2\" from bottom", "Residential driveways"],
+    ["5\" slab (heavy)", "#4", "12\" × 12\"", "2\" from bottom", "Heavy vehicle traffic"],
+    ["6\" slab (commercial)", "#4 or #5", "12\" × 12\"", "2\" from bottom", "Commercial, industrial"],
+    ["Footings (residential)", "#4", "12\" OC both ways", "3\" from earth", "Continuous footings"],
+    ["Footings (structural)", "#5 or #6", "Per engineer", "3\" from earth", "Must follow structural plans"],
+    ["Walls (8\")", "#4 vertical", "12-16\" OC", "1.5\" from face", "Foundation walls"],
+    ["Walls (10-12\")", "#5 vertical", "12\" OC + horizontal", "1.5\" from face", "Tall/structural walls"],
+  ];
+  rebarData.forEach(([thickness, size, spacing, cover, app]) => {
+    ws6.getCell(qr, 1).value = thickness;
+    ws6.getCell(qr, 2).value = size;
+    ws6.getCell(qr, 3).value = spacing;
+    ws6.getCell(qr, 4).value = cover;
+    ws6.getCell(qr, 5).value = app;
+    ws6.getCell(qr, 5).font = { size: 9 };
+    for (let c = 1; c <= 5; c++) applyBorder(ws6.getCell(qr, c));
+    qr++;
+  });
+
+  // Curing Times
+  qr += 1;
+  ws6.getCell(`A${qr}`).value = "CURING TIMES & STRENGTH DEVELOPMENT";
+  ws6.mergeCells(`A${qr}:E${qr}`);
+  for (let c = 1; c <= 5; c++) { ws6.getCell(qr, c).fill = HEADER_FILL; ws6.getCell(qr, c).font = HEADER_FONT; }
+  qr++;
+  ["Time After Pour", "% of Full Strength", "What You Can Do", "Temperature Notes", ""].forEach((h, i) => { if (h) ws6.getCell(qr, i + 1).value = h; });
+  styleSubheaderRow(ws6, qr, 4);
+  qr++;
+
+  const curingData: [string, string, string, string][] = [
+    ["24 hours", "~15-20%", "Remove forms, light foot traffic only", "Below 50°F: extend to 48 hours"],
+    ["3 days", "~40%", "Light foot traffic OK", "Keep moist or apply curing compound"],
+    ["7 days", "~65-70%", "Vehicle traffic on driveways", "Below 40°F: extend to 10-14 days"],
+    ["14 days", "~85-90%", "Normal use for most applications", "Hot weather: may reach 90% at 10 days"],
+    ["28 days", "~100%", "Full design strength reached", "Standard engineering benchmark"],
+    ["56 days", "~105-110%", "Concrete continues to strengthen slowly", "Strength gain continues for years"],
+  ];
+  curingData.forEach(([time, strength, action, notes]) => {
+    ws6.getCell(qr, 1).value = time;
+    ws6.getCell(qr, 1).font = { bold: true };
+    ws6.getCell(qr, 2).value = strength;
+    ws6.getCell(qr, 3).value = action;
+    ws6.getCell(qr, 4).value = notes;
+    ws6.getCell(qr, 4).font = { size: 9, italic: true };
+    for (let c = 1; c <= 4; c++) applyBorder(ws6.getCell(qr, c));
+    qr++;
+  });
+
+  // PSI Recommendations
+  qr += 1;
+  ws6.getCell(`A${qr}`).value = "PSI RECOMMENDATIONS BY PROJECT TYPE";
+  ws6.mergeCells(`A${qr}:E${qr}`);
+  for (let c = 1; c <= 5; c++) { ws6.getCell(qr, c).fill = HEADER_FILL; ws6.getCell(qr, c).font = HEADER_FONT; }
+  qr++;
+  ["Project Type", "Min PSI", "Recommended", "Max Slump", "Notes"].forEach((h, i) => { ws6.getCell(qr, i + 1).value = h; });
+  styleSubheaderRow(ws6, qr, 5);
+  qr++;
+
+  const psiData: [string, string, string, string, string][] = [
+    ["Sidewalks / Paths", "3000", "3500", "5\"", "Air-entrained in freeze/thaw areas"],
+    ["Patios (basic)", "3000", "3500", "5\"", "Air-entrained recommended"],
+    ["Driveways", "3500", "4000", "4-5\"", "Higher PSI = better durability"],
+    ["Garage Floors", "3500", "4000-4500", "4\"", "Lower slump for better finish"],
+    ["Stamped/Decorative", "3500", "4000", "4\"", "Lower slump for stamp definition"],
+    ["Foundations (residential)", "3000", "3500-4000", "4-5\"", "Per structural engineer spec"],
+    ["Foundation Walls", "3500", "4000-4500", "4-5\"", "Pumpable mix if using pump"],
+    ["Commercial Slabs", "4000", "4500-5000", "4\"", "Often specified by engineer"],
+    ["High-Traffic / Industrial", "4500", "5000+", "3-4\"", "May need fiber or rebar"],
+    ["Polished Concrete", "4000", "4500", "4\"", "Smoother aggregate for polish"],
+  ];
+  psiData.forEach(([type, min, rec, slump, notes]) => {
+    ws6.getCell(qr, 1).value = type;
+    ws6.getCell(qr, 2).value = min;
+    ws6.getCell(qr, 3).value = rec;
+    ws6.getCell(qr, 3).font = { bold: true };
+    ws6.getCell(qr, 4).value = slump;
+    ws6.getCell(qr, 5).value = notes;
+    ws6.getCell(qr, 5).font = { size: 9 };
+    for (let c = 1; c <= 5; c++) applyBorder(ws6.getCell(qr, c));
+    qr++;
+  });
+
+  // Quick Conversion Table
+  qr += 1;
+  ws6.getCell(`A${qr}`).value = "QUICK CONVERSIONS & FORMULAS";
+  ws6.mergeCells(`A${qr}:E${qr}`);
+  for (let c = 1; c <= 5; c++) { ws6.getCell(qr, c).fill = HEADER_FILL; ws6.getCell(qr, c).font = HEADER_FONT; }
+  qr++;
+  const conversions = [
+    "Cubic Yards = (Length × Width × Thickness in inches) ÷ 324",
+    "Square Feet to Cubic Yards (4\" thick): SF ÷ 81 = CY",
+    "Square Feet to Cubic Yards (6\" thick): SF ÷ 54 = CY",
+    "1 Cubic Yard = 27 cubic feet = ~4,050 lbs",
+    "1 Cubic Yard covers: 81 SF at 4\" thick, 54 SF at 6\" thick",
+    "Always add 10% waste factor to calculated cubic yards",
+    "Bags per CY: ~45 bags (80 lb) or ~60 bags (60 lb) per cubic yard",
+    "Water/cement ratio: 0.45-0.50 for most residential work",
+    "Control joint spacing (ft) = Slab thickness (inches) × 2.5",
+    "Minimum slope for drainage: 1/8\" per foot (1% grade)",
+  ];
+  conversions.forEach(conv => {
+    ws6.getCell(`A${qr}`).value = conv;
+    ws6.mergeCells(`A${qr}:E${qr}`);
+    ws6.getCell(`A${qr}`).font = { size: 10 };
+    applyBorder(ws6.getCell(`A${qr}`));
+    qr++;
+  });
+
+  ws6.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+
   await wb.xlsx.writeFile(path.join(OUT, "bid-calculator-pro-a8f3b2.xlsx"));
   console.log("✓ bid-calculator-pro-a8f3b2.xlsx");
 }
@@ -1000,34 +1165,26 @@ async function generateEstimate(data: EstimateConfig) {
   styleSubheaderRow(ws, r, 5);
   r++;
 
-  // Overhead with dropdown
+  // Overhead — editable yellow cell (enter any %)
   ws.getCell(r, 1).value = "Overhead %:";
   ws.getCell(r, 1).font = { bold: true };
   ws.getCell(r, 2).value = 0.10;
   ws.getCell(r, 2).numFmt = PCT_FMT;
   ws.getCell(r, 2).fill = ACCENT_FILL;
-  ws.getCell(r, 2).dataValidation = {
-    type: "list",
-    allowBlank: true,
-    formulae: ['"8%,10%,12%,15%"'],
-  };
+  ws.getCell(r, 2).note = "Enter your overhead percentage (e.g. 10%, 12%, 15%). This covers insurance, office, vehicle, phone, etc.";
   ws.getCell(r, 5).value = { formula: `E${subtotalRow}*B${r}` } as any;
   ws.getCell(r, 5).numFmt = CURRENCY_FMT;
   for (let c = 1; c <= 5; c++) applyBorder(ws.getCell(r, c));
   const overheadRow = r;
   r++;
 
-  // Profit with dropdown
+  // Profit Margin — editable yellow cell (enter any %)
   ws.getCell(r, 1).value = "Profit Margin %:";
   ws.getCell(r, 1).font = { bold: true };
   ws.getCell(r, 2).value = 0.15;
   ws.getCell(r, 2).numFmt = PCT_FMT;
   ws.getCell(r, 2).fill = ACCENT_FILL;
-  ws.getCell(r, 2).dataValidation = {
-    type: "list",
-    allowBlank: true,
-    formulae: ['"10%,15%,20%,25%,30%,35%"'],
-  };
+  ws.getCell(r, 2).note = "Enter your desired profit margin. 15-25% is typical for residential. 20-30% for decorative/specialty work.";
   ws.getCell(r, 5).value = { formula: `(E${subtotalRow}+E${overheadRow})*B${r}` } as any;
   ws.getCell(r, 5).numFmt = CURRENCY_FMT;
   for (let c = 1; c <= 5; c++) applyBorder(ws.getCell(r, c));
@@ -1133,6 +1290,69 @@ async function generateEstimate(data: EstimateConfig) {
   ws.pageSetup = { paperSize: 1, orientation: "portrait", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
   ws.headerFooter = { oddFooter: "EstimateConcrete.com — Professional Concrete Estimating Tools" };
 
+  // --- Site Conditions Checklist sheet ---
+  addSiteConditionsSheet(wb, data.siteConditions);
+
+  // --- Separate Change Order sheet ---
+  const wsCO = wb.addWorksheet("Change Order", { properties: { tabColor: { argb: "FFFECACA" } } });
+  wsCO.columns = [{ width: 6 }, { width: 30 }, { width: 14 }, { width: 16 }, { width: 14 }, { width: 20 }];
+
+  wsCO.mergeCells("A1:F1");
+  wsCO.getCell("A1").value = "CHANGE ORDER LOG";
+  wsCO.getCell("A1").font = { bold: true, size: 14, color: { argb: "FF1E293B" } };
+  wsCO.getRow(1).height = 28;
+
+  wsCO.mergeCells("A2:F2");
+  wsCO.getCell("A2").value = "Track all mid-project scope changes. Get client approval before proceeding with any change.";
+  wsCO.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+
+  wsCO.getCell("A3").value = "Project:";
+  wsCO.getCell("A3").font = { bold: true };
+  wsCO.getCell("B3").fill = ACCENT_FILL;
+  wsCO.getCell("D3").value = "Original Contract:";
+  wsCO.getCell("D3").font = { bold: true };
+  wsCO.getCell("E3").fill = ACCENT_FILL;
+  wsCO.getCell("E3").numFmt = CURRENCY_FMT;
+
+  ["#", "Description of Change", "Added Cost", "Client Approval Date", "Notes", "Status"].forEach((h, i) => {
+    wsCO.getCell(5, i + 1).value = h;
+  });
+  styleHeaderRow(wsCO, 5, 6);
+
+  for (let i = 0; i < 15; i++) {
+    const row = 6 + i;
+    wsCO.getCell(row, 1).value = i + 1;
+    wsCO.getCell(row, 1).alignment = { horizontal: "center" };
+    wsCO.getCell(row, 2).fill = ACCENT_FILL;
+    wsCO.getCell(row, 3).fill = ACCENT_FILL;
+    wsCO.getCell(row, 3).numFmt = CURRENCY_FMT;
+    wsCO.getCell(row, 4).fill = ACCENT_FILL;
+    wsCO.getCell(row, 5).fill = ACCENT_FILL;
+    wsCO.getCell(row, 6).fill = ACCENT_FILL;
+    wsCO.getCell(row, 6).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"Pending,Approved,Rejected,Completed"'],
+    };
+    for (let c = 1; c <= 6; c++) applyBorder(wsCO.getCell(row, c));
+  }
+
+  const coSumRow = 21;
+  wsCO.getCell(coSumRow, 2).value = "TOTAL CHANGE ORDERS";
+  wsCO.getCell(coSumRow, 2).font = { bold: true, size: 11 };
+  wsCO.getCell(coSumRow, 3).value = { formula: "SUM(C6:C20)" } as any;
+  wsCO.getCell(coSumRow, 3).numFmt = CURRENCY_FMT;
+  wsCO.getCell(coSumRow, 3).font = { bold: true, size: 12 };
+  styleSubheaderRow(wsCO, coSumRow, 6);
+
+  wsCO.getCell(23, 2).value = "Revised Contract Total:";
+  wsCO.getCell(23, 2).font = { bold: true, size: 11 };
+  wsCO.getCell(23, 3).value = { formula: "E3+C21" } as any;
+  wsCO.getCell(23, 3).numFmt = CURRENCY_FMT;
+  wsCO.getCell(23, 3).font = { bold: true, size: 12, color: { argb: "FF10B981" } };
+
+  wsCO.pageSetup = { paperSize: 1, orientation: "portrait", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+
   await wb.xlsx.writeFile(path.join(OUT, data.filename));
   console.log(`✓ ${data.filename}`);
 }
@@ -1215,10 +1435,19 @@ const estimates: EstimateConfig[] = [
       "Adjust labor hours and rates to match your crew",
       "Review equipment costs and modify as needed",
       "Check the PROJECT-SPECIFIC OPTIONS — add pricing for any extras the client wants",
-      "Set your overhead % and profit margin % using the dropdown menus",
+      "Set your overhead % and profit margin % in the yellow cells (type any value you want)",
       "Review the GRAND TOTAL",
       "Complete the Site Conditions Checklist during site visit",
+      "Use the Change Order sheet for any mid-project scope changes",
       "Print or save as PDF to present to the client",
+      "",
+      "💡 DRIVEWAY PRO TIPS:",
+      "• Don't forget to account for the apron/flare at the street — it adds 15-30 SF",
+      "• Measure the full length from garage to street, including any slope transition",
+      "• Check if the city requires a permit for curb cuts or approaches",
+      "• Consider adding 6\" thickness at the garage entrance for heavier loads",
+      "• Account for removal of old driveway — asphalt removal costs less than concrete",
+      "• Always slope away from the garage (1/8\" per foot minimum)",
     ],
   },
   {
@@ -1302,9 +1531,18 @@ const estimates: EstimateConfig[] = [
       "Verify vapor barrier is included if slab will be enclosed (garage, shop)",
       "Adjust labor hours for your crew size",
       "Add any project-specific options the client wants",
-      "Set overhead % and profit margin % using dropdowns",
+      "Set overhead % and profit margin % in the yellow cells (type any value)",
       "Complete the Site Conditions Checklist",
+      "Use the Change Order sheet for any mid-project scope changes",
       "Print or save as PDF for client presentation",
+      "",
+      "💡 SLAB PRO TIPS:",
+      "• Always include vapor barrier under enclosed slabs — moisture wicking ruins floors",
+      "• For garage slabs, use 4500 PSI concrete instead of 4000 for better durability",
+      "• Place control joints every 8-12 feet (slab thickness in inches × 2.5 = max joint spacing in feet)",
+      "• If the slab will support heavy equipment, upgrade to 6\" with #4 rebar on 18\" centers",
+      "• Account for thickened edges if the slab will have walls built on it",
+      "• Consider a 1-2% slope toward a floor drain for shops/garages",
     ],
   },
   {
@@ -1387,9 +1625,18 @@ const estimates: EstimateConfig[] = [
       "Price out any project-specific options (steps, seat walls, drainage)",
       "Adjust labor hours — decorative work takes significantly more time than basic broom finish",
       "Note: decorative patios typically price at $16-$30/SF vs $8-$14/SF for basic",
-      "Set overhead and profit margins using the dropdowns",
+      "Set overhead and profit margins in the yellow cells (type any value)",
       "Complete site conditions checklist during your site visit",
+      "Use the Change Order sheet for any mid-project scope changes",
       "Present the estimate showing base price + optional upgrades separately",
+      "",
+      "💡 PATIO PRO TIPS:",
+      "• Always slope AWAY from the house — minimum 1/4\" per foot for proper drainage",
+      "• Consider a French drain along the house-side edge if grading is tricky",
+      "• Check HOA rules before starting — some require specific materials or setbacks",
+      "• Suggest a seat wall or raised border — adds $15-25/LF but increases perceived value",
+      "• For entertaining areas, suggest embedded post anchors for future pergola/shade",
+      "• Fire pit pads need a separate 4\" slab — don't pour monolithic with the patio",
     ],
   },
   {
@@ -1484,8 +1731,18 @@ const estimates: EstimateConfig[] = [
       "Include waterproofing if foundation walls will be below grade",
       "Include drain tile for any basement or below-grade construction",
       "Price out project-specific options based on site conditions",
-      "Set overhead and profit margins",
+      "Set overhead and profit margins in the yellow cells (type any value)",
+      "Use the Change Order sheet for any mid-project scope changes",
       "Have structural engineer approve the scope before presenting to client",
+      "",
+      "💡 FOUNDATION PRO TIPS:",
+      "• Always get a soils report before bidding — unexpected conditions are the #1 budget killer",
+      "• Verify frost depth with YOUR local building code — don't rely on rules of thumb",
+      "• Include 10-15% concrete overage — forms always take more than calculated",
+      "• Price stepped footings separately — each step adds 2-4 hours of forming labor",
+      "• Don't forget anchor bolt placement — rework after pour is extremely expensive",
+      "• Include radon mitigation pipe rough-in where required — it's $100 now vs $2000 later",
+      "• Waterproofing below grade is NOT optional — skipping it leads to callbacks and lawsuits",
     ],
   },
   {
@@ -1581,9 +1838,20 @@ const estimates: EstimateConfig[] = [
       "Include stamp mat rental or purchase cost",
       "Price sealer separately — type affects both cost and maintenance schedule",
       "Add any decorative upgrades (accent colors, borders, carved details)",
-      "Set overhead and profit margins — decorative work commands higher margins (20-30%)",
+      "Set overhead and profit margins in the yellow cells — decorative work commands higher margins (20-30%)",
       "Get written color and pattern approval from client before work begins",
+      "Use the Change Order sheet for any mid-project scope changes",
       "Include maintenance schedule in the estimate so client knows about future sealer costs",
+      "",
+      "💡 STAMPED CONCRETE PRO TIPS:",
+      "• ALWAYS do a test stamp on a practice slab before the real pour — timing is everything",
+      "• Order 20% extra color hardener — running out mid-pour is a disaster",
+      "• Schedule stamped pours for morning — afternoon heat sets concrete too fast",
+      "• Never stamp in rain or when rain is forecast within 4 hours",
+      "• Apply release agent GENEROUSLY — not enough = stamps stick and tear the surface",
+      "• Charge 25-35% more for multi-color/accent work — it takes double the time",
+      "• Show clients physical samples, not just photos — manage color expectations upfront",
+      "• Pressure wash 3-5 days after stamping to remove excess release agent before sealing",
     ],
   },
 ];
@@ -2240,6 +2508,97 @@ async function generatePricingMatrix() {
 
   ws.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
 
+  // --- Your Price Calculator sheet ---
+  const wsPriceCalc = wb.addWorksheet("Your Price Calculator");
+  wsPriceCalc.columns = [{ width: 28 }, { width: 16 }, { width: 16 }, { width: 16 }, { width: 16 }, { width: 16 }];
+
+  wsPriceCalc.mergeCells("A1:F1");
+  wsPriceCalc.getCell("A1").value = "YOUR CUSTOM PRICE CALCULATOR";
+  wsPriceCalc.getCell("A1").font = { bold: true, size: 14, color: { argb: "FF1E293B" } };
+  wsPriceCalc.getRow(1).height = 28;
+
+  wsPriceCalc.mergeCells("A2:F2");
+  wsPriceCalc.getCell("A2").value = "Enter YOUR rates below — prices auto-calculate for every project type";
+  wsPriceCalc.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+
+  wsPriceCalc.getCell("A4").value = "YOUR RATES";
+  wsPriceCalc.mergeCells("A4:F4");
+  for (let c = 1; c <= 6; c++) { wsPriceCalc.getCell(4, c).fill = HEADER_FILL; wsPriceCalc.getCell(4, c).font = HEADER_FONT; }
+
+  wsPriceCalc.getCell("A5").value = "Your Hourly Labor Rate:";
+  wsPriceCalc.getCell("A5").font = { bold: true };
+  wsPriceCalc.getCell("B5").value = 55;
+  wsPriceCalc.getCell("B5").numFmt = CURRENCY_FMT;
+  wsPriceCalc.getCell("B5").fill = ACCENT_FILL;
+  applyBorder(wsPriceCalc.getCell("B5"));
+
+  wsPriceCalc.getCell("A6").value = "Overhead %:";
+  wsPriceCalc.getCell("A6").font = { bold: true };
+  wsPriceCalc.getCell("B6").value = 0.10;
+  wsPriceCalc.getCell("B6").numFmt = PCT_FMT;
+  wsPriceCalc.getCell("B6").fill = ACCENT_FILL;
+  applyBorder(wsPriceCalc.getCell("B6"));
+
+  wsPriceCalc.getCell("A7").value = "Target Profit Margin %:";
+  wsPriceCalc.getCell("A7").font = { bold: true };
+  wsPriceCalc.getCell("B7").value = 0.20;
+  wsPriceCalc.getCell("B7").numFmt = PCT_FMT;
+  wsPriceCalc.getCell("B7").fill = ACCENT_FILL;
+  applyBorder(wsPriceCalc.getCell("B7"));
+
+  wsPriceCalc.getCell("A8").value = "Concrete Cost ($/CY):";
+  wsPriceCalc.getCell("A8").font = { bold: true };
+  wsPriceCalc.getCell("B8").value = 150;
+  wsPriceCalc.getCell("B8").numFmt = CURRENCY_FMT;
+  wsPriceCalc.getCell("B8").fill = ACCENT_FILL;
+  applyBorder(wsPriceCalc.getCell("B8"));
+
+  // Auto-calculated table
+  wsPriceCalc.getCell("A10").value = "YOUR AUTO-CALCULATED PRICING PER SQUARE FOOT";
+  wsPriceCalc.mergeCells("A10:F10");
+  for (let c = 1; c <= 6; c++) { wsPriceCalc.getCell(10, c).fill = HEADER_FILL; wsPriceCalc.getCell(10, c).font = HEADER_FONT; }
+
+  ["Project Type", "Material $/SF", "Labor Hrs/SF", "Labor $/SF", "YOUR Price/SF", "Min Job Charge"].forEach((h, i) => {
+    wsPriceCalc.getCell(11, i + 1).value = h;
+  });
+  styleSubheaderRow(wsPriceCalc, 11, 6);
+
+  const pmCalcData: [string, number, number, number][] = [
+    ["Basic Slab (4\")", 2.50, 0.08, 800],
+    ["Driveway (4-6\")", 3.00, 0.10, 1200],
+    ["Patio (basic)", 3.00, 0.12, 1000],
+    ["Patio (decorative)", 4.50, 0.18, 1500],
+    ["Stamped Concrete", 5.00, 0.22, 2000],
+    ["Sidewalk", 2.50, 0.08, 600],
+    ["Foundation (footings)", 4.00, 0.15, 2500],
+    ["Foundation (walls)", 5.50, 0.20, 3500],
+    ["Garage Floor", 2.50, 0.09, 1000],
+    ["Pool Deck", 4.00, 0.16, 1500],
+    ["Retaining Wall", 8.00, 0.30, 2000],
+    ["Steps/Landing", 6.00, 0.25, 800],
+    ["Polished Concrete", 3.50, 0.15, 1200],
+  ];
+
+  pmCalcData.forEach(([type, matPerSF, laborHrsPerSF, minCharge], i) => {
+    const row = 12 + i;
+    wsPriceCalc.getCell(row, 1).value = type;
+    wsPriceCalc.getCell(row, 2).value = matPerSF;
+    wsPriceCalc.getCell(row, 2).numFmt = CURRENCY_FMT;
+    wsPriceCalc.getCell(row, 3).value = laborHrsPerSF;
+    wsPriceCalc.getCell(row, 3).numFmt = "0.00";
+    wsPriceCalc.getCell(row, 4).value = { formula: `C${row}*B$5` } as any;
+    wsPriceCalc.getCell(row, 4).numFmt = CURRENCY_FMT;
+    wsPriceCalc.getCell(row, 5).value = { formula: `(B${row}+D${row})*(1+B$6)*(1+B$7)` } as any;
+    wsPriceCalc.getCell(row, 5).numFmt = CURRENCY_FMT;
+    wsPriceCalc.getCell(row, 5).font = { bold: true };
+    wsPriceCalc.getCell(row, 5).fill = GREEN_FILL;
+    wsPriceCalc.getCell(row, 6).value = minCharge;
+    wsPriceCalc.getCell(row, 6).numFmt = CURRENCY_FMT;
+    for (let c = 1; c <= 6; c++) applyBorder(wsPriceCalc.getCell(row, c));
+  });
+
+  wsPriceCalc.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+
   await wb.xlsx.writeFile(path.join(OUT, "pricing-matrix-c6f2a9.xlsx"));
   console.log("✓ pricing-matrix-c6f2a9.xlsx");
 }
@@ -2642,6 +3001,91 @@ async function generateMarketingPlan() {
     wsLS.getCell(row, 5).numFmt = CURRENCY_FMT;
     for (let c = 1; c <= 5; c++) applyBorder(wsLS.getCell(row, c));
   });
+
+  // --- Lead Tracker Sheet ---
+  const wsLT = wb.addWorksheet("Lead Tracker");
+  wsLT.columns = [
+    { width: 6 }, { width: 12 }, { width: 18 }, { width: 20 }, { width: 16 },
+    { width: 14 }, { width: 12 }, { width: 20 },
+  ];
+
+  wsLT.mergeCells("A1:H1");
+  wsLT.getCell("A1").value = "LEAD TRACKER";
+  wsLT.getCell("A1").font = { bold: true, size: 14, color: { argb: "FF1E293B" } };
+  wsLT.getRow(1).height = 28;
+
+  wsLT.mergeCells("A2:H2");
+  wsLT.getCell("A2").value = "Log every lead — track from first contact to won/lost. Know your pipeline at a glance.";
+  wsLT.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+
+  ["#", "Date", "Source", "Client Name", "Project Type", "Est. Value", "Status", "Notes"].forEach((h, i) => {
+    wsLT.getCell(4, i + 1).value = h;
+  });
+  styleHeaderRow(wsLT, 4, 8);
+
+  for (let i = 0; i < 40; i++) {
+    const row = 5 + i;
+    wsLT.getCell(row, 1).value = i + 1;
+    wsLT.getCell(row, 1).alignment = { horizontal: "center" };
+    wsLT.getCell(row, 2).fill = ACCENT_FILL;
+    wsLT.getCell(row, 3).fill = ACCENT_FILL;
+    wsLT.getCell(row, 3).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"Google,Google Ads,Facebook,Nextdoor,Referral,Yard Sign,Door Hanger,Angi,HomeAdvisor,Yelp,Website,Cold Call,Other"'],
+    };
+    wsLT.getCell(row, 4).fill = ACCENT_FILL;
+    wsLT.getCell(row, 5).fill = ACCENT_FILL;
+    wsLT.getCell(row, 5).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"Driveway,Patio,Slab,Foundation,Stamped,Sidewalk,Repair,Steps,Retaining Wall,Other"'],
+    };
+    wsLT.getCell(row, 6).fill = ACCENT_FILL;
+    wsLT.getCell(row, 6).numFmt = CURRENCY_FMT;
+    wsLT.getCell(row, 7).fill = ACCENT_FILL;
+    wsLT.getCell(row, 7).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"New,Contacted,Quoted,Won,Lost,No Response"'],
+    };
+    wsLT.getCell(row, 8).fill = ACCENT_FILL;
+    for (let c = 1; c <= 8; c++) applyBorder(wsLT.getCell(row, c));
+  }
+
+  // Pipeline summary
+  const ltSumRow = 47;
+  wsLT.getCell(`A${ltSumRow}`).value = "PIPELINE SUMMARY";
+  wsLT.mergeCells(`A${ltSumRow}:H${ltSumRow}`);
+  for (let c = 1; c <= 8; c++) { wsLT.getCell(ltSumRow, c).fill = HEADER_FILL; wsLT.getCell(ltSumRow, c).font = HEADER_FONT; }
+
+  const ltMetrics: [string, string][] = [
+    ["Total Leads", "COUNTA(D5:D44)"],
+    ["New Leads", "COUNTIF(G5:G44,\"New\")"],
+    ["Quoted", "COUNTIF(G5:G44,\"Quoted\")"],
+    ["Won", "COUNTIF(G5:G44,\"Won\")"],
+    ["Lost", "COUNTIF(G5:G44,\"Lost\")"],
+    ["Pipeline Value (Quoted)", "SUMIFS(F5:F44,G5:G44,\"Quoted\")"],
+    ["Won Revenue", "SUMIFS(F5:F44,G5:G44,\"Won\")"],
+    ["Win Rate", "IF(COUNTA(D5:D44)>0,COUNTIF(G5:G44,\"Won\")/COUNTA(D5:D44),0)"],
+  ];
+
+  ltMetrics.forEach(([label, formula], i) => {
+    const row = ltSumRow + 1 + i;
+    wsLT.getCell(row, 1).value = "";
+    wsLT.getCell(row, 2).value = label;
+    wsLT.getCell(row, 2).font = { bold: true };
+    wsLT.getCell(row, 3).value = { formula } as any;
+    if (label.includes("Value") || label.includes("Revenue")) {
+      wsLT.getCell(row, 3).numFmt = CURRENCY_FMT;
+    } else if (label.includes("Rate")) {
+      wsLT.getCell(row, 3).numFmt = "0%";
+    }
+    wsLT.getCell(row, 3).font = { bold: true };
+    for (let c = 1; c <= 3; c++) applyBorder(wsLT.getCell(row, c));
+  });
+
+  wsLT.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
 
   // --- Competitor Analysis Sheet ---
   const wsCA = wb.addWorksheet("Competitor Analysis");
