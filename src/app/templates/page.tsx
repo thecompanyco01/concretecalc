@@ -86,6 +86,38 @@ export default function Templates() {
         <EmailCapture source="templates-page" variant="prominent" />
       </div>
 
+      {/* Template Preview Gallery */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-slate-900 mb-2 text-center">
+          See What You&apos;re Getting
+        </h2>
+        <p className="text-slate-500 text-center mb-6">
+          Real previews of the actual templates — populated with sample data
+        </p>
+        <div className="grid md:grid-cols-3 gap-4">
+          {[
+            { src: "/previews/bid-calculator-preview.png", label: "Pro Bid Calculator" },
+            { src: "/previews/estimate-driveway-preview.png", label: "Driveway Estimate" },
+            { src: "/previews/estimate-slab-preview.png", label: "Slab Estimate" },
+            { src: "/previews/estimate-patio-preview.png", label: "Stamped Patio Estimate" },
+            { src: "/previews/contract-preview.png", label: "Contract Template" },
+            { src: "/previews/pricing-matrix-preview.png", label: "Pricing Matrix" },
+          ].map((preview) => (
+            <div key={preview.label} className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <img
+                src={preview.src}
+                alt={`${preview.label} preview`}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+              <div className="p-3 text-center">
+                <span className="text-sm font-semibold text-slate-700">{preview.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-3 gap-5">
         {products.map((product) => (
           <div
