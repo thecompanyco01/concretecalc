@@ -45,6 +45,23 @@ const products = [
     cta: "Buy Now — $49",
   },
   {
+    name: "Invoice Template",
+    price: "$19",
+    description:
+      "Professional concrete invoice with auto-calculating line items, tax, and totals. Includes payment tracker sheet to manage all your outstanding invoices.",
+    features: [
+      "Auto-calculated line items & totals",
+      "Tax rate & payment credits fields",
+      "Payment tracker sheet (30 invoices)",
+      "Status tracking (Sent, Paid, Overdue)",
+      "Payment terms & late fee clauses",
+      "Print-ready professional layout",
+    ],
+    popular: false,
+    href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03", // TODO: Create separate Stripe payment link for invoice template
+    cta: "Buy Now — $19",
+  },
+  {
     name: "Business Starter Kit",
     price: "$297",
     description:
@@ -52,6 +69,7 @@ const products = [
     features: [
       "Complete 6-chapter business guide",
       "Client contract template",
+      "Invoice template included",
       "Standard operating procedures (SOPs)",
       "90-day marketing plan",
       "Pricing matrix by project type & region",
@@ -86,6 +104,60 @@ export default function Templates() {
         <EmailCapture source="templates-page" variant="prominent" />
       </div>
 
+      {/* Complete Contractor Toolkit Bundle */}
+      {/* TODO: Create Stripe product for the $149 bundle — need Fabian to set this up */}
+      <div className="mb-12 bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-300 rounded-2xl p-8 relative overflow-hidden">
+        <div className="absolute top-4 right-4">
+          <span className="bg-green-600 text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">
+            Best Value
+          </span>
+        </div>
+        <div className="md:flex md:items-center md:gap-10">
+          <div className="flex-grow mb-6 md:mb-0">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-2">
+              🧰 Complete Contractor Toolkit
+            </h2>
+            <p className="text-slate-600 mb-4 leading-relaxed max-w-xl">
+              Everything a concrete contractor needs in one bundle. Stop buying tools one at a time — get the whole shop.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-4">
+              {[
+                "5 Estimate Templates (Driveway, Slab, Patio, Foundation, Stamped)",
+                "Pro Bid Calculator",
+                "Invoice Template with Payment Tracker",
+                "Pricing Matrix by Project Type & Region",
+                "Client Contract Template",
+                "Standard Operating Procedures (SOPs)",
+                "90-Day Marketing Plan",
+                "Equipment Buying Guide",
+                "6-Chapter Business Guide",
+              ].map((item) => (
+                <div key={item} className="flex gap-2 text-sm">
+                  <span className="text-green-600 flex-shrink-0">✓</span>
+                  <span className="text-slate-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="text-center flex-shrink-0 md:min-w-[200px]">
+            <div className="text-slate-400 text-sm line-through mb-1">$424 if bought separately</div>
+            <div className="flex items-baseline justify-center gap-1 mb-1">
+              <span className="text-5xl font-extrabold text-slate-900">$149</span>
+              <span className="text-slate-400 text-sm">one-time</span>
+            </div>
+            <div className="text-green-700 font-bold text-sm mb-4">Save 65% — over $275 off</div>
+            {/* TODO: Replace with actual Stripe payment link once Fabian creates the bundle product */}
+            <a
+              href="/api/bundle-checkout"
+              className="inline-block w-full bg-green-600 text-white font-bold py-3.5 px-8 rounded-lg hover:bg-green-700 transition shadow-md text-lg"
+            >
+              Get The Complete Toolkit →
+            </a>
+            <p className="text-xs text-slate-500 mt-2">Instant download • 30-day guarantee</p>
+          </div>
+        </div>
+      </div>
+
       {/* Template Preview Gallery */}
       <div className="mb-12">
         <h2 className="text-2xl font-bold text-slate-900 mb-2 text-center">
@@ -118,7 +190,7 @@ export default function Templates() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         {products.map((product) => (
           <div
             key={product.name}

@@ -116,6 +116,12 @@ export default function RootLayout({
                   <li><Link href="/states" className="hover:text-white transition">State Guides</Link></li>
                   <li><Link href="/blog/how-to-bid-concrete-jobs" className="hover:text-white transition">How to Bid Jobs</Link></li>
                 </ul>
+                <h4 className="text-white font-semibold mb-3 mt-6 text-sm uppercase tracking-wide">Compare</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><Link href="/compare/vs-clear-estimates" className="hover:text-white transition">vs Clear Estimates</Link></li>
+                  <li><Link href="/compare/vs-joist" className="hover:text-white transition">vs Joist</Link></li>
+                  <li><Link href="/compare/vs-concretecalc-pro" className="hover:text-white transition">vs ConcreteCalc Pro</Link></li>
+                </ul>
               </div>
             </div>
             <div className="border-t border-slate-800 mt-8 pt-6 text-sm text-center text-slate-500">

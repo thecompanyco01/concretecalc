@@ -3,13 +3,15 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 
-type RebarSize = "#3" | "#4" | "#5" | "#6";
+type RebarSize = "#3" | "#4" | "#5" | "#6" | "#7" | "#8";
 
 const REBAR_DATA: Record<RebarSize, { label: string; diameter: string; weightPerFt: number; pricePerFt: number }> = {
   "#3": { label: "#3 (⅜\")", diameter: "0.375\"", weightPerFt: 0.376, pricePerFt: 0.75 },
   "#4": { label: "#4 (½\")", diameter: "0.500\"", weightPerFt: 0.668, pricePerFt: 1.25 },
   "#5": { label: "#5 (⅝\")", diameter: "0.625\"", weightPerFt: 1.043, pricePerFt: 1.75 },
   "#6": { label: "#6 (¾\")", diameter: "0.750\"", weightPerFt: 1.502, pricePerFt: 2.50 },
+  "#7": { label: "#7 (⅞\")", diameter: "0.875\"", weightPerFt: 2.044, pricePerFt: 3.25 },
+  "#8": { label: "#8 (1\")", diameter: "1.000\"", weightPerFt: 2.670, pricePerFt: 4.00 },
 };
 
 function ResultRow({ label, value, highlight = false }: { label: string; value: string; highlight?: boolean }) {
@@ -212,6 +214,72 @@ export default function RebarCalculator() {
         </div>
       </div>
 
+      {/* Visual Rebar Grid */}
+      <div className="max-w-3xl mx-auto mt-12">
+        <h2 className="text-xl font-bold mb-4">📐 Rebar Layout Visualization</h2>
+        <div className="bg-white border border-gray-200 rounded-xl p-6">
+          <div className="relative w-full" style={{ paddingBottom: "60%" }}>
+            <svg viewBox="0 0 400 240" className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+              {/* Slab outline */}
+              <rect x="40" y="20" width="320" height="200" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" rx="2" />
+              {/* Horizontal bars */}
+              {Array.from({ length: Math.min(parseInt(results.lengthBars) || 0, 12) }).map((_, i) => {
+                const count = Math.min(parseInt(results.lengthBars) || 1, 12);
+                const y = 20 + ((i + 1) * 200) / (count + 1);
+                return <line key={`h${i}`} x1="40" y1={y} x2="360" y2={y} stroke="#dc2626" strokeWidth="1.5" opacity="0.7" />;
+              })}
+              {/* Vertical bars */}
+              {Array.from({ length: Math.min(parseInt(results.widthBars) || 0, 16) }).map((_, i) => {
+                const count = Math.min(parseInt(results.widthBars) || 1, 16);
+                const x = 40 + ((i + 1) * 320) / (count + 1);
+                return <line key={`v${i}`} x1={x} y1="20" x2={x} y2="220" stroke="#dc2626" strokeWidth="1.5" opacity="0.7" />;
+              })}
+              {/* Dimension labels */}
+              <text x="200" y="14" textAnchor="middle" fontSize="11" fill="#475569">{slabLength} ft</text>
+              <text x="370" y="120" textAnchor="start" fontSize="11" fill="#475569" transform="rotate(90, 370, 120)">{slabWidth} ft</text>
+              {/* Spacing indicator */}
+              <text x="200" y="236" textAnchor="middle" fontSize="10" fill="#94a3b8">{spacing}&quot; OC spacing — {results.lengthBars} × {results.widthBars} bars</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Rebar Weight Reference Table */}
+      <div className="max-w-3xl mx-auto mt-8">
+        <h2 className="text-xl font-bold mb-4">📊 Complete Rebar Weight Reference</h2>
+        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left px-4 py-3 font-semibold">Bar Size</th>
+                <th className="text-center px-4 py-3 font-semibold">Diameter</th>
+                <th className="text-center px-4 py-3 font-semibold">Weight (lb/ft)</th>
+                <th className="text-center px-4 py-3 font-semibold">Est. Price ($/ft)</th>
+                <th className="text-left px-4 py-3 font-semibold">Common Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              {(Object.entries(REBAR_DATA) as [RebarSize, typeof REBAR_DATA[RebarSize]][]).map(([key, data]) => (
+                <tr key={key} className={`border-t ${rebarSize === key ? "bg-orange-50" : ""}`}>
+                  <td className="px-4 py-2 font-semibold">{data.label}</td>
+                  <td className="px-4 py-2 text-center">{data.diameter}</td>
+                  <td className="px-4 py-2 text-center font-mono">{data.weightPerFt}</td>
+                  <td className="px-4 py-2 text-center font-mono">${data.pricePerFt.toFixed(2)}</td>
+                  <td className="px-4 py-2 text-gray-600">
+                    {key === "#3" && "Sidewalks, patios, light slabs"}
+                    {key === "#4" && "Residential slabs, driveways (most common)"}
+                    {key === "#5" && "Heavy-duty slabs, foundations"}
+                    {key === "#6" && "Commercial, structural"}
+                    {key === "#7" && "Heavy commercial, bridge decks"}
+                    {key === "#8" && "Large structural, columns, beams"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <article className="max-w-3xl mx-auto mt-16 prose prose-gray">
         <h2>How to Calculate Rebar for Concrete Slabs</h2>
         <p>
@@ -238,6 +306,8 @@ export default function RebarCalculator() {
             <tr><td>#4</td><td>½&quot;</td><td>0.668 lb</td><td>$1.25</td><td>Residential slabs, driveways (most common)</td></tr>
             <tr><td>#5</td><td>⅝&quot;</td><td>1.043 lb</td><td>$1.75</td><td>Heavy-duty slabs, foundations</td></tr>
             <tr><td>#6</td><td>¾&quot;</td><td>1.502 lb</td><td>$2.50</td><td>Commercial, structural</td></tr>
+            <tr><td>#7</td><td>⅞&quot;</td><td>2.044 lb</td><td>$3.25</td><td>Heavy commercial, bridge decks</td></tr>
+            <tr><td>#8</td><td>1&quot;</td><td>2.670 lb</td><td>$4.00</td><td>Large structural, columns, beams</td></tr>
           </tbody>
         </table>
 

@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/states`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
   ];
 
-  const calculatorSlugs = ["slab", "driveway", "patio", "footing", "stamped", "sidewalk", "block", "rebar", "stairs"];
+  const calculatorSlugs = ["slab", "driveway", "patio", "footing", "stamped", "sidewalk", "block", "rebar", "stairs", "column", "wall", "curb"];
   const calculatorPages = calculatorSlugs.map((slug) => ({
     url: `${BASE_URL}/calculators/${slug}`,
     lastModified: now,
@@ -48,5 +48,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...corePages, ...calculatorPages, ...blogPages, ...statePages];
+  const comparePages = [
+    { url: `${BASE_URL}/compare/clear-estimates`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/compare/joist`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/compare/concretecalc-pro`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+  ];
+
+  const bundlePage = [
+    { url: `${BASE_URL}/bundle`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.9 },
+  ];
+
+  return [...corePages, ...calculatorPages, ...bundlePage, ...comparePages, ...blogPages, ...statePages];
 }

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-type TemplateType = "driveway" | "slab" | "patio" | "foundation" | "stamped";
+type TemplateType = "driveway" | "slab" | "patio" | "foundation" | "stamped" | "retaining-wall" | "pool-deck" | "garage-floor";
 
 const templates: Record<TemplateType, {
   title: string;
@@ -173,6 +173,107 @@ const templates: Record<TemplateType, {
       { desc: "Mobilization", qty: 1, unit: "Trip", price: 300 },
     ],
   },
+  "retaining-wall": {
+    title: "Retaining Wall Estimate",
+    description: "Complete retaining wall estimate — block or poured concrete with drainage, rebar, and geogrid reinforcement.",
+    materials: [
+      { desc: "Concrete blocks (or poured concrete)", qty: 400, unit: "EA/CY", price: 4.50 },
+      { desc: "Rebar (#4 bar)", qty: 300, unit: "LF", price: 0.75 },
+      { desc: "Gravel backfill (3/4\" clean)", qty: 12, unit: "Tons", price: 38 },
+      { desc: "Drainage pipe (4\" perf)", qty: 80, unit: "LF", price: 3.25 },
+      { desc: "Filter fabric", qty: 400, unit: "SF", price: 0.35 },
+      { desc: "Geogrid reinforcement", qty: 200, unit: "SF", price: 1.50 },
+      { desc: "Cap blocks / coping", qty: 50, unit: "EA", price: 6.00 },
+      { desc: "Construction adhesive", qty: 6, unit: "Tubes", price: 8.00 },
+      { desc: "Gravel leveling pad (base)", qty: 4, unit: "Tons", price: 35 },
+    ],
+    labor: [
+      { desc: "Excavation & site prep", hrs: 16, rate: 55 },
+      { desc: "Leveling pad installation", hrs: 8, rate: 55 },
+      { desc: "Block laying / wall pour", hrs: 24, rate: 60 },
+      { desc: "Rebar placement & tying", hrs: 8, rate: 60 },
+      { desc: "Geogrid installation", hrs: 6, rate: 55 },
+      { desc: "Drainage pipe & gravel backfill", hrs: 12, rate: 55 },
+      { desc: "Cap / coping installation", hrs: 6, rate: 55 },
+      { desc: "Cleanup & grading", hrs: 8, rate: 45 },
+    ],
+    equipment: [
+      { desc: "Mini excavator", qty: 2, unit: "Days", price: 400 },
+      { desc: "Plate compactor", qty: 2, unit: "Days", price: 125 },
+      { desc: "Laser level / transit", qty: 1, unit: "Day", price: 75 },
+      { desc: "Concrete saw (for cuts)", qty: 1, unit: "Day", price: 125 },
+      { desc: "Dump truck (hauling)", qty: 2, unit: "Loads", price: 450 },
+      { desc: "Mobilization", qty: 1, unit: "Trip", price: 350 },
+    ],
+  },
+  "pool-deck": {
+    title: "Pool Deck Estimate",
+    description: "Professional pool deck estimate with decorative finish options, cool deck coating, and expansion joints.",
+    materials: [
+      { desc: "Concrete (ready-mix 4000 PSI)", qty: 14, unit: "CY", price: 155 },
+      { desc: "Color hardener / integral color", qty: 150, unit: "LB", price: 0.85 },
+      { desc: "Cool deck coating", qty: 10, unit: "Gal", price: 55 },
+      { desc: "Expansion joint material", qty: 120, unit: "LF", price: 2.75 },
+      { desc: "Gravel base (4\" depth)", qty: 10, unit: "Tons", price: 35 },
+      { desc: "Wire mesh (6x6)", qty: 900, unit: "SF", price: 0.45 },
+      { desc: "Form lumber & stakes", qty: 1, unit: "Lot", price: 450 },
+      { desc: "Sealer (non-slip acrylic)", qty: 12, unit: "Gal", price: 38 },
+      { desc: "Coping / bullnose edge", qty: 80, unit: "LF", price: 12 },
+    ],
+    labor: [
+      { desc: "Demo existing deck surface", hrs: 16, rate: 55 },
+      { desc: "Grading & compaction", hrs: 10, rate: 55 },
+      { desc: "Formwork installation", hrs: 12, rate: 55 },
+      { desc: "Wire mesh placement", hrs: 6, rate: 55 },
+      { desc: "Concrete pour & finishing", hrs: 16, rate: 65 },
+      { desc: "Decorative finish application", hrs: 10, rate: 65 },
+      { desc: "Expansion joint installation", hrs: 4, rate: 55 },
+      { desc: "Sealer application (2 coats)", hrs: 6, rate: 50 },
+      { desc: "Cleanup & debris removal", hrs: 6, rate: 45 },
+    ],
+    equipment: [
+      { desc: "Skid steer / bobcat", qty: 1, unit: "Day", price: 350 },
+      { desc: "Plate compactor", qty: 1, unit: "Day", price: 125 },
+      { desc: "Concrete vibrator", qty: 1, unit: "Day", price: 85 },
+      { desc: "Bull float / fresno", qty: 1, unit: "Day", price: 100 },
+      { desc: "Power trowel", qty: 1, unit: "Day", price: 150 },
+      { desc: "Mobilization", qty: 1, unit: "Trip", price: 300 },
+    ],
+  },
+  "garage-floor": {
+    title: "Garage Floor Estimate",
+    description: "Garage floor estimate with 4000 PSI concrete, vapor barrier, wire mesh, control joints, and sealer/epoxy options.",
+    materials: [
+      { desc: "Concrete (4000 PSI ready-mix)", qty: 10, unit: "CY", price: 155 },
+      { desc: "Vapor barrier (10 mil poly)", qty: 800, unit: "SF", price: 0.18 },
+      { desc: "Wire mesh (6x6 W2.9)", qty: 800, unit: "SF", price: 0.45 },
+      { desc: "Control joint material", qty: 80, unit: "LF", price: 1.25 },
+      { desc: "Sealer / epoxy coating", qty: 8, unit: "Gal", price: 48 },
+      { desc: "Gravel base (4\" depth)", qty: 6, unit: "Tons", price: 35 },
+      { desc: "Form lumber & stakes", qty: 1, unit: "Lot", price: 300 },
+      { desc: "Curing compound", qty: 5, unit: "Gal", price: 18 },
+      { desc: "Fiber mesh additive", qty: 10, unit: "Bags", price: 12 },
+    ],
+    labor: [
+      { desc: "Demo old floor / removal", hrs: 12, rate: 55 },
+      { desc: "Grading & compaction", hrs: 8, rate: 55 },
+      { desc: "Vapor barrier installation", hrs: 4, rate: 45 },
+      { desc: "Formwork installation", hrs: 6, rate: 55 },
+      { desc: "Wire mesh placement", hrs: 4, rate: 55 },
+      { desc: "Concrete pour & finishing", hrs: 12, rate: 65 },
+      { desc: "Control joint cutting", hrs: 4, rate: 55 },
+      { desc: "Sealer / epoxy application", hrs: 6, rate: 55 },
+      { desc: "Cleanup & debris removal", hrs: 6, rate: 45 },
+    ],
+    equipment: [
+      { desc: "Skid steer (demo & grading)", qty: 1, unit: "Day", price: 350 },
+      { desc: "Plate compactor", qty: 1, unit: "Day", price: 125 },
+      { desc: "Concrete vibrator", qty: 1, unit: "Day", price: 85 },
+      { desc: "Power trowel", qty: 1, unit: "Day", price: 150 },
+      { desc: "Concrete saw", qty: 1, unit: "Day", price: 125 },
+      { desc: "Mobilization", qty: 1, unit: "Trip", price: 250 },
+    ],
+  },
 };
 
 export default function EstimateTemplates() {
@@ -222,11 +323,11 @@ export default function EstimateTemplates() {
               rel="noopener noreferrer"
               className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-2 px-6 rounded-lg transition text-sm"
             >
-              ⬇️ Download All 5 Templates — $49
+              ⬇️ Download All 8 Templates — $49
             </a>
           </div>
           <h1 className="text-3xl font-extrabold text-slate-900 mt-3">Estimate Template Pack</h1>
-          <p className="text-slate-500 mt-2">5 professional estimate templates. Click any template, customize quantities and rates, then print as PDF.</p>
+          <p className="text-slate-500 mt-2">8 professional estimate templates. Click any template, customize quantities and rates, then print as PDF.</p>
         </div>
 
         {/* Template Tabs */}
