@@ -2069,6 +2069,293 @@ const estimates: EstimateConfig[] = [
       "Use 2 colors minimum — base + accent release. Single-color stamped looks flat and cheap. Extra cost is $50-$100 total",
     ],
   },
+  {
+    filename: "estimate-retaining-wall-d4e8f1.xlsx",
+    title: "Retaining Wall Estimate",
+    description: "Professional retaining wall estimate with concrete block or poured concrete, rebar, geogrid reinforcement, drainage, and cap installation. Pre-loaded with typical block wall materials and labor items.",
+    materials: [
+      ["Concrete blocks (12x8x16)", 400, "EA", 4.50],
+      ["Mortar mix (80 lb bags)", 40, "Bags", 8.50],
+      ["Rebar (#4 bar)", 300, "LF", 0.75],
+      ["Gravel backfill (3/4\" clean)", 12, "Tons", 38],
+      ["Drain pipe (4\" perforated)", 80, "LF", 3.25],
+      ["Geogrid reinforcement", 200, "SF", 1.50],
+      ["Cap blocks (standard)", 50, "EA", 6.00],
+      ["Construction adhesive", 6, "Tubes", 8.00],
+      ["Gravel leveling pad (base)", 4, "Tons", 35],
+      ["Filter fabric / geotextile", 400, "SF", 0.35],
+    ],
+    labor: [
+      ["Excavation & site prep", 16, 55],
+      ["Leveling pad installation", 8, 55],
+      ["Block laying", 24, 60],
+      ["Rebar placement & grout fill", 8, 60],
+      ["Backfill & compaction", 12, 55],
+      ["Drainage pipe installation", 6, 55],
+      ["Geogrid installation", 6, 55],
+      ["Cap block installation", 6, 55],
+      ["Final grading & cleanup", 8, 45],
+    ],
+    equipment: [
+      ["Mini excavator", 2, "Days", 400],
+      ["Plate compactor", 2, "Days", 125],
+      ["Block saw (wet)", 1, "Day", 150],
+      ["Laser level / transit", 1, "Day", 75],
+      ["Mobilization", 1, "Trip", 350],
+    ],
+    projectSpecificItems: [
+      "Stepped wall sections (per step)",
+      "Deadman anchors / tie-backs (per LF)",
+      "Waterproofing membrane on back face",
+      "Decorative face block upgrade (per SF)",
+      "Lighting integration (per fixture rough-in)",
+      "Planters / built-in seating on top",
+    ],
+    siteConditions: [
+      "Existing slope/grade angle",
+      "Soil type (clay, sand, expansive)",
+      "Water table / drainage conditions",
+      "Access for mini excavator",
+      "Underground utilities located",
+      "Load surcharge above wall (structure, vehicle)",
+      "Wall height (over 4' may require engineering)",
+      "Permit required (many cities require for walls over 30\")",
+    ],
+    scopeExclusions: [
+      "Structural engineering / stamped drawings",
+      "Permits and inspection fees",
+      "Landscaping restoration behind wall",
+      "Irrigation or planting",
+      "Retaining wall over 6' (requires engineering)",
+      "Soil testing / geotechnical report",
+      "Surcharge load calculations",
+    ],
+    warrantyNotes: [
+      "1-YEAR WORKMANSHIP WARRANTY: Contractor warrants all work for 12 months from completion date.",
+      "Warranty covers: block displacement, mortar failure, drainage failure due to improper installation.",
+      "Warranty does NOT cover: settlement due to surcharge loads not disclosed, frost heave, expansive soil movement,",
+      "  wall failure caused by poor soil conditions not identified prior to construction.",
+      "ENGINEERING NOTE: Retaining walls over 4' typically require a permit and stamped engineering drawings.",
+      "DRAINAGE IS CRITICAL: Proper backfill drainage prevents 90% of retaining wall failures.",
+    ],
+    howToSteps: [
+      "Verify wall height — walls over 30\" typically require a permit in most jurisdictions",
+      "Check if engineering drawings are required (walls over 4' usually do)",
+      "Confirm soil type — clay or expansive soils require additional drainage and geogrid",
+      "Adjust block quantities based on exact wall dimensions (SF of face)",
+      "Add geogrid layers every 2-3 courses for walls over 3' tall",
+      "Price drainage separately — it's easy to underestimate",
+      "Include deadman anchors or tie-backs for walls over 4' if no geogrid",
+      "Set overhead and profit margins in the yellow cells",
+      "Use the Change Order sheet for any mid-project scope changes",
+      "Print or save as PDF to present to client",
+      "",
+      "💡 RETAINING WALL PRO TIPS:",
+      "• Drainage is everything — 60% of wall failures are from water pressure. Never skip the drain pipe",
+      "• Add 10% extra blocks — cuts and breakage add up fast",
+      "• Geogrid every 2 courses for walls over 4' tall — it's cheap insurance",
+      "• Base course must be buried minimum 1\" per foot of wall height",
+      "• Always check for utilities before digging — call 811",
+    ],
+    proTips: [
+      "Drainage is the single most important factor — improperly drained walls fail. Never cut corners on drain tile or backfill",
+      "Walls over 4' are a premium scope — charge accordingly. Engineering, permits, and liability are all higher",
+      "Upsell geogrid even when not required — it's $300-$500 in materials and adds 10+ years to wall life. Easy sell",
+      "Photograph base trench, geogrid layers, and drain pipe before backfill — critical for warranty defense",
+      "Price cap blocks separately as an upgrade — decorative caps can add $300-$800 and customers love the look",
+    ],
+  },
+  {
+    filename: "estimate-pool-deck-b7c3a9.xlsx",
+    title: "Pool Deck Estimate",
+    description: "Professional pool deck estimate with decorative finish options, cool deck coating, color hardener, expansion joints, and sealer. Includes demo, grading, forming, pour, and coating application.",
+    materials: [
+      ["Concrete (ready-mix 4000 PSI)", 14, "CY", 155],
+      ["Color hardener (integral or broadcast)", 150, "LB", 0.85],
+      ["Cool deck coating", 10, "Gal", 55],
+      ["Expansion joint material", 120, "LF", 2.75],
+      ["Gravel base (4\" depth)", 10, "Tons", 35],
+      ["Wire mesh (6x6 W2.9)", 900, "SF", 0.45],
+      ["Form lumber & stakes", 1, "Lot", 450],
+      ["Sealer (non-slip acrylic)", 12, "Gal", 38],
+    ],
+    labor: [
+      ["Demo existing deck surface", 16, 55],
+      ["Grading & compaction", 10, 55],
+      ["Formwork installation", 12, 55],
+      ["Concrete pour & finishing", 16, 65],
+      ["Color hardener application", 6, 65],
+      ["Cool deck coating application", 8, 60],
+      ["Sealer application (2 coats)", 6, 50],
+      ["Cleanup & debris removal", 6, 45],
+    ],
+    equipment: [
+      ["Skid steer / bobcat", 1, "Day", 350],
+      ["Plate compactor", 1, "Day", 125],
+      ["Power trowel", 1, "Day", 150],
+      ["Sprayer (cool deck coating)", 1, "Day", 85],
+      ["Mobilization", 1, "Trip", 300],
+    ],
+    projectSpecificItems: [
+      "Coping / bullnose edge (per LF)",
+      "Broom vs. trowel finish selection",
+      "Stamped concrete sections (per SF)",
+      "Drain installation or repositioning",
+      "Waterline tile coordination",
+      "Step nosing / coping integration",
+      "Second cool deck coat (per SF)",
+      "Anti-slip grit additive (per coat)",
+    ],
+    siteConditions: [
+      "Pool shape complexity (freeform vs. rectangular)",
+      "Existing deck removal needed (Y/N)",
+      "Access for skid steer / equipment",
+      "Underground pool plumbing locations",
+      "Coping or tile interface requirements",
+      "Drainage slope and direction",
+      "Expansion gap to pool coping (required)",
+      "Safety code requirements (slip resistance, no-slip zones)",
+    ],
+    scopeExclusions: [
+      "Pool plumbing or equipment",
+      "Coping installation (if separate contractor)",
+      "Pool tile installation",
+      "Landscaping or grass restoration",
+      "Permits and inspection fees",
+      "Underwater lighting or electrical",
+      "Future sealer reapplication (maintenance item)",
+    ],
+    warrantyNotes: [
+      "1-YEAR WORKMANSHIP WARRANTY: Contractor warrants all work for 12 months from completion date.",
+      "Warranty covers: structural cracking >1/4\", coating delamination, improper slope/drainage.",
+      "Warranty does NOT cover: cool deck fading (UV exposure), sealer wear, chemical damage from pool water,",
+      "  hairline/shrinkage cracks, staining, or color variation.",
+      "COOL DECK CARE: Avoid pool chemicals on deck surface. Rinse pool splash with water immediately.",
+      "SLIP RESISTANCE: Non-slip sealer and cool deck coating are required near pool edges per most codes.",
+      "SEALER MAINTENANCE: Reapply every 2-3 years. Non-slip additive must be included each time.",
+    ],
+    howToSteps: [
+      "Measure exact pool deck area — freeform pools are tricky, walk the perimeter",
+      "Confirm color and finish with client before ordering materials",
+      "Check if cool deck coating or stamped pattern is preferred",
+      "Verify local codes for slip resistance near pool edges",
+      "Include expansion gap at pool coping (required to prevent cracking)",
+      "Price demo of old deck separately — material disposal adds cost",
+      "Allow extra time for cool deck coating — it's labor intensive",
+      "Set overhead and profit margins in the yellow cells",
+      "Use the Change Order sheet for any mid-project scope changes",
+      "Get written finish and color approval before starting",
+      "",
+      "💡 POOL DECK PRO TIPS:",
+      "• Always leave a 1/2\" expansion joint where deck meets pool coping — no exceptions",
+      "• Cool deck coating is hot in summer. Offer it as an upgrade — homeowners will pay extra",
+      "• Slope away from pool (1/8\" per foot) for drainage — code requirement in most states",
+      "• Stamp pattern around pool edges takes 2x the time — price accordingly",
+    ],
+    proTips: [
+      "Pool decks have the highest liability of any residential concrete job. Photo everything before and after",
+      "Upsell cool deck coating — it's $400-$800 in materials and labor but adds $1,500-$2,500 to the ticket. Homeowners love it",
+      "Non-slip sealer is non-negotiable near water. If you skip it and someone slips, you're liable",
+      "Freeform pools are 20-30% harder to form than rectangular. Add a 20% labor premium for curved decks",
+      "Always measure the actual perimeter after demo — pool shapes rarely match blueprints exactly",
+    ],
+  },
+  {
+    filename: "estimate-garage-floor-e5f2d8.xlsx",
+    title: "Garage Floor Estimate",
+    description: "Complete garage floor estimate with 4000 PSI concrete, vapor barrier, wire mesh, control joints, and epoxy sealer. Includes demo of old floor, grading, and full finishing.",
+    materials: [
+      ["Concrete (ready-mix 4000 PSI)", 10, "CY", 155],
+      ["Vapor barrier (10 mil poly)", 800, "SF", 0.18],
+      ["Wire mesh (6x6 W2.9)", 800, "SF", 0.45],
+      ["Control joint material", 80, "LF", 1.25],
+      ["Epoxy sealer (2-part)", 8, "Gal", 48],
+      ["Gravel base (4\" depth)", 6, "Tons", 35],
+      ["Form lumber & stakes", 1, "Lot", 300],
+      ["Fiber mesh additive", 10, "Bags", 12],
+    ],
+    labor: [
+      ["Demo old floor / removal", 12, 55],
+      ["Grading & compaction", 8, 55],
+      ["Vapor barrier installation", 4, 45],
+      ["Formwork installation", 6, 55],
+      ["Wire mesh placement", 4, 55],
+      ["Concrete pour & finish", 12, 65],
+      ["Control joint cutting", 4, 55],
+      ["Epoxy sealer application", 6, 55],
+      ["Cleanup & debris removal", 6, 45],
+    ],
+    equipment: [
+      ["Demo hammer / jackhammer", 1, "Day", 150],
+      ["Plate compactor", 1, "Day", 125],
+      ["Power trowel", 1, "Day", 150],
+      ["Concrete saw (joint cutting)", 1, "Day", 125],
+      ["Mobilization", 1, "Trip", 250],
+    ],
+    projectSpecificItems: [
+      "Epoxy flake broadcast system (decorative)",
+      "Radiant heat tubing (in-slab, per SF)",
+      "Drain installation or repositioning",
+      "Thickened edge / turn-down at garage door",
+      "Step or approach apron (per SF)",
+      "Extra thickness upgrade (5\" or 6\")",
+      "Polyaspartic coating upgrade (faster cure)",
+      "Floor grinding / shot blast prep (for epoxy adhesion)",
+    ],
+    siteConditions: [
+      "Existing floor condition (crack, heave, moisture)",
+      "Soil type and compaction quality",
+      "Moisture vapor emission test recommended",
+      "Drain location / slope requirements",
+      "Garage door threshold height",
+      "Access for concrete truck (min 10' wide)",
+      "Vehicle load requirements (standard vs. heavy truck)",
+    ],
+    scopeExclusions: [
+      "Plumbing or drain rough-in (if new)",
+      "HVAC or electrical in floor",
+      "Pest control / termite treatment",
+      "Permits and inspection fees",
+      "Wall patching around perimeter",
+      "Drywall repair from moisture remediation",
+      "Future epoxy recoating (maintenance item)",
+    ],
+    warrantyNotes: [
+      "1-YEAR WORKMANSHIP WARRANTY: Contractor warrants all work for 12 months from completion date.",
+      "Warranty covers: structural cracking >1/4\", epoxy delamination, improper slope/drainage.",
+      "Warranty does NOT cover: epoxy surface wear/scuffs, hairline shrinkage cracks (normal), tire marks,",
+      "  chemical staining, damage from vehicle fluids, moisture vapor transmission from soil.",
+      "EPOXY CARE: Allow 7 days full cure before driving on surface. Avoid hot tire pickup by using floor mats under parking area.",
+      "VAPOR BARRIER NOTE: If moisture is visible on existing slab, a moisture mitigation system is required before epoxy.",
+      "CONTROL JOINT SPACING: Standard is 10-12' on center. Joints must be cut within 24 hours of pour.",
+    ],
+    howToSteps: [
+      "Measure the garage floor area (include any bump-outs or utility areas)",
+      "Confirm whether demo of existing floor is required",
+      "Test for moisture vapor emission if epoxy coating is planned",
+      "Check for cracks in existing floor — severe cracking may indicate soil issues",
+      "Verify drain location and required floor slope (1/8\" per foot toward drain)",
+      "Confirm epoxy type — standard 2-part, flake broadcast, or polyaspartic",
+      "Include floor grinding / shot blast if epoxy adhesion is critical",
+      "Set overhead and profit margins in the yellow cells",
+      "Use the Change Order sheet for any mid-project scope changes",
+      "Allow 7-day cure before vehicle traffic",
+      "",
+      "💡 GARAGE FLOOR PRO TIPS:",
+      "• Shot blast before epoxy — it doubles adhesion and prevents peeling. Don't skip it",
+      "• Vapor barrier is non-negotiable — epoxy will peel within 1 year without it",
+      "• Cut control joints within 24 hours of pour — late cuts lead to random cracking",
+      "• Offer flake broadcast epoxy as an upgrade — $500 extra in materials adds $1,500-$2,000 to the ticket",
+      "• Garage floors are high repeat-business — do great work and you'll get the driveway too",
+    ],
+    proTips: [
+      "Test for moisture before committing to epoxy. Failed epoxy jobs lead to callbacks that cost more than the original job",
+      "Shot blast prep is a premium upsell — most contractors skip it. Offer it at $0.75-$1.25/SF. It's 30 min work and worth it",
+      "Epoxy flake systems are the #1 garage floor upsell. Cost: $300-$500 extra. Revenue: $1,500-$2,500 extra. Easy sell",
+      "Always include vapor barrier under new slab — moisture is the #1 cause of epoxy failures and callbacks",
+      "Garage floors lead to driveways which lead to patios. Treat every garage floor as a relationship-building job",
+    ],
+  },
 ];
 
 // ======================== CONTRACT TEMPLATE ========================
@@ -3364,56 +3651,56 @@ async function generateMarketingPlan() {
   });
 
   // ======================== LEAD TRACKER SHEET ========================
-  const wsLT = wb.addWorksheet("📊 Lead Tracker", { properties: { tabColor: { argb: "FF10B981" } } });
-  wsLT.columns = [{ width: 6 }, { width: 12 }, { width: 20 }, { width: 20 }, { width: 18 }, { width: 14 }, { width: 14 }, { width: 24 }];
+  const wsLT2 = wb.addWorksheet("📊 Lead Tracker", { properties: { tabColor: { argb: "FF10B981" } } });
+  wsLT2.columns = [{ width: 6 }, { width: 12 }, { width: 20 }, { width: 20 }, { width: 18 }, { width: 14 }, { width: 14 }, { width: 24 }];
 
-  wsLT.mergeCells("A1:H1");
-  wsLT.getCell("A1").value = "📊 LEAD TRACKER — YOUR SALES PIPELINE";
-  wsLT.getCell("A1").font = { bold: true, size: 16, color: { argb: "FF1E293B" } };
-  wsLT.getRow(1).height = 30;
-  wsLT.mergeCells("A2:H2");
-  wsLT.getCell("A2").value = "Log every lead, track status, and watch your pipeline grow. This is your simple CRM — use it religiously.";
-  wsLT.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
+  wsLT2.mergeCells("A1:H1");
+  wsLT2.getCell("A1").value = "📊 LEAD TRACKER — YOUR SALES PIPELINE";
+  wsLT2.getCell("A1").font = { bold: true, size: 16, color: { argb: "FF1E293B" } };
+  wsLT2.getRow(1).height = 30;
+  wsLT2.mergeCells("A2:H2");
+  wsLT2.getCell("A2").value = "Log every lead, track status, and watch your pipeline grow. This is your simple CRM — use it religiously.";
+  wsLT2.getCell("A2").font = { size: 10, color: { argb: "FF64748B" } };
 
-  ["#", "Date", "Lead Source", "Client Name", "Project Type", "Est. Value", "Status", "Notes / Follow-Up"].forEach((h, i) => { wsLT.getCell(4, i + 1).value = h; });
-  styleHeaderRow(wsLT, 4, 8);
+  ["#", "Date", "Lead Source", "Client Name", "Project Type", "Est. Value", "Status", "Notes / Follow-Up"].forEach((h, i) => { wsLT2.getCell(4, i + 1).value = h; });
+  styleHeaderRow(wsLT2, 4, 8);
 
   for (let i = 0; i < 40; i++) {
     const row = 5 + i;
-    wsLT.getCell(row, 1).value = i + 1; wsLT.getCell(row, 1).alignment = { horizontal: "center" };
-    wsLT.getCell(row, 2).fill = ACCENT_FILL;
-    wsLT.getCell(row, 3).fill = ACCENT_FILL;
-    wsLT.getCell(row, 3).dataValidation = { type: "list", allowBlank: true, formulae: ['"Google Search,Google Ads,Facebook,Nextdoor,Referral,Yard Sign,Door Hanger,Angi,Yelp,Website,Cold Call,Other"'] };
-    wsLT.getCell(row, 4).fill = ACCENT_FILL;
-    wsLT.getCell(row, 5).fill = ACCENT_FILL;
-    wsLT.getCell(row, 5).dataValidation = { type: "list", allowBlank: true, formulae: ['"Driveway,Patio,Slab,Foundation,Stamped,Sidewalk,Retaining Wall,Repair,Steps,Pool Deck,Other"'] };
-    wsLT.getCell(row, 6).fill = ACCENT_FILL; wsLT.getCell(row, 6).numFmt = CURRENCY_FMT;
-    wsLT.getCell(row, 7).fill = ACCENT_FILL;
-    wsLT.getCell(row, 7).dataValidation = { type: "list", allowBlank: true, formulae: ['"New Lead,Contacted,Estimate Sent,Won,Lost,On Hold"'] };
-    wsLT.getCell(row, 8).fill = ACCENT_FILL;
-    for (let c = 1; c <= 8; c++) applyBorder(wsLT.getCell(row, c));
+    wsLT2.getCell(row, 1).value = i + 1; wsLT2.getCell(row, 1).alignment = { horizontal: "center" };
+    wsLT2.getCell(row, 2).fill = ACCENT_FILL;
+    wsLT2.getCell(row, 3).fill = ACCENT_FILL;
+    wsLT2.getCell(row, 3).dataValidation = { type: "list", allowBlank: true, formulae: ['"Google Search,Google Ads,Facebook,Nextdoor,Referral,Yard Sign,Door Hanger,Angi,Yelp,Website,Cold Call,Other"'] };
+    wsLT2.getCell(row, 4).fill = ACCENT_FILL;
+    wsLT2.getCell(row, 5).fill = ACCENT_FILL;
+    wsLT2.getCell(row, 5).dataValidation = { type: "list", allowBlank: true, formulae: ['"Driveway,Patio,Slab,Foundation,Stamped,Sidewalk,Retaining Wall,Repair,Steps,Pool Deck,Other"'] };
+    wsLT2.getCell(row, 6).fill = ACCENT_FILL; wsLT2.getCell(row, 6).numFmt = CURRENCY_FMT;
+    wsLT2.getCell(row, 7).fill = ACCENT_FILL;
+    wsLT2.getCell(row, 7).dataValidation = { type: "list", allowBlank: true, formulae: ['"New Lead,Contacted,Estimate Sent,Won,Lost,On Hold"'] };
+    wsLT2.getCell(row, 8).fill = ACCENT_FILL;
+    for (let c = 1; c <= 8; c++) applyBorder(wsLT2.getCell(row, c));
   }
 
   // Pipeline Summary
   let ltR = 46;
-  wsLT.getCell(`A${ltR}`).value = "PIPELINE SUMMARY";
-  wsLT.mergeCells(`A${ltR}:H${ltR}`);
-  for (let ci = 1; ci <= 8; ci++) { wsLT.getCell(ltR, ci).fill = HEADER_FILL; wsLT.getCell(ltR, ci).font = HEADER_FONT; }
+  wsLT2.getCell(`A${ltR}`).value = "PIPELINE SUMMARY";
+  wsLT2.mergeCells(`A${ltR}:H${ltR}`);
+  for (let ci = 1; ci <= 8; ci++) { wsLT2.getCell(ltR, ci).fill = HEADER_FILL; wsLT2.getCell(ltR, ci).font = HEADER_FONT; }
   ltR++;
 
   [["Total Leads", `COUNTA(D5:D44)`], ["New Leads", `COUNTIF(G5:G44,"New Lead")`],
    ["Contacted", `COUNTIF(G5:G44,"Contacted")`], ["Estimates Sent", `COUNTIF(G5:G44,"Estimate Sent")`],
    ["Won", `COUNTIF(G5:G44,"Won")`], ["Lost", `COUNTIF(G5:G44,"Lost")`],
    ["On Hold", `COUNTIF(G5:G44,"On Hold")`]].forEach(([label, formula]) => {
-    wsLT.getCell(ltR, 2).value = label; wsLT.getCell(ltR, 2).font = { bold: true, size: 10 };
-    wsLT.getCell(ltR, 3).value = { formula } as any; wsLT.getCell(ltR, 3).font = { bold: true, size: 12 };
-    for (let c = 2; c <= 3; c++) applyBorder(wsLT.getCell(ltR, c));
+    wsLT2.getCell(ltR, 2).value = label; wsLT2.getCell(ltR, 2).font = { bold: true, size: 10 };
+    wsLT2.getCell(ltR, 3).value = { formula } as any; wsLT2.getCell(ltR, 3).font = { bold: true, size: 12 };
+    for (let c = 2; c <= 3; c++) applyBorder(wsLT2.getCell(ltR, c));
     ltR++;
   });
 
   ltR++;
-  wsLT.getCell(ltR, 2).value = "PIPELINE VALUE"; wsLT.getCell(ltR, 2).font = { bold: true, size: 11 };
-  wsLT.getCell(ltR, 2).fill = SUBHEADER_FILL; wsLT.mergeCells(`B${ltR}:C${ltR}`);
+  wsLT2.getCell(ltR, 2).value = "PIPELINE VALUE"; wsLT2.getCell(ltR, 2).font = { bold: true, size: 11 };
+  wsLT2.getCell(ltR, 2).fill = SUBHEADER_FILL; wsLT2.mergeCells(`B${ltR}:C${ltR}`);
   ltR++;
 
   [["Total Pipeline Value", `SUMIF(G5:G44,"<>Lost",F5:F44)`, CURRENCY_FMT],
@@ -3422,21 +3709,21 @@ async function generateMarketingPlan() {
    ["Average Deal Size", `IF(COUNTA(F5:F44)>0,AVERAGEIF(F5:F44,">0"),0)`, CURRENCY_FMT],
    ["Win Rate", `IF(COUNTIF(G5:G44,"Won")+COUNTIF(G5:G44,"Lost")>0,COUNTIF(G5:G44,"Won")/(COUNTIF(G5:G44,"Won")+COUNTIF(G5:G44,"Lost")),0)`, "0%"]
   ].forEach(([label, formula, fmt]) => {
-    wsLT.getCell(ltR, 2).value = label; wsLT.getCell(ltR, 2).font = { bold: true };
-    wsLT.getCell(ltR, 3).value = { formula } as any;
-    wsLT.getCell(ltR, 3).numFmt = fmt as string; wsLT.getCell(ltR, 3).font = { bold: true, size: 12 };
-    if (label === "Won Revenue") wsLT.getCell(ltR, 3).fill = GREEN_FILL;
-    for (let c = 2; c <= 3; c++) applyBorder(wsLT.getCell(ltR, c));
+    wsLT2.getCell(ltR, 2).value = label; wsLT2.getCell(ltR, 2).font = { bold: true };
+    wsLT2.getCell(ltR, 3).value = { formula } as any;
+    wsLT2.getCell(ltR, 3).numFmt = fmt as string; wsLT2.getCell(ltR, 3).font = { bold: true, size: 12 };
+    if (label === "Won Revenue") wsLT2.getCell(ltR, 3).fill = GREEN_FILL;
+    for (let c = 2; c <= 3; c++) applyBorder(wsLT2.getCell(ltR, c));
     ltR++;
   });
 
   ltR += 2;
-  wsLT.mergeCells(`A${ltR}:H${ltR}`);
-  wsLT.getCell(`A${ltR}`).value = "💡 Follow up on 'Estimate Sent' leads within 48 hours — that's when close rates drop off a cliff.";
-  wsLT.getCell(`A${ltR}`).font = { bold: true, size: 10, color: { argb: "FF2563EB" } };
-  wsLT.getCell(`A${ltR}`).fill = BLUE_FILL;
+  wsLT2.mergeCells(`A${ltR}:H${ltR}`);
+  wsLT2.getCell(`A${ltR}`).value = "💡 Follow up on 'Estimate Sent' leads within 48 hours — that's when close rates drop off a cliff.";
+  wsLT2.getCell(`A${ltR}`).font = { bold: true, size: 10, color: { argb: "FF2563EB" } };
+  wsLT2.getCell(`A${ltR}`).fill = BLUE_FILL;
 
-  wsLT.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
+  wsLT2.pageSetup = { paperSize: 1, orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 };
 
   await wb.xlsx.writeFile(path.join(OUT, "marketing-plan-e9b5c3.xlsx"));
   console.log("✓ marketing-plan-e9b5c3.xlsx");

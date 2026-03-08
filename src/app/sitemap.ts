@@ -58,5 +58,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/bundle`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.9 },
   ];
 
-  return [...corePages, ...calculatorPages, ...bundlePage, ...comparePages, ...blogPages, ...statePages];
+  const toolPages = [
+    { url: `${BASE_URL}/tools/invoice-template`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/tools/estimate-templates`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+  ];
+
+  return [...corePages, ...calculatorPages, ...bundlePage, ...comparePages, ...toolPages, ...blogPages, ...statePages];
 }
