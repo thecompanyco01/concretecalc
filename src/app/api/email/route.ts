@@ -1,15 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
 
-const EMAIL_FILE = "/tmp/estimateconcrete-emails.json";
-
-interface EmailEntry {
-  email: string;
-  source: string;
-  timestamp: string;
-  ip?: string;
-}
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://gfibxfvaggsuhpbnvxnp.supabase.co";
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -27,28 +19,25 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const entry: EmailEntry = {
-      email: email.toLowerCase().trim(),
-      source: source || "unknown",
-      timestamp: new Date().toISOString(),
-    };
+    const cleanEmail = email.toLowerCase().trim();
 
-    // Read existing emails
-    let emails: EmailEntry[] = [];
-    try {
-      if (fs.existsSync(EMAIL_FILE)) {
-        const data = fs.readFileSync(EMAIL_FILE, "utf-8");
-        emails = JSON.parse(data);
-      }
-    } catch {
-      emails = [];
-    }
+    // Insert into Supabase (upsert to handle duplicates)
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/emails`, {
+      method: "POST",
+      headers: {
+        "apikey": SUPABASE_ANON_KEY,
+        "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+        "Content-Type": "application/json",
+        "Prefer": "resolution=ignore-duplicates",
+      },
+      body: JSON.stringify({
+        email: cleanEmail,
+        source: source || "unknown",
+      }),
+    });
 
-    // Check for duplicate
-    const exists = emails.some((e) => e.email === entry.email);
-    if (!exists) {
-      emails.push(entry);
-      fs.writeFileSync(EMAIL_FILE, JSON.stringify(emails, null, 2));
+    if (!res.ok && res.status !== 409) {
+      console.error("Supabase insert error:", res.status, await res.text());
     }
 
     return NextResponse.json({ success: true, message: "Email saved successfully." });
