@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 
 const DEFAULTS = {
   concretePricePerYard: 150,
@@ -178,6 +179,10 @@ export default function DrivewayCalculator() {
                 Get the Pro Estimate Template — $49
               </Link>
               <p className="text-xs text-gray-500 text-center mt-2">Turn this calculator into a professional bid sheet</p>
+            </div>
+
+            <div className="mt-4">
+              <EmailCapture source="driveway-calculator" variant="compact" />
             </div>
           </div>
         </div>
