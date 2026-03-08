@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Contractor Equipment List & Costs (Startup Guide) | ConcreteCalc",
+  title: "Concrete Contractor Equipment List & Costs (Startup Guide) | EstimateConcrete",
   description: "Starting a concrete business requires $10,000-$50,000 in equipment depending on whether you buy new or used. Here's every piece of equipment you need, what",
   keywords: "concrete equipment list, concrete cost, concrete calculator, concrete contractor",
 };

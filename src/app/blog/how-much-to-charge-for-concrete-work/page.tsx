@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How Much to Charge for Concrete Work (2026 Pricing Guide) | ConcreteCalc",
+  title: "How Much to Charge for Concrete Work (2026 Pricing Guide) | EstimateConcrete",
   description: "Complete pricing guide for concrete contractors. Per-square-foot rates by job type, regional pricing data, how to calculate your rate, and profit margin targets.",
   keywords: "how much to charge for concrete work, concrete pricing per square foot, concrete contractor rates, concrete labor rates 2026",
 };

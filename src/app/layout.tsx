@@ -7,7 +7,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+  title: "EstimateConcrete — Free Concrete Calculators for Contractors",
   description:
     "Professional concrete calculators built for contractors. Estimate slabs, driveways, patios, footings & more. Free tools + premium templates for concrete businesses.",
   keywords:
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://estimateconcrete.com"),
   openGraph: {
     type: "website",
-    title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+    title: "EstimateConcrete — Free Concrete Calculators for Contractors",
     description:
       "Professional concrete calculators built for contractors. Calculate yards, costs, and materials for any concrete job.",
-    siteName: "ConcreteCalc",
+    siteName: "EstimateConcrete",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+    title: "EstimateConcrete — Free Concrete Calculators for Contractors",
     description:
       "Professional concrete calculators built for contractors.",
   },
@@ -45,7 +45,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "ConcreteCalc",
+              name: "EstimateConcrete",
               url: "https://estimateconcrete.com",
               description:
                 "Professional concrete calculators and business tools built for contractors.",
@@ -59,7 +59,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
               <span className="bg-amber-500 text-slate-900 w-7 h-7 rounded flex items-center justify-center text-sm font-extrabold">C</span>
-              <span>ConcreteCalc</span>
+              <span>EstimateConcrete</span>
             </Link>
             <div className="hidden md:flex gap-6 text-sm font-medium text-slate-300">
               <Link href="/calculators/slab" className="hover:text-white transition">
@@ -91,7 +91,7 @@ export default function RootLayout({
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="bg-amber-500 text-slate-900 w-6 h-6 rounded flex items-center justify-center text-xs font-extrabold">C</span>
-                  <span className="text-white font-bold">ConcreteCalc</span>
+                  <span className="text-white font-bold">EstimateConcrete</span>
                 </div>
                 <p className="text-sm leading-relaxed">
                   Professional concrete calculators built specifically for
@@ -119,7 +119,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="border-t border-slate-800 mt-8 pt-6 text-sm text-center text-slate-500">
-              © {new Date().getFullYear()} ConcreteCalc. Built for concrete professionals.
+              © {new Date().getFullYear()} EstimateConcrete. Built for concrete professionals.
             </div>
           </div>
         </footer>

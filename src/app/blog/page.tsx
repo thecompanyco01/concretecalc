@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Concrete Business Blog — Tips, Guides & Resources | ConcreteCalc",
+  title: "Concrete Business Blog — Tips, Guides & Resources | EstimateConcrete",
   description:
     "Practical guides for concrete contractors: bidding, estimating, pricing, business growth, and technical how-tos. Built for pros running concrete businesses.",
 };

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in New Hampshire (NH) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in New Hampshire (NH) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in New Hampshire. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in NH.",
   keywords: "how to start concrete business New Hampshire, concrete contractor license New Hampshire, concrete business NH",
 };

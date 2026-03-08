@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "What Markup Should Concrete Contractors Use? | ConcreteCalc",
+  title: "What Markup Should Concrete Contractors Use? | EstimateConcrete",
   description: "Most profitable concrete contractors use a 50-100% markup on materials and 30-50% markup on labor. This translates to a 20-35% net profit margin. Here's ho",
   keywords: "concrete markup percentage, concrete cost, concrete calculator, concrete contractor",
 };

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How Much Does a Yard of Concrete Weigh? Weight Tables & Calculations (2026) | ConcreteCalc",
+  title: "How Much Does a Yard of Concrete Weigh? Weight Tables & Calculations (2026) | EstimateConcrete",
   description: "A cubic yard of concrete weighs approximately 4,050 pounds (2 tons). Complete weight tables for wet, dry, and specialty concrete types, plus truck load limits, form pressure, and project calculations.",
   keywords: "how much does a yard of concrete weigh, concrete weight per yard, cubic yard concrete weight, concrete weight calculator, weight of concrete per cubic yard",
 };

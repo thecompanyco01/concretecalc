@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Floor Cost (2026 Guide) | ConcreteCalc",
+  title: "Concrete Floor Cost (2026 Guide) | EstimateConcrete",
   description: "Interior concrete floors cost $2-$30 per square foot depending on the finish. Basic gray concrete runs $2-6/sqft, polished concrete $3-12/sqft, stained $4-",
   keywords: "concrete floor cost, concrete cost, concrete calculator, concrete contractor",
 };

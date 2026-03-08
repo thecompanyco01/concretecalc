@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Washington (WA) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Washington (WA) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Washington. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in WA.",
   keywords: "how to start concrete business Washington, concrete contractor license Washington, concrete business WA",
 };

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Kansas (KS) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Kansas (KS) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Kansas. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in KS.",
   keywords: "how to start concrete business Kansas, concrete contractor license Kansas, concrete business KS",
 };

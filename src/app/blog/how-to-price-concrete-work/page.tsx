@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Price Concrete Work (2026 Pricing Guide) | ConcreteCalc",
+  title: "How to Price Concrete Work (2026 Pricing Guide) | EstimateConcrete",
   description: "Pricing concrete work correctly means covering your costs, making a profit, and staying competitive. This guide covers pricing strategies, real-world rate ",
   keywords: "how to price concrete work, concrete cost, concrete calculator, concrete contractor",
 };

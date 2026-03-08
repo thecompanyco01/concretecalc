@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Nevada (NV) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Nevada (NV) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Nevada. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in NV.",
   keywords: "how to start concrete business Nevada, concrete contractor license Nevada, concrete business NV",
 };

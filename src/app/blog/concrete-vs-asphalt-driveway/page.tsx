@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete vs Asphalt Driveway: Full Cost Comparison & 30-Year TCO (2026) | ConcreteCalc",
+  title: "Concrete vs Asphalt Driveway: Full Cost Comparison & 30-Year TCO (2026) | EstimateConcrete",
   description: "Concrete vs asphalt driveway: complete comparison with real pricing data, 30-year total cost of ownership, climate recommendations, ROI analysis, and pros/cons for every homeowner.",
   keywords: "concrete vs asphalt driveway, concrete driveway vs asphalt, asphalt vs concrete cost, concrete vs asphalt driveway cost, driveway cost comparison",
 };

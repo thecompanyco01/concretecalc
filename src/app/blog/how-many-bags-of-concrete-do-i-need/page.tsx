@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How Many Bags of Concrete Do I Need? Complete Guide + Charts (2026) | ConcreteCalc",
+  title: "How Many Bags of Concrete Do I Need? Complete Guide + Charts (2026) | EstimateConcrete",
   description: "Calculate exactly how many bags of concrete you need for any project. Reference tables for 40lb, 60lb, and 80lb bags, bag vs ready-mix breakeven analysis, mixing tips, and common project examples.",
   keywords: "how many bags of concrete do i need, bags of concrete calculator, concrete bags per yard, concrete bag calculator, 80lb bags per yard, 60lb bags concrete",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Epoxy Garage Floor Cost & Installation Guide (2026) | ConcreteCalc',
+  title: 'Epoxy Garage Floor Cost & Installation Guide (2026) | EstimateConcrete',
   description: 'Complete epoxy garage floor coating guide for contractors and homeowners. Costs per sq ft, DIY vs professional installation, prep steps, coating types, and business startup tips.',
   keywords: ['epoxy garage floor', 'garage floor epoxy', 'epoxy floor coating', 'epoxy garage floor cost', 'garage floor coating', 'epoxy flooring'],
 }
@@ -654,8 +654,8 @@ export default function EpoxyGarageFloorGuide() {
             "@type": "Article",
             "headline": "Epoxy Garage Floor Coating: Complete Cost & Installation Guide for 2026",
             "description": "Complete guide to epoxy garage floor coatings — costs, installation steps, coating types, DIY vs professional, and business startup economics.",
-            "author": { "@type": "Organization", "name": "ConcreteCalc" },
-            "publisher": { "@type": "Organization", "name": "ConcreteCalc" },
+            "author": { "@type": "Organization", "name": "EstimateConcrete" },
+            "publisher": { "@type": "Organization", "name": "EstimateConcrete" },
             "datePublished": "2026-03-07",
             "dateModified": "2026-03-07",
           }),

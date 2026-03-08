@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Oklahoma (OK) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Oklahoma (OK) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Oklahoma. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in OK.",
   keywords: "how to start concrete business Oklahoma, concrete contractor license Oklahoma, concrete business OK",
 };

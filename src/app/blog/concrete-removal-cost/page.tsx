@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Concrete Removal Cost: Price Per Sq Ft Guide (2026) | ConcreteCalc',
+  title: 'Concrete Removal Cost: Price Per Sq Ft Guide (2026) | EstimateConcrete',
   description: 'How much does concrete removal cost? Complete pricing guide with cost per sq ft for driveways, patios, sidewalks, and foundations. DIY vs hiring, equipment rental costs, dump fees, and how contractors should price removal jobs.',
   keywords: ['concrete removal cost', 'concrete demolition cost', 'concrete removal price per square foot', 'concrete breakup cost', 'concrete hauling cost', 'how much to remove concrete'],
 }

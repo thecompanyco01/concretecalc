@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ConcreteCalc — Free Concrete Calculators for Contractors",
+  title: "EstimateConcrete — Free Concrete Calculators for Contractors",
   description:
     "Professional concrete calculators built for contractors. Estimate slabs, driveways, patios, footings, yards of concrete & more. Free tools + premium estimate templates.",
 };
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-2">
-              Why Contractors Use ConcreteCalc
+              Why Contractors Use EstimateConcrete
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

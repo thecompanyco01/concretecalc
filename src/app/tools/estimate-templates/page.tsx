@@ -211,6 +211,20 @@ export default function EstimateTemplates() {
       <div className="max-w-5xl mx-auto px-4 py-8">
         <div className="no-print mb-6">
           <Link href="/templates" className="text-amber-600 hover:text-amber-700 text-sm font-medium">← Back to Templates</Link>
+          {/* Free vs Paid Banner */}
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4 mb-4">
+            <p className="text-blue-900 text-sm font-medium mb-2">
+              📋 Template Preview — See what&apos;s included. Buy the full pack ($49) for editable Excel/Google Sheets templates with formulas, auto-calculations, and print-ready formatting.
+            </p>
+            <a
+              href="https://buy.stripe.com/6oUdRadrNdg91rJ3ntaMU00"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-2 px-6 rounded-lg transition text-sm"
+            >
+              ⬇️ Download All 5 Templates — $49
+            </a>
+          </div>
           <h1 className="text-3xl font-extrabold text-slate-900 mt-3">Estimate Template Pack</h1>
           <p className="text-slate-500 mt-2">5 professional estimate templates. Click any template, customize quantities and rates, then print as PDF.</p>
         </div>

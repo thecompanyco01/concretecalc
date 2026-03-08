@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free Concrete Invoice Template (2026) — Get Paid Faster | ConcreteCalc",
+  title: "Free Concrete Invoice Template (2026) — Get Paid Faster | EstimateConcrete",
   description: "Professional concrete invoice template for contractors. Includes material breakdown, labor costs, progress billing, and payment terms. Free download + pro templates.",
   keywords: "concrete invoice template, concrete contractor invoice, concrete billing template, concrete receipt template, free concrete invoice",
 };

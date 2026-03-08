@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Steps Cost (2026 Guide) | ConcreteCalc",
+  title: "Concrete Steps Cost (2026 Guide) | EstimateConcrete",
   description: "Concrete steps cost $300-$500 per step for a standard 3-4 foot wide staircase. A typical 4-step front entry runs $1,200-$2,000. Wider steps (6-8 feet) for ",
   keywords: "concrete steps cost, concrete cost, concrete calculator, concrete contractor",
 };

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Rhode Island (RI) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Rhode Island (RI) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Rhode Island. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in RI.",
   keywords: "how to start concrete business Rhode Island, concrete contractor license Rhode Island, concrete business RI",
 };

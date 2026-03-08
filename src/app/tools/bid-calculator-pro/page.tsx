@@ -159,6 +159,20 @@ export default function BidCalculatorPro() {
           <Link href="/templates" className="text-amber-600 hover:text-amber-700 text-sm font-medium">
             ← Back to Templates
           </Link>
+          {/* Free vs Paid Banner */}
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4 mb-4">
+            <p className="text-blue-900 text-sm font-medium mb-2">
+              🔓 Free Preview — Try the calculator with sample data. Buy the Pro Excel version ($29) for customizable rates, company branding, and print-ready PDF export.
+            </p>
+            <a
+              href="https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-2 px-6 rounded-lg transition text-sm"
+            >
+              ⬇️ Download Excel Version — $29
+            </a>
+          </div>
           <h1 className="text-3xl font-extrabold text-slate-900 mt-3">
             Pro Bid Calculator
           </h1>

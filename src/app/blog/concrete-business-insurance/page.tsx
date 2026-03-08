@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Contractor Insurance: Types, Costs & Requirements | ConcreteCalc",
+  title: "Concrete Contractor Insurance: Types, Costs & Requirements | EstimateConcrete",
   description: "Concrete contractor insurance costs $2,000-$8,000 per year for a small operation. You need general liability ($1,000-$3,000/year), commercial auto ($1,500-",
   keywords: "concrete business insurance cost, concrete cost, concrete calculator, concrete contractor",
 };

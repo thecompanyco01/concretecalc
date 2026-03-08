@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Alabama (AL) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Alabama (AL) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Alabama. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in AL.",
   keywords: "how to start concrete business Alabama, concrete contractor license Alabama, concrete business AL",
 };

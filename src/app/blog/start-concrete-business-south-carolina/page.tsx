@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in South Carolina (SC) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in South Carolina (SC) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in South Carolina. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in SC.",
   keywords: "how to start concrete business South Carolina, concrete contractor license South Carolina, concrete business SC",
 };

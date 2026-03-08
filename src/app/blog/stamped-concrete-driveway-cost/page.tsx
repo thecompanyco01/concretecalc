@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Stamped Concrete Driveway Cost (2026) | ConcreteCalc",
+  title: "Stamped Concrete Driveway Cost (2026) | EstimateConcrete",
   description: "A stamped concrete driveway costs $12-$22 per square foot, compared to $6-$10 for plain concrete. A standard 2-car driveway (400-600 sqft) in stamped concr",
   keywords: "stamped concrete driveway cost, concrete cost, concrete calculator, concrete contractor",
 };

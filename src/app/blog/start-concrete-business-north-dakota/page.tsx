@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in North Dakota (ND) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in North Dakota (ND) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in North Dakota. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in ND.",
   keywords: "how to start concrete business North Dakota, concrete contractor license North Dakota, concrete business ND",
 };

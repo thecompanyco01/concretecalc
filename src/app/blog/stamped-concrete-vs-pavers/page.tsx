@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Stamped Concrete vs Pavers: Cost, Durability & Design Comparison (2026) | ConcreteCalc",
+  title: "Stamped Concrete vs Pavers: Cost, Durability & Design Comparison (2026) | EstimateConcrete",
   description: "Stamped concrete costs $8-$16/sq ft vs pavers at $12-$25/sq ft. Complete comparison of cost, durability, maintenance, design options, and which is better for patios, driveways, and pool decks.",
   keywords: "stamped concrete vs pavers, stamped concrete vs pavers cost, stamped concrete or pavers, pavers vs stamped concrete, stamped concrete patio cost",
 };

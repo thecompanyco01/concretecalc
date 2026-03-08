@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Curb Cost Per Linear Foot (2026) | ConcreteCalc",
+  title: "Concrete Curb Cost Per Linear Foot (2026) | EstimateConcrete",
   description: "Concrete curbing costs $5-$20 per linear foot depending on the type. Standard straight curb runs $5-10/ft, extruded landscape curbing $6-15/ft, and mountab",
   keywords: "concrete curb cost, concrete cost, concrete calculator, concrete contractor",
 };

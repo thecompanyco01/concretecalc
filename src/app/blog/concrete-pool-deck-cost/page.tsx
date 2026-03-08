@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Pool Deck Cost Guide (2026) | ConcreteCalc",
+  title: "Concrete Pool Deck Cost Guide (2026) | EstimateConcrete",
   description: "A concrete pool deck costs $6-$20 per square foot depending on the finish. Plain broom-finish runs $6-10/sqft, stamped concrete $12-18/sqft, and exposed ag",
   keywords: "concrete pool deck cost, concrete cost, concrete calculator, concrete contractor",
 };

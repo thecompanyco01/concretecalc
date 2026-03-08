@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free Concrete Estimate Template (2026) + Pro Templates | ConcreteCalc",
+  title: "Free Concrete Estimate Template (2026) + Pro Templates | EstimateConcrete",
   description: "Download a free concrete estimate template for contractors. Includes material costs, labor rates, overhead, and profit margins. Professional templates that win more jobs.",
   keywords: "concrete estimate template, concrete bid template, concrete estimating spreadsheet, concrete job estimate form, free concrete estimate template",
 };

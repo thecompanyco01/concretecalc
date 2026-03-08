@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Concrete Testing Guide: Types, Methods & ACI Standards (2026) | ConcreteCalc',
+  title: 'Concrete Testing Guide: Types, Methods & ACI Standards (2026) | EstimateConcrete',
   description: 'Complete guide to concrete testing for contractors. Covers slump test, air content test, cylinder break test, compression strength, Schmidt hammer, core testing, ACI standards, and costs for each test type.',
   keywords: ['concrete testing', 'concrete slump test', 'concrete compression test', 'concrete cylinder test', 'concrete strength test', 'ACI concrete testing', 'concrete core test'],
 }

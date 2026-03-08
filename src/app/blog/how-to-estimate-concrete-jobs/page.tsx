@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Estimate Concrete Jobs (Contractor Guide) | ConcreteCalc",
+  title: "How to Estimate Concrete Jobs (Contractor Guide) | EstimateConcrete",
   description: "Accurate concrete estimating is the difference between profitable jobs and money-losing disasters. This guide covers the complete estimating process — from",
   keywords: "how to estimate concrete jobs, concrete cost, concrete calculator, concrete contractor",
 };

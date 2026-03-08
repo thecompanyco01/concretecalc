@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Garage Floor Cost Guide (2026) | ConcreteCalc",
+  title: "Concrete Garage Floor Cost Guide (2026) | EstimateConcrete",
   description: "A new concrete garage floor costs $4-$8 per square foot for plain concrete, or $8-$15 per square foot with epoxy coating. A standard 2-car garage (400-600 ",
   keywords: "concrete garage floor cost, concrete cost, concrete calculator, concrete contractor",
 };

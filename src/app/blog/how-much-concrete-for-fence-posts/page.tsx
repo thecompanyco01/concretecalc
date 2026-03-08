@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How Much Concrete for Fence Posts? (Calculator & Guide) | ConcreteCalc",
+  title: "How Much Concrete for Fence Posts? (Calculator & Guide) | EstimateConcrete",
   description: "Each fence post needs 1-3 bags of concrete (60-lb or 80-lb) depending on post size and hole diameter. A standard 4×4 post in a 10-inch hole needs about 1.5",
   keywords: "how much concrete for fence posts, concrete cost, concrete calculator, concrete contractor",
 };

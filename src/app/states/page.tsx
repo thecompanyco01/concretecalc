@@ -3,7 +3,7 @@ import Link from "next/link";
 import { STATES } from "./data";
 
 export const metadata: Metadata = {
-  title: "Concrete Contractor Guide by State — Licensing, Costs & Requirements | ConcreteCalc",
+  title: "Concrete Contractor Guide by State — Licensing, Costs & Requirements | EstimateConcrete",
   description:
     "State-by-state guide to concrete contracting. Find licensing requirements, concrete costs per yard, insurance requirements, and how to start a concrete business in your state.",
   keywords:

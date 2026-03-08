@@ -28,7 +28,7 @@ function ResultRow({ label, value, highlight = false }: { label: string; value: 
   );
 }
 
-export default function StampedConcreteCalculator() {
+export default function StampedEstimateConcreteulator() {
   const [area, setArea] = useState<string>("400");
   const [complexity, setComplexity] = useState<Complexity>("medium");
   const [colors, setColors] = useState<string>("2");

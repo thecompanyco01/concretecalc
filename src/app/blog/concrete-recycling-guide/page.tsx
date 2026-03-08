@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Concrete Recycling Guide: Process, Uses & Business Startup (2026) | ConcreteCalc',
+  title: 'Concrete Recycling Guide: Process, Uses & Business Startup (2026) | EstimateConcrete',
   description: 'Complete guide to concrete recycling for contractors. Learn the crushing process, crushed concrete uses, environmental benefits, cost savings vs virgin aggregate, equipment needed, permits, and how to start a concrete recycling business.',
   keywords: ['concrete recycling', 'recycled concrete aggregate', 'crushed concrete', 'concrete recycling business', 'RCA aggregate', 'concrete waste recycling', 'recycled concrete uses'],
 }

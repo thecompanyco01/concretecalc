@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Sidewalk Cost Per Foot (2026 Guide) | ConcreteCalc",
+  title: "Concrete Sidewalk Cost Per Foot (2026 Guide) | EstimateConcrete",
   description: "Concrete sidewalks cost $6-$12 per square foot or $24-$48 per linear foot (for standard 4-foot wide sidewalks). A 50-foot residential sidewalk runs $1,200-",
   keywords: "concrete sidewalk cost per foot, concrete cost, concrete calculator, concrete contractor",
 };

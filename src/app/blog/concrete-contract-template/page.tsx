@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free Concrete Contract Template (2026) — Protect Your Business | ConcreteCalc",
+  title: "Free Concrete Contract Template (2026) — Protect Your Business | EstimateConcrete",
   description: "Download a free concrete contract template with payment terms, scope of work, change orders, and liability protection. Essential for every concrete contractor.",
   keywords: "concrete contract template, concrete contractor agreement, concrete work contract, concrete service agreement, free concrete contract",
 };

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete vs. Pavers: Cost, Maintenance & Durability (2026) | ConcreteCalc",
+  title: "Concrete vs. Pavers: Cost, Maintenance & Durability (2026) | EstimateConcrete",
   description: "Concrete costs $6-$18/sqft and pavers cost $12-$30/sqft installed. Concrete is cheaper and lower maintenance. Pavers are more expensive but easier to repai",
   keywords: "concrete vs pavers, concrete cost, concrete calculator, concrete contractor",
 };

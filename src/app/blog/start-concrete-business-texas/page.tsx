@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Start a Concrete Business in Texas (TX) — 2026 Guide | ConcreteCalc",
+  title: "How to Start a Concrete Business in Texas (TX) — 2026 Guide | EstimateConcrete",
   description: "Complete guide to starting a concrete business in Texas. Licensing requirements, startup costs, equipment, insurance, and how to find your first customers in TX.",
   keywords: "how to start concrete business Texas, concrete contractor license Texas, concrete business TX",
 };

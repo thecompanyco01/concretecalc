@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Concrete Retaining Wall Cost Guide (2026) — Pricing, Heights & Permits | ConcreteCalc",
+  title: "Concrete Retaining Wall Cost Guide (2026) — Pricing, Heights & Permits | EstimateConcrete",
   description: "Concrete retaining walls cost $20-$45 per square foot installed. Get detailed pricing by wall height, material breakdowns, labor costs, permit requirements, and cost-saving tips for contractors.",
   keywords: "concrete retaining wall cost, retaining wall cost per foot, poured concrete retaining wall, retaining wall cost calculator, how much does a retaining wall cost",
 };

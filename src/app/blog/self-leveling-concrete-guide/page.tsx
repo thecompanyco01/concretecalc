@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Self-Leveling Concrete: Complete Guide for Contractors (2026) | ConcreteCalc',
+  title: 'Self-Leveling Concrete: Complete Guide for Contractors (2026) | EstimateConcrete',
   description: 'Everything contractors need to know about self-leveling concrete. Types, costs, application steps, common mistakes, and how to price self-leveling jobs profitably.',
   keywords: ['self leveling concrete', 'self-leveling concrete', 'self leveling underlayment', 'concrete floor leveling', 'self leveling compound'],
 }
@@ -490,8 +490,8 @@ export default function SelfLevelingConcreteGuide() {
             "@type": "Article",
             "headline": "Self-Leveling Concrete: The Complete Contractor's Guide for 2026",
             "description": "Everything contractors need to know about self-leveling concrete — types, costs, application steps, common mistakes, and pricing guide.",
-            "author": { "@type": "Organization", "name": "ConcreteCalc" },
-            "publisher": { "@type": "Organization", "name": "ConcreteCalc" },
+            "author": { "@type": "Organization", "name": "EstimateConcrete" },
+            "publisher": { "@type": "Organization", "name": "EstimateConcrete" },
             "datePublished": "2026-03-07",
             "dateModified": "2026-03-07",
           }),

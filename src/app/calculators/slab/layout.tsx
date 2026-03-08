@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Concrete Slab Calculator — Free Tool for Contractors | ConcreteCalc",
+  title: "Concrete Slab Calculator — Free Tool for Contractors | EstimateConcrete",
   description:
     "Calculate cubic yards, bags of concrete, material cost, and labor for any slab project. Includes waste factor, rebar estimates, and cost per square foot. Free tool for concrete contractors.",
   keywords:

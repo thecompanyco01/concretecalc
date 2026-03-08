@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!state) return {};
 
   return {
-    title: `Concrete Contractor License & Costs in ${state.name} (2026 Guide) | ConcreteCalc`,
+    title: `Concrete Contractor License & Costs in ${state.name} (2026 Guide) | EstimateConcrete`,
     description: `Complete guide to starting a concrete business in ${state.name}. License requirements, concrete costs ($${state.avgCostPerYard}/yard), insurance, and business tips for ${state.abbreviation} contractors.`,
     keywords: `concrete contractor license ${state.name}, concrete cost per yard ${state.name}, how to start concrete business ${state.name}, concrete contractor ${state.name}`,
   };
