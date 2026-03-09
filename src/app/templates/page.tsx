@@ -58,7 +58,7 @@ const products = [
       "Print-ready professional layout",
     ],
     popular: false,
-    href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03", // TODO: Create separate Stripe payment link for $19 invoice template — currently shares bid calc link
+    href: "https://buy.stripe.com/28EdRa2N9a3X6M31flaMU07",
     cta: "Buy Now — $19",
   },
   {
