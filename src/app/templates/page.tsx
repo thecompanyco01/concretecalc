@@ -58,7 +58,7 @@ const products = [
       "Print-ready professional layout",
     ],
     popular: false,
-    href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03", // TODO: Create separate Stripe payment link for invoice template
+    href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03", // TODO: Create separate Stripe payment link for $19 invoice template — currently shares bid calc link
     cta: "Buy Now — $19",
   },
   {
@@ -142,13 +142,14 @@ export default function Templates() {
           <div className="text-center flex-shrink-0 md:min-w-[200px]">
             <div className="text-slate-400 text-sm line-through mb-1">$424 if bought separately</div>
             <div className="flex items-baseline justify-center gap-1 mb-1">
-              <span className="text-5xl font-extrabold text-slate-900">$149</span>
+              <span className="text-5xl font-extrabold text-slate-900">$297</span>
               <span className="text-slate-400 text-sm">one-time</span>
             </div>
-            <div className="text-green-700 font-bold text-sm mb-4">Save 65% — over $275 off</div>
-            {/* TODO: Replace with actual Stripe payment link once Fabian creates the bundle product */}
+            <div className="text-green-700 font-bold text-sm mb-4">Save 30% — over $125 off</div>
             <a
-              href="/api/bundle-checkout"
+              href="https://buy.stripe.com/8x2cN6afBdg9c6ne27aMU01"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block w-full bg-green-600 text-white font-bold py-3.5 px-8 rounded-lg hover:bg-green-700 transition shadow-md text-lg"
             >
               Get The Complete Toolkit →
