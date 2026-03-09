@@ -292,31 +292,57 @@ export default function Templates() {
         </div>
       </div>
 
-      {/* Social Proof */}
+      {/* What You're Getting — Fact Bar */}
+      <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+        {[
+          { icon: "📊", label: "15 Excel Templates" },
+          { icon: "📱", label: "Works in Google Sheets" },
+          { icon: "⚡", label: "Instant Download" },
+          { icon: "🛡️", label: "30-Day Money-Back Guarantee" },
+        ].map((fact) => (
+          <div
+            key={fact.label}
+            className="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"
+          >
+            <div className="text-2xl mb-1">{fact.icon}</div>
+            <span className="text-sm font-semibold text-slate-700">{fact.label}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Why Contractors Trust EstimateConcrete */}
       <div className="mt-12 bg-blue-50 border border-blue-100 rounded-xl p-8">
-        <h2 className="text-xl font-bold text-slate-900 text-center mb-6">Built for Real Concrete Contractors</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg p-5 border border-blue-100">
-            <div className="text-amber-500 mb-2">★★★★★</div>
-            <p className="text-slate-700 text-sm leading-relaxed mb-3">
-              &ldquo;Saved me 3 hours per bid. Used to build estimates in a blank spreadsheet — now I plug in dimensions and it&rsquo;s done. Paid for itself on the first job.&rdquo;
-            </p>
-            <p className="text-slate-500 text-xs font-semibold">— Mike R., Flatwork Contractor, TX</p>
-          </div>
-          <div className="bg-white rounded-lg p-5 border border-blue-100">
-            <div className="text-amber-500 mb-2">★★★★★</div>
-            <p className="text-slate-700 text-sm leading-relaxed mb-3">
-              &ldquo;The bid calculator is dead simple. I use it on every estimate now. Customers take me more seriously when I hand them a professional-looking bid sheet.&rdquo;
-            </p>
-            <p className="text-slate-500 text-xs font-semibold">— Carlos D., Concrete &amp; Masonry, FL</p>
-          </div>
-          <div className="bg-white rounded-lg p-5 border border-blue-100">
-            <div className="text-amber-500 mb-2">★★★★★</div>
-            <p className="text-slate-700 text-sm leading-relaxed mb-3">
-              &ldquo;The starter kit contracts alone were worth $297. Had my lawyer look at them and he said they&rsquo;re solid. Everything else was a bonus.&rdquo;
-            </p>
-            <p className="text-slate-500 text-xs font-semibold">— Jason T., J&amp;T Concrete, OH</p>
-          </div>
+        <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+          Why Contractors Trust EstimateConcrete
+        </h2>
+        <div className="max-w-2xl mx-auto space-y-3">
+          {[
+            "208 pages of free concrete guides and calculators",
+            "9 interactive calculators — try them free before buying",
+            "15 professionally built Excel templates with real formulas",
+            "50 state-specific licensing and cost guides",
+            "30-day money-back guarantee — no questions asked",
+            "Built specifically for concrete contractors, not generic business tools",
+          ].map((point) => (
+            <div key={point} className="flex items-start gap-3">
+              <span className="text-green-600 flex-shrink-0 mt-0.5">✓</span>
+              <span className="text-slate-700 leading-relaxed">{point}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Free Sample CTA */}
+      <div className="mt-8 bg-amber-50 border border-amber-200 rounded-xl p-8 text-center">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">
+          Not sure yet? Try before you buy.
+        </h3>
+        <p className="text-slate-600 max-w-lg mx-auto mb-5 leading-relaxed">
+          Download a free bid calculator sample and see the quality for yourself —
+          no credit card required.
+        </p>
+        <div className="max-w-md mx-auto">
+          <EmailCapture source="templates-free-sample" variant="prominent" />
         </div>
       </div>
 
