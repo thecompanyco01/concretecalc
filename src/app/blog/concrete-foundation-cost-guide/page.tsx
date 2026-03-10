@@ -7,11 +7,84 @@ export const metadata: Metadata = {
     "How much does a concrete foundation cost in 2026? Detailed pricing for slab-on-grade ($4-7/sqft), crawlspace ($7-13/sqft), full basement ($15-25/sqft), and pier foundations. Includes soil testing, engineering, permits, and frost line requirements.",
   keywords:
     "concrete foundation cost, foundation cost per square foot, slab foundation cost, basement foundation cost, crawl space foundation cost, pier foundation cost, how much does a foundation cost",
+  alternates: {
+    canonical: "https://estimateconcrete.com/blog/concrete-foundation-cost-guide",
+  },
 };
 
+const faqItems = [
+  {
+    question: "How much does a concrete foundation cost?",
+    answer:
+      "A concrete foundation costs $4–$25 per square foot depending on the type. Slab-on-grade foundations run $4–$7/sq ft ($4,000–$14,000 for a typical home). Crawlspace foundations cost $7–$13/sq ft ($7,000–$26,000). Full basements are the most expensive at $15–$25/sq ft ($20,000–$50,000+).",
+  },
+  {
+    question: "What is the cheapest type of foundation?",
+    answer:
+      "Slab-on-grade is the cheapest foundation type at $4–$7 per square foot. It's a single concrete pour directly on prepared ground — no crawlspace or basement. Best for warm climates with shallow frost lines. Pier and beam foundations can be cheaper in some situations ($3–$6/sq ft) but aren't suitable for all soil types.",
+  },
+  {
+    question: "How long does it take to pour a foundation?",
+    answer:
+      "A slab-on-grade foundation takes 1–3 days to pour after site prep is complete. Total timeline including excavation, forming, plumbing rough-in, and curing is typically 2–4 weeks. Basement foundations take 3–6 weeks total. Concrete needs at least 7 days to cure before framing can begin (28 days for full strength).",
+  },
+  {
+    question: "Do I need a soil test before pouring a foundation?",
+    answer:
+      "Yes. A geotechnical soil test ($500–$1,500) is almost always required for new construction and strongly recommended for additions. It determines soil bearing capacity, water table depth, and whether you need special engineering. Skipping it can lead to settlement, cracking, and structural failure — repairs that cost $10,000–$50,000+.",
+  },
+  {
+    question: "How much does foundation repair cost?",
+    answer:
+      "Foundation repair costs $2,000–$15,000 for minor crack repairs and $15,000–$75,000+ for major structural fixes. Mudjacking (slab leveling) costs $500–$3,000. Helical pier underpinning runs $1,000–$3,000 per pier with 8–12 piers typical. Early detection saves money — address cracks before they become structural.",
+  },
+];
+
 export default function ConcreteFoundationCostGuide() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: "Concrete Foundation Cost in 2026: Prices by Type & Size",
+        description:
+          "Complete guide to concrete foundation costs in 2026. Covers slab-on-grade, crawlspace, basement, and pier foundations with pricing, soil testing, and engineering requirements.",
+        author: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-10",
+        mainEntityOfPage:
+          "https://estimateconcrete.com/blog/concrete-foundation-cost-guide",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-orange-600">Home</Link>{" "}
         /{" "}
@@ -603,6 +676,16 @@ export default function ConcreteFoundationCostGuide() {
         <p>
           For more concrete project guides, check out our <Link href="/blog/concrete-cost-per-yard">concrete cost per yard guide</Link>, <Link href="/blog/concrete-slab-cost-guide">slab cost guide</Link>, or learn <Link href="/blog/how-to-bid-concrete-jobs">how to bid concrete jobs</Link> like a pro.
         </p>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div className="not-prose space-y-4 my-6">
+          {faqItems.map((item) => (
+            <div key={item.question} className="bg-white border border-slate-200 rounded-lg p-5">
+              <h3 className="font-semibold text-slate-900 mb-2">{item.question}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
+            </div>
+          ))}
+        </div>
       </article>
     </div>
   );

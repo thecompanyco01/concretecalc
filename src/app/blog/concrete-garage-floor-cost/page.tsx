@@ -3,13 +3,81 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Concrete Garage Floor Cost Guide (2026) | EstimateConcrete",
-  description: "A new concrete garage floor costs $4-$8 per square foot for plain concrete, or $8-$15 per square foot with epoxy coating. A standard 2-car garage (400-600 ",
-  keywords: "concrete garage floor cost, concrete cost, concrete calculator, concrete contractor",
+  description: "A new concrete garage floor costs $4-$8 per square foot for plain concrete, or $8-$15 per square foot with epoxy coating. A standard 2-car garage (400-600 sq ft) runs $2,000-$5,000 for plain or $4,000-$9,000 with epoxy.",
+  keywords: "concrete garage floor cost, garage floor cost, epoxy garage floor cost, concrete garage floor replacement, how much does a garage floor cost",
+  alternates: {
+    canonical: "https://estimateconcrete.com/blog/concrete-garage-floor-cost",
+  },
 };
 
+const faqItems = [
+  {
+    question: "How much does a concrete garage floor cost?",
+    answer:
+      "A new concrete garage floor costs $4–$8 per square foot for plain concrete. A standard 2-car garage (400–600 sq ft) runs $2,000–$5,000. With epoxy coating, expect $8–$15 per square foot or $4,000–$9,000 total. Prices include site prep, forming, pouring, and finishing.",
+  },
+  {
+    question: "How thick should a garage floor be?",
+    answer:
+      "Garage floors need a minimum of 4 inches of concrete, but 5–6 inches is recommended for vehicle loads. If you park heavy vehicles (trucks, RVs), go with 6 inches. The extra 2 inches adds about $1–$2 per square foot but dramatically increases load capacity and crack resistance.",
+  },
+  {
+    question: "Is epoxy coating worth it for a garage floor?",
+    answer:
+      "Yes, for most homeowners. Professional epoxy coating ($5–$12/sq ft) protects against oil stains, salt damage, and wear while making the floor easy to clean. Professional jobs last 10–20 years. DIY kits ($200–$500) are cheaper but typically last only 2–5 years. The investment pays off in durability and home value.",
+  },
+  {
+    question: "How much does it cost to replace a garage floor?",
+    answer:
+      "Replacing a garage floor costs $3,000–$8,000 for a 2-car garage. This includes old floor removal ($2–$6/sq ft or $1,000–$3,000), regrading the subbase, and pouring new concrete ($4–$8/sq ft). If the old floor is in decent shape, a concrete overlay ($3–$6/sq ft) may be a cheaper alternative.",
+  },
+];
+
 export default function Article() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: "Concrete Garage Floor Cost Guide (2026)",
+        description:
+          "Complete guide to concrete garage floor costs in 2026. Covers plain concrete, epoxy coating, replacement costs, thickness requirements, and DIY vs professional.",
+        author: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-10",
+        mainEntityOfPage:
+          "https://estimateconcrete.com/blog/concrete-garage-floor-cost",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav className="text-sm text-slate-400 mb-6">
         <Link href="/" className="hover:text-slate-700">Home</Link>
         {" / "}
@@ -56,6 +124,16 @@ export default function Article() {
           >
             Get Pro Templates — $49
           </Link>
+        </div>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div className="not-prose space-y-4 my-6">
+          {faqItems.map((item) => (
+            <div key={item.question} className="bg-white border border-slate-200 rounded-lg p-5">
+              <h3 className="font-semibold text-slate-900 mb-2">{item.question}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
+            </div>
+          ))}
         </div>
       </article>
     </div>

@@ -7,11 +7,84 @@ export const metadata: Metadata = {
     "How much does a concrete patio cost in 2026? Real prices by size (10x10 to 20x20), finish options (broom, stamped, colored, stained), DIY vs contractor costs, permits, and maintenance tips.",
   keywords:
     "concrete patio cost, patio cost per square foot, stamped concrete patio cost, how much does a concrete patio cost, concrete patio ideas, patio installation cost 2026, DIY concrete patio",
+  alternates: {
+    canonical: "https://estimateconcrete.com/blog/concrete-patio-cost-guide",
+  },
 };
 
+const faqItems = [
+  {
+    question: "How much does a concrete patio cost?",
+    answer:
+      "A concrete patio costs $6–$20 per square foot installed in 2026. A basic 12×12 broom-finish patio runs $1,500–$2,500. A 20×20 stamped patio with color can cost $6,000–$8,000+. Total price depends on size, finish type, site conditions, and your region.",
+  },
+  {
+    question: "How much does a 12x12 concrete patio cost?",
+    answer:
+      "A 12×12 concrete patio (144 sq ft) costs $900–$2,900 depending on the finish. Basic broom finish runs $900–$1,450. Stamped or decorative finishes push it to $1,700–$2,900. Add $200–$500 for site prep if the ground isn't level.",
+  },
+  {
+    question: "Is a concrete patio cheaper than pavers?",
+    answer:
+      "Yes, a basic concrete patio costs $6–$12 per square foot vs. $10–$25+ for pavers. However, stamped concrete ($12–$20/sq ft) is comparable to mid-range pavers. Concrete requires less maintenance but is harder to repair if it cracks. Pavers can be individually replaced.",
+  },
+  {
+    question: "How long does a concrete patio last?",
+    answer:
+      "A properly installed concrete patio lasts 25–50 years. Key factors affecting lifespan: adequate base preparation, correct thickness (minimum 4 inches), proper reinforcement, control joints every 8–10 feet, and sealing every 2–3 years. Freeze-thaw cycles reduce lifespan in northern climates if not sealed.",
+  },
+  {
+    question: "Can I pour a concrete patio myself?",
+    answer:
+      "DIY is feasible for small patios under 100 sq ft with a broom finish. You'll save $1,000–$2,000 in labor on a 200 sq ft patio. However, concrete is unforgiving — you have 60–90 minutes to place and finish before it sets. For patios over 200 sq ft or any decorative finish, hire a pro.",
+  },
+];
+
 export default function ConcretePatioCostGuide() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: "Concrete Patio Cost in 2026: Prices by Size & Finish Type",
+        description:
+          "Complete guide to concrete patio costs in 2026. Covers cost per square foot by size, finish options, DIY vs contractor, and money-saving tips.",
+        author: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-10",
+        mainEntityOfPage:
+          "https://estimateconcrete.com/blog/concrete-patio-cost-guide",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-orange-600">Home</Link>{" "}
         /{" "}
@@ -508,6 +581,16 @@ export default function ConcretePatioCostGuide() {
         <p>
           For more concrete project guides, check out our <Link href="/blog/concrete-driveway-cost-guide">driveway cost guide</Link>, <Link href="/blog/concrete-slab-cost-guide">slab cost guide</Link>, or learn about <Link href="/blog/concrete-cost-per-yard">concrete pricing per yard</Link>.
         </p>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div className="not-prose space-y-4 my-6">
+          {faqItems.map((item) => (
+            <div key={item.question} className="bg-white border border-slate-200 rounded-lg p-5">
+              <h3 className="font-semibold text-slate-900 mb-2">{item.question}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
+            </div>
+          ))}
+        </div>
       </article>
     </div>
   );
