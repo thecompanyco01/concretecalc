@@ -2,16 +2,94 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Concrete Slab Cost in 2026: Complete Price Breakdown by Type",
+  title: "Concrete Slab Cost in 2026: Installation Prices & Cost to Pour",
   description:
-    "How much does a concrete slab cost? 2026 pricing for garage floors, patios, house foundations, and more. Includes thickness guide, reinforcement options, DIY vs pro costs, and money-saving tips.",
+    "How much does concrete slab installation cost? Get 2026 prices for pouring and installing concrete slabs — by size, thickness, and region. Includes cost calculator, DIY vs pro comparison, and money-saving tips.",
   keywords:
-    "concrete slab cost, concrete slab cost per square foot, garage floor cost, patio slab cost, concrete foundation cost, how much does a concrete slab cost",
+    "concrete slab installation cost, cost to install a concrete slab, cost to pour a concrete slab, cost of laying concrete slab, estimate cost of concrete slab, concrete slab cost, concrete slab cost per square foot, how much does a concrete slab cost",
+  alternates: {
+    canonical: "https://estimateconcrete.com/blog/concrete-slab-cost-guide",
+  },
 };
 
+const faqItems = [
+  {
+    question: "How much does it cost to install a concrete slab?",
+    answer:
+      "A concrete slab costs $4–$8 per square foot for materials only and $6–$18 per square foot fully installed with site prep, reinforcement, and finishing. A typical 400 sq ft patio slab costs $2,700–$5,600 installed. A 2-car garage floor (500 sq ft) runs $4,000–$7,000.",
+  },
+  {
+    question: "How much does it cost to pour a 20x20 concrete slab?",
+    answer:
+      "A 20×20 concrete slab (400 sq ft) costs $2,700–$5,600 for a basic broom finish at 4\" thick. With a thicker 6\" slab and rebar reinforcement (recommended for garages), expect $4,000–$7,000. Stamped or decorative finishes add $2,400–$6,000 on top.",
+  },
+  {
+    question: "How much does it cost to pour a 30x30 concrete slab?",
+    answer:
+      "A 30×30 slab (900 sq ft) costs $6,000–$12,600 for basic broom finish at 4\" thickness. For a 6\" thick slab with rebar (shop or garage), expect $8,000–$16,000. Larger slabs get a slightly lower per-square-foot price due to economies of scale.",
+  },
+  {
+    question: "How much does a concrete slab cost per square foot?",
+    answer:
+      "Installed concrete slab costs range from $6–$18 per square foot depending on thickness, reinforcement, finish type, and your location. Basic 4\" broom finish runs $6–$10/sq ft. A 6\" reinforced slab with decorative finish can reach $15–$18/sq ft.",
+  },
+  {
+    question: "Is it cheaper to pour concrete yourself?",
+    answer:
+      "DIY saves roughly $1,500–$2,500 on a 400 sq ft slab (about 40–50% of the total cost). However, concrete is unforgiving — once the truck arrives, you have 60–90 minutes to place and finish. DIY makes sense for small, non-structural slabs under 100 sq ft. For driveways, garages, and anything structural, hire a pro.",
+  },
+  {
+    question: "What is the cheapest way to lay a concrete slab?",
+    answer:
+      "The cheapest approach: do your own site prep (clearing, grading, compacting), use wire mesh instead of rebar (for patios/walkways only), choose broom finish, pour in the off-season (fall/winter for 10–20% savings), and get at least 3 contractor quotes. On a 400 sq ft slab, this can save $1,000–$2,000 vs. full-service pricing.",
+  },
+];
+
 export default function ConcreteSlabCostGuide() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: "Concrete Slab Cost in 2026: Installation Prices & Cost to Pour",
+        description:
+          "Complete guide to concrete slab installation costs in 2026. Covers cost per square foot by type, thickness, reinforcement, finishing, and region.",
+        author: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-10",
+        mainEntityOfPage:
+          "https://estimateconcrete.com/blog/concrete-slab-cost-guide",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <nav className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-orange-600">Home</Link>{" "}
         /{" "}
@@ -26,6 +104,23 @@ export default function ConcreteSlabCostGuide() {
         <p className="lead text-xl text-gray-600">
           A concrete slab costs <strong>$4–$8 per square foot</strong> for basic work and <strong>$8–$18+ per square foot</strong> installed with site prep, reinforcement, and finishing. The total price depends on slab type, thickness, your location, and whether you hire a pro or do it yourself. This guide breaks down real costs for every common slab type.
         </p>
+
+        {/* Table of Contents */}
+        <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 not-prose my-8">
+          <p className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wide">In This Guide</p>
+          <ol className="grid md:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+            <li><a href="#by-type" className="text-blue-700 hover:underline">Cost by Slab Type</a></li>
+            <li><a href="#cost-breakdown" className="text-blue-700 hover:underline">Cost Breakdown</a></li>
+            <li><a href="#thickness" className="text-blue-700 hover:underline">Thickness Guide</a></li>
+            <li><a href="#site-prep" className="text-blue-700 hover:underline">Site Preparation Costs</a></li>
+            <li><a href="#reinforcement" className="text-blue-700 hover:underline">Reinforcement Options</a></li>
+            <li><a href="#diy-vs-pro" className="text-blue-700 hover:underline">DIY vs. Hiring a Pro</a></li>
+            <li><a href="#finishing" className="text-blue-700 hover:underline">Finishing Options</a></li>
+            <li><a href="#regional" className="text-blue-700 hover:underline">Regional Cost Differences</a></li>
+            <li><a href="#save-money" className="text-blue-700 hover:underline">8 Ways to Save</a></li>
+            <li><a href="#faq" className="text-blue-700 hover:underline">FAQ</a></li>
+          </ol>
+        </div>
 
         <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 not-prose my-8">
           <p className="font-bold text-orange-800 mb-2">🧮 Get Your Exact Cost</p>
@@ -504,14 +599,93 @@ export default function ConcreteSlabCostGuide() {
           </Link>
         </div>
 
+        <h2 id="regional">Regional Cost Differences</h2>
+        <p>
+          Concrete slab installation costs vary significantly by region. Labor rates, material availability, and seasonal factors all play a role:
+        </p>
+
+        <div className="not-prose overflow-x-auto my-6">
+          <table className="min-w-full border border-gray-200 rounded-lg text-sm">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="text-left px-4 py-2 font-semibold">Region</th>
+                <th className="text-left px-4 py-2 font-semibold">Cost/sq ft (installed)</th>
+                <th className="text-left px-4 py-2 font-semibold">400 sq ft Slab</th>
+                <th className="text-left px-4 py-2 font-semibold">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-4 py-2">Southeast (FL, GA, AL, SC)</td>
+                <td className="px-4 py-2">$5–$10</td>
+                <td className="px-4 py-2">$2,000–$4,000</td>
+                <td className="px-4 py-2">Lower labor costs, year-round season</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Midwest (OH, IN, MI, IL)</td>
+                <td className="px-4 py-2">$6–$12</td>
+                <td className="px-4 py-2">$2,400–$4,800</td>
+                <td className="px-4 py-2">Short season = higher demand in summer</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">South / Southwest (TX, AZ, NM)</td>
+                <td className="px-4 py-2">$6–$11</td>
+                <td className="px-4 py-2">$2,400–$4,400</td>
+                <td className="px-4 py-2">Long season, competitive market</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Northeast (NY, NJ, MA, CT)</td>
+                <td className="px-4 py-2">$8–$16</td>
+                <td className="px-4 py-2">$3,200–$6,400</td>
+                <td className="px-4 py-2">Higher labor, frost depth requirements</td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2">West Coast (CA, WA, OR)</td>
+                <td className="px-4 py-2">$9–$18</td>
+                <td className="px-4 py-2">$3,600–$7,200</td>
+                <td className="px-4 py-2">Highest labor costs, permits stricter</td>
+              </tr>
+              <tr className="border-t bg-gray-50">
+                <td className="px-4 py-2">Mountain (CO, UT, MT)</td>
+                <td className="px-4 py-2">$7–$14</td>
+                <td className="px-4 py-2">$2,800–$5,600</td>
+                <td className="px-4 py-2">Altitude affects curing, short season</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Check our <Link href="/states">state-by-state guides</Link> for specific costs, licensing requirements, and concrete contractor resources in your area.
+        </p>
+
+        {/* FAQ Section */}
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div className="not-prose space-y-4 my-6">
+          {faqItems.map((item) => (
+            <div key={item.question} className="bg-white border border-slate-200 rounded-lg p-5">
+              <h3 className="font-semibold text-slate-900 mb-2">{item.question}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
+            </div>
+          ))}
+        </div>
+
         <h2 id="calculators">Free Concrete Calculators</h2>
         <p>Get instant estimates for your project:</p>
         <ul>
           <li><Link href="/calculators/slab">Concrete Slab Calculator</Link> — Cubic yards, bags, rebar, and cost estimates</li>
           <li><Link href="/calculators/driveway">Driveway Calculator</Link> — Driveway-specific sizing and costs</li>
+          <li><Link href="/calculators/patio">Patio Calculator</Link> — Patio-specific dimensions and costs</li>
+          <li><Link href="/calculators/footing">Footing Calculator</Link> — Foundation and footing estimates</li>
         </ul>
         <p>
-          For more pricing information, see our guides on <Link href="/blog/concrete-driveway-cost-guide">driveway costs</Link>, <Link href="/blog/concrete-patio-cost-guide">patio costs</Link>, and <Link href="/blog/concrete-foundation-cost-guide">foundation costs</Link>.
+          For more pricing information, see our guides on <Link href="/blog/concrete-driveway-cost-guide">driveway costs</Link>, <Link href="/blog/concrete-patio-cost-guide">patio costs</Link>, <Link href="/blog/concrete-foundation-cost-guide">foundation costs</Link>, and <Link href="/blog/concrete-cost-per-yard">concrete cost per yard</Link>.
+        </p>
+
+        <p>
+          Starting a concrete business? Read our{" "}
+          <Link href="/blog/how-to-start-concrete-business">complete startup guide</Link> and{" "}
+          <Link href="/blog/how-to-bid-concrete-jobs">bidding guide</Link> to price your work profitably.
         </p>
       </article>
     </div>
