@@ -23,6 +23,7 @@ const products = [
       "Regional rate reference sheet",
       "Works in Excel & Google Sheets",
     ],
+    whatYouGet: "1 Excel file • 7 sheets with auto-formulas • Instant download",
     popular: false,
     href: "https://buy.stripe.com/00wcN673p8ZTb2jgafaMU03",
     cta: "Buy Now — $29",
@@ -40,6 +41,7 @@ const products = [
       "Editable in Excel or Google Sheets",
       "Company branding section",
     ],
+    whatYouGet: "5 Excel templates • Auto-calculated costs • Print-ready layouts",
     popular: true,
     href: "https://buy.stripe.com/6oUdRadrNdg91rJ3ntaMU00",
     cta: "Buy Now — $49",
@@ -57,6 +59,7 @@ const products = [
       "Payment terms & late fee clauses",
       "Print-ready professional layout",
     ],
+    whatYouGet: "1 Excel file • Invoice + payment tracker • Auto-calculations",
     popular: false,
     href: "https://buy.stripe.com/28EdRa2N9a3X6M31flaMU07",
     cta: "Buy Now — $19",
@@ -77,6 +80,7 @@ const products = [
       "Pro bid calculator included",
       "All 5 estimate templates included",
     ],
+    whatYouGet: "15 templates + 6-chapter guide • Everything in one bundle",
     popular: false,
     href: "https://buy.stripe.com/8x2cN6afBdg9c6ne27aMU01",
     cta: "Buy Now — $297",
@@ -222,6 +226,13 @@ export default function Templates() {
                 </li>
               ))}
             </ul>
+            {/* What you'll get — trust reinforcement */}
+            <div className="bg-slate-50 border border-slate-100 rounded-lg p-3 mb-4">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-1">
+                What you&apos;ll get
+              </p>
+              <p className="text-sm text-slate-700">{product.whatYouGet}</p>
+            </div>
             <a
               href={product.href}
               target="_blank"
@@ -234,6 +245,9 @@ export default function Templates() {
             >
               {product.cta || "Buy Now"}
             </a>
+            <p className="text-xs text-slate-400 text-center mt-2">
+              Instant download • 30-day money-back guarantee
+            </p>
           </div>
         ))}
       </div>

@@ -172,6 +172,7 @@ export default function BidCalculatorPro() {
             >
               ⬇️ Download Excel Version — $29
             </a>
+            <p className="text-xs text-slate-500 mt-2">1 Excel file • 7 sheets with auto-formulas • Instant download • 30-day guarantee</p>
           </div>
           <h1 className="text-3xl font-extrabold text-slate-900 mt-3">
             Pro Bid Calculator

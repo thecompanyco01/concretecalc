@@ -325,6 +325,7 @@ export default function EstimateTemplates() {
             >
               ⬇️ Download All 8 Templates — $49
             </a>
+            <p className="text-xs text-slate-500 mt-2">5 Excel templates • Auto-calculated costs • Print-ready • 30-day guarantee</p>
           </div>
           <h1 className="text-3xl font-extrabold text-slate-900 mt-3">Estimate Template Pack</h1>
           <p className="text-slate-500 mt-2">8 professional estimate templates. Click any template, customize quantities and rates, then print as PDF.</p>

@@ -176,6 +176,10 @@ export default function StarterKit() {
           Get all 6 chapters, 5 estimate templates, the Pro Bid Calculator, client contracts, SOPs, 
           pricing matrix, equipment guide, and 90-day marketing plan.
         </p>
+        <div className="bg-white/60 border border-amber-200 rounded-lg p-4 max-w-md mx-auto mb-4">
+          <p className="text-xs font-semibold text-amber-800 uppercase tracking-wide mb-1">What you&apos;ll get</p>
+          <p className="text-sm text-amber-900/80">15 templates + 6-chapter guide • Contracts, SOPs & marketing plan • Everything in one download</p>
+        </div>
         <a
           href="https://buy.stripe.com/8x2cN6afBdg9c6ne27aMU01"
           target="_blank"
@@ -184,7 +188,7 @@ export default function StarterKit() {
         >
           Get the Starter Kit — $297
         </a>
-        <p className="text-amber-900/60 text-sm mt-3">30-day money-back guarantee</p>
+        <p className="text-amber-900/60 text-sm mt-3">Instant download • 30-day money-back guarantee</p>
       </div>
 
       {/* Bottom CTA */}
