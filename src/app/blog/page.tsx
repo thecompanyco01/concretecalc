@@ -287,6 +287,33 @@ const posts = [
     readTime: "12 min read",
     status: "live",
   },
+  {
+    title: "Concrete Sidewalk Cost Guide (2026)",
+    slug: "concrete-sidewalk-cost-guide",
+    excerpt:
+      "Concrete sidewalk costs $6–$12/sq ft installed. Get pricing for new pours, replacement, repairs, and decorative options by region.",
+    date: "March 10, 2026",
+    readTime: "10 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Retaining Wall Cost Guide (2026)",
+    slug: "concrete-retaining-wall-cost-guide",
+    excerpt:
+      "Retaining wall costs $20–$45/sq ft for poured concrete, $15–$35/sq ft for block. Pricing by height, block vs poured, drainage, and permits.",
+    date: "March 10, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
+  {
+    title: "Concrete Footing Cost Guide (2026)",
+    slug: "concrete-footing-cost-guide",
+    excerpt:
+      "Concrete footings cost $5–$15/linear foot for strip, $75–$300 per pad, $150–$500 per pier. Pricing by type, depth, and frost line.",
+    date: "March 10, 2026",
+    readTime: "11 min read",
+    status: "live",
+  },
 ];
 
 export default function Blog() {
