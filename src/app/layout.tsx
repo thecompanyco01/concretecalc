@@ -133,9 +133,9 @@ export default function RootLayout({
                 </ul>
                 <h4 className="text-white font-semibold mb-3 mt-6 text-sm uppercase tracking-wide">Compare</h4>
                 <ul className="space-y-2 text-sm">
-                  <li><Link href="/compare/vs-clear-estimates" className="hover:text-white transition">vs Clear Estimates</Link></li>
-                  <li><Link href="/compare/vs-joist" className="hover:text-white transition">vs Joist</Link></li>
-                  <li><Link href="/compare/vs-concretecalc-pro" className="hover:text-white transition">vs ConcreteCalc Pro</Link></li>
+                  <li><Link href="/compare/clear-estimates" className="hover:text-white transition">vs Clear Estimates</Link></li>
+                  <li><Link href="/compare/joist" className="hover:text-white transition">vs Joist</Link></li>
+                  <li><Link href="/compare/concretecalc-pro" className="hover:text-white transition">vs ConcreteCalc Pro</Link></li>
                 </ul>
               </div>
             </div>
