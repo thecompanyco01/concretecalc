@@ -94,6 +94,10 @@ export default function Members() {
         <p className="text-blue-200 mb-6 max-w-md mx-auto">
           Cancel anytime. All templates are yours to keep even if you cancel. 30-day money-back guarantee.
         </p>
+        <div className="bg-white/10 border border-blue-400/30 rounded-lg p-3 max-w-sm mx-auto mb-4">
+          <p className="text-xs font-semibold text-blue-200 uppercase tracking-wide mb-1">What you&apos;ll get</p>
+          <p className="text-sm text-blue-100">All templates included • Monthly pricing data updates • Regional benchmarks • Cancel anytime</p>
+        </div>
         <a
           href="https://buy.stripe.com/00w4gA2N9b815HZbTZaMU02"
           target="_blank"
