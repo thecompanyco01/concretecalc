@@ -278,6 +278,15 @@ const posts = [
     readTime: "15 min read",
     status: "live",
   },
+  {
+    title: "Concrete Business Plan Template (Free)",
+    slug: "concrete-business-plan-template",
+    excerpt:
+      "Free business plan template built for concrete contractors. Includes financial projections, market analysis framework, startup budget, and 3-year revenue forecast.",
+    date: "March 10, 2026",
+    readTime: "12 min read",
+    status: "live",
+  },
 ];
 
 export default function Blog() {

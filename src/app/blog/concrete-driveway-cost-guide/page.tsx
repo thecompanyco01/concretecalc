@@ -6,12 +6,84 @@ export const metadata: Metadata = {
   description:
     "How much does a concrete driveway cost in 2026? Get real prices per square foot for plain, stamped, colored, and exposed aggregate driveways. Includes removal costs, sizing guide, thickness requirements, and asphalt vs concrete comparison.",
   keywords:
-    "concrete driveway cost, concrete driveway cost per square foot, stamped concrete driveway cost, how much does a concrete driveway cost, driveway replacement cost, concrete vs asphalt driveway, colored concrete driveway price",
+    "concrete driveway cost, estimate cost of concrete driveway, concrete driveway cost per square foot, stamped concrete driveway cost, how much does a concrete driveway cost, driveway replacement cost, concrete vs asphalt driveway, colored concrete driveway price, cost to pour a concrete driveway",
+  alternates: {
+    canonical: "https://estimateconcrete.com/blog/concrete-driveway-cost-guide",
+  },
 };
 
+const faqItems = [
+  {
+    question: "How much does it cost to pour a concrete driveway?",
+    answer:
+      "A concrete driveway costs $8–$18 per square foot installed, with most homeowners paying $3,200–$14,400 total depending on size and finish. A standard 2-car driveway (600 sq ft, broom finish) typically costs $5,000–$8,000. Stamped or decorative driveways run $10,000–$18,000+.",
+  },
+  {
+    question: "How much does a 20x20 concrete driveway cost?",
+    answer:
+      "A 20×20 concrete driveway (400 sq ft) costs $3,200–$7,200 for basic broom finish. With stamped concrete, expect $6,000–$10,000. This size fits approximately 2 cars parked side by side.",
+  },
+  {
+    question: "Is concrete or asphalt cheaper for a driveway?",
+    answer:
+      "Asphalt is cheaper upfront ($3–$7/sq ft vs $8–$18/sq ft for concrete), but concrete lasts 25–30+ years vs 15–20 for asphalt and requires far less maintenance. Over 30 years, concrete typically costs less because asphalt needs resealing every 2–3 years and replacement sooner.",
+  },
+  {
+    question: "How long does a concrete driveway last?",
+    answer:
+      "A properly installed concrete driveway lasts 25–30+ years with minimal maintenance. Factors that shorten lifespan: poor drainage, inadequate thickness (less than 5\"), no reinforcement, freeze-thaw cycles without proper air entrainment, and heavy vehicle traffic beyond design specs.",
+  },
+  {
+    question: "Does a concrete driveway increase home value?",
+    answer:
+      "Yes. A new concrete driveway typically returns 50–75% of its cost in home value and significantly improves curb appeal. A cracked or damaged driveway can reduce home value by $5,000–$10,000 or more, making replacement a smart investment before selling.",
+  },
+];
+
 export default function ConcreteDrivewayCostGuide() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: "Concrete Driveway Cost in 2026: Prices Per Sq Ft by Type",
+        description:
+          "Complete guide to concrete driveway costs in 2026. Per square foot pricing for plain, stamped, colored, and exposed aggregate driveways with removal costs and sizing guide.",
+        author: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "EstimateConcrete",
+          url: "https://estimateconcrete.com",
+        },
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-10",
+        mainEntityOfPage:
+          "https://estimateconcrete.com/blog/concrete-driveway-cost-guide",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-orange-600">Home</Link>{" "}
         /{" "}
@@ -574,6 +646,17 @@ export default function ConcreteDrivewayCostGuide() {
           >
             Get the Pro Estimate Template — $49
           </Link>
+        </div>
+
+        {/* FAQ Section */}
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div className="not-prose space-y-4 my-6">
+          {faqItems.map((item) => (
+            <div key={item.question} className="bg-white border border-slate-200 rounded-lg p-5">
+              <h3 className="font-semibold text-slate-900 mb-2">{item.question}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.answer}</p>
+            </div>
+          ))}
         </div>
 
         <h2 id="calculators">Calculate Your Driveway Cost Now</h2>

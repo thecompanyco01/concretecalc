@@ -97,6 +97,22 @@ export default function Article() {
           Many successful concrete contractors started with $10,000 and a truck they already owned.
         </p>
 
+        <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 not-prose my-8">
+          <p className="text-sm text-slate-700">
+            📖 <strong>Read the full guide:</strong>{" "}
+            <Link href="/blog/how-to-start-concrete-business" className="text-blue-700 underline font-semibold">
+              How to Start a Concrete Business — National Guide
+            </Link>{" "}
+            covers equipment, insurance, pricing strategy, finding customers, and first-year financials in detail.
+          </p>
+          <p className="text-sm text-slate-600 mt-2">
+            📋 Need a business plan?{" "}
+            <Link href="/blog/concrete-business-plan-template" className="text-blue-700 underline">
+              Free Concrete Business Plan Template
+            </Link>
+          </p>
+        </div>
+
         <div className="bg-slate-900 text-white rounded-lg p-8 not-prose my-8 text-center">
           <h3 className="text-xl font-bold mb-3">Get the Complete Business Starter Kit</h3>
           <p className="text-slate-400 mb-6 max-w-lg mx-auto">
