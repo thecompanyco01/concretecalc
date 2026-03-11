@@ -24,7 +24,7 @@ export default function ThankYouInvoiceTemplate() {
           tracker sheet to manage all your outstanding invoices in one place.
         </p>
         <a
-          href="/downloads/invoice-template-pro-d4e1c7.xlsx"
+          href="/downloads/invoice-template-f4b8d1.xlsx"
           download
           className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-3 px-8 rounded-lg transition text-sm mb-4"
         >
